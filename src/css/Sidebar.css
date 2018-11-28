@@ -57,11 +57,17 @@
   top:0;
   right: 0;
 }
+:root.ss-sidebar #mascot img {
+  padding: 0 1px 0 0;
+}
 :root.ss-sidebar.left-sidebar body::before {
   border-right:2px solid rgba(" + $SS.theme.mainColor.rgb + ",.9);
   border-left: none !important;
   left: 0;
   right: auto !important;
+}
+:root.ss-sidebar.left-sidebar #mascot img {
+  padding: 0 0 0 1px !important;
 }
 /* Minimal Sidebar */
 :root.mini-sidebar:root.left-sidebar body {
