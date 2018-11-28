@@ -20,7 +20,7 @@
   "permissions": [
     "storage",
     "*://www.4chan.org/*",
-    "*://boards.4chan.org/*"
+    "*://boards.4chan.org/*",
     "*://www.4channel.org/*",
     "*://boards.4channel.org/*"
   ]
