@@ -1,4 +1,5 @@
 A personal build of OneeChan for testing out things. Not recommended for normal use right now.
 
-For a (hopefully) active build, try (this version) [https://github.com/KevinParnell/OneeChan].
-For a vintage build with 4channel fixes, (use this one) [https://github.com/dnsev/OneeChan].
+For a (hopefully) active build, try this version: https://github.com/KevinParnell/OneeChan
+
+For a vintage build with 4channel fixes, use this one: https://github.com/dnsev/OneeChan
