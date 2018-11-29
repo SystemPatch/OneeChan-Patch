@@ -3993,19 +3993,9 @@
                     "<path fill='rgb(" + this.tripColor.rgb + ")' d='M8.037,11.166L14.5,22.359c0.825,1.43,2.175,1.43,3,0l6.463-11.194c0.826-1.429,0.15-2.598-1.5-2.598H9.537C7.886,8.568,7.211,9.737,8.037,11.166z'/></svg>"
             };
 
-            if (theme.customCSS) {
-                try {
-                    if (theme.customCSS[0] === "(")
-                        theme.customCSS = "\"+".concat(theme.customCSS);
-                    if (theme.customCSS[theme.customCSS.length - 1] === ")")
-                        theme.customCSS += "+\"";
-
-                    this.customCSS = eval($SS.trimLineBreaks(new String('"' + theme.customCSS.replace(/\"/g, "\\\"").replace(/\'/g, "\\\'") + '"')));
-                } catch (e) {
-                    alert("Error evaluating " + this.name + "'s theme.customCSS!\n" + e.message);
-                    this.customCSS = theme.customCSS;
-                }
-            } else
+            if (theme.customCSS) 
+                this.customCSS = $SS.trimLineBreaks(theme.customCSS);
+            else
                 this.customCSS = "";
 
             this.preview = function() {
