@@ -336,9 +336,7 @@ table.flashListing .highlightPost {
   text-align: center !important;
 }
 #delform[action='https://sys.4chan.org/f/up.php'],
-#delform[action='https://sys.4chan.org/f/up.php'] .postblock,
-#delform[action='https://sys.4channel.org/f/up.php'],
-#delform[action='https://sys.4channel.org/f/up.php'] .postblock {
+#delform[action='https://sys.4chan.org/f/up.php'] .postblock {
   background: none !important;
   border: none !important;
   box-shadow: none !important;
