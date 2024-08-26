@@ -248,6 +248,30 @@
                 }, {
                     name: "Helvetica",
                     value: "Helvetica"
+                }, {
+                    name: "Deja Vu Sans",
+                    value: "Deja Vu Sans"
+                }, {
+                    name: "Roboto",
+                    value: "Roboto"
+                }, {
+                    name: "Verdana",
+                    value: "Verdana"
+                }, {
+                    name: "Noto",
+                    value: "Noto"
+                }, {
+                    name: "PT Sans",
+                    value: "PT Sans"
+                }, {
+                    name: "Liberation",
+                    value: "Liberation"
+                }, {
+                    name: "Source Sans",
+                    value: "Source Sans"
+                }, {
+                    name: "Libre Baskerville",
+                    value: "Libre Baskerville"
                 }]
             ],
             "Font Size": [13, "Set the general size of text (Pixels). Min: 10px, Max: 18px"],
@@ -882,10 +906,12 @@
                 if (!$SS.conf["Show Top Ad"]) {
                     $(".topad.center").remove();
                     $(".aboveMidAd.center").remove();
+                    $("#danbo-s-t.danbo-slot").remove();
                 } else if (!$SS.conf["Show Middle Ad"]) {
                     $(".middlead.center").remove();
                 } else if (!$SS.conf["Show Bottom Ad"]) {
                     $(".bottomad.center").remove();
+                    $("#danbo-s-b.danbo-slot").remove();
                 }
 
                 // things that need to change after 4chan X loads.
@@ -2726,6 +2752,7 @@
                 authorName: "Seaweed",
                 authorTrip: "!!lq+3fff+/ev",
                 "default": true,
+                bgImg: false,
                 replyOp: "1.0",
                 navOp: "0.9",
                 bgColor: "20211c",
@@ -2759,6 +2786,7 @@
                 authorName: "Seaweed",
                 authorTrip: "!!lq+3fff+/ev",
                 "default": true,
+                bgImg: false,
                 replyOp: "1.0",
                 navOp: "0.9",
                 bgColor: "e9eced",
@@ -2792,6 +2820,7 @@
                 authorName: "Leagle",
                 authorTrip: "!YoGiiH6Oi.",
                 "default": true,
+                bgImg: false,
                 replyOp: "1.0",
                 navOp: "0.9",
                 mainColor: "222222",
@@ -2826,6 +2855,7 @@
                 authorName: "Kori",
                 authorTrip: "!STRaW/KORI",
                 "default": true,
+                bgImg: false,
                 replyOp: "1.0",
                 navOp: "0.9",
                 mainColor: "fcfcfc",
@@ -2859,6 +2889,7 @@
                 authorName: "Zixaphir",
                 authorTrip: "!M.........",
                 "default": true,
+                bgImg: false,
                 replyOp: "1.0",
                 navOp: "0.9",
                 mainColor: "1c1c1c",
@@ -2887,6 +2918,173 @@
                 threadHLColor: "aaaaaa",
                 replybgHLColor: "0e0e0e",
                 replyslctColor: "ffffff"
+            }, {
+                name: "Cyber Blue",
+                authorName: "Jelloman",
+                authorTrip: "!anon......",
+                "default": true,
+                bgImg: false,
+                replyOp: "1.0",
+                navOp: "0.9",
+                mainColor: "40404f",
+                brderColor: "57596b",
+                inputColor: "2b2c36",
+                inputbColor: "23232b",
+                headerBGColor: "23232b",
+                headerColor: "a9b3d9",
+                boardColor: "a9b3d9",
+                bgColor: "393a47",
+                textColor: "a9b3d9",
+                blinkColor: "677cba",
+                headerLColor: "a9b3d9",
+                headerLHColor: "d33682",
+                linkColor: "8481b3",
+                linkHColor: "d33682",
+                qlColor: "8481b3",
+                nameColor: "73668a",
+                tripColor: "677cba",
+                titleColor: "a19dc4",
+                quoteColor: "859900",
+                unreadColor: "696fc0",
+                postHLColor: "97b2c2",
+                quotesYouHLColor: "97b2c2",
+                ownPostHLColor: "97b2c2",
+                threadHLColor: "a19dc4",
+                replybgHLColor: "656980",
+                replyslctColor: "97b2c2"
+            }, {
+                name: "Colorblind",
+                authorName: "Jelloman",
+                authorTrip: "!anon......",
+                "default": true,
+                bgImg: false,
+                replyOp: "1.0",
+                navOp: "0.9",
+                mainColor: "545454",
+                brderColor: "5e5e5e",
+                inputColor: "454545",
+                inputbColor: "888888",
+                headerBGColor: "303030",
+                headerColor:"bfbfbf",
+                boardColor: "bfbfbf",
+                bgColor: "404040",
+                textColor: "bfbfbf",
+                blinkColor: "efefef",
+                headerLColor: "efefef",
+                headerLHColor: "8a8a8a",
+                linkColor: "efefef",
+                linkHColor: "8a8a8a",
+                qlColor: "efefef",
+                nameColor: "bfbfbf",
+                tripColor: "000000",
+                titleColor: "aaaaaa",
+                quoteColor: "000000",
+                unreadColor: "ffffff",
+                postHLColor: "6e6e6e",
+                quotesYouHLColor: "000000",
+                ownPostHLColor: "ffffff",
+                threadHLColor: "000000",
+                replybgHLColor: "737373",
+                replyslctColor: "575757"
+            }, {
+                name: "Stalenhag",
+                authorName: "Desu",
+                authorTrip: "!Desu.152Wc",
+                "default": true,
+                bgImg: false,
+                replyOp: "0.8",
+                navOp: "0.9",
+                mainColor: "00161d",
+                brderColor: "00161d",
+                inputColor: "00161d",
+                inputbColor: "25645b",
+                headerBGColor: "00161d",
+                headerColor: "95bab1",
+                boardColor: "95bab1",
+                bgColor: "00161d",
+                textColor: "95bab1",
+                blinkColor: "485c4d",
+                headerLColor: "485c4d",
+                headerLHColor: "485c4d",
+                linkColor: "485c4d",
+                linkHColor: "485c4d",
+                qlColor: "485c4d",
+                nameColor: "27534d",
+                tripColor: "305b68",
+                titleColor: "164947",
+                quoteColor: "305b68",
+                unreadColor: "305b68",
+                postHLColor: "305b68",
+                quotesYouHLColor: "25645b",
+                ownPostHLColor: "164947",
+                threadHLColor: "305b68",
+                replybgHLColor: "00161d",
+                replyslctColor: "ffffff",
+                bgRPA: "repeat-y top center fixed"
+            }, {
+                name: "Blue Phallus",
+                authorName: "iluvOP",
+                authorTrip: "Tripfags can die.",
+                "default": true,
+                bgImg: false,
+                replyOp: "1.0",
+                navOp: "0.9",
+                mainColor: "242436",
+                brderColor: "242436",
+                inputColor: "242436",
+                inputbColor: "262638",
+                headerBGColor: "242436",
+                headerColor: "da637e",
+                boardColor: "7787a3",
+                bgColor: "20202f",
+                textColor: "a7a7ad",
+                blinkColor: "4b5e57",
+                headerLColor: "4c626d",
+                headerLHColor: "da637e",
+                linkColor: "7787a3",
+                linkHColor: "da637e",
+                nameColor: "da637e",
+                tripColor: "63918b",
+                titleColor: "da637e",
+                quoteColor: "b1b792",
+                unreadColor: "64657b",
+                highlightColor: "ffffff",
+                customCSS: ".reply { box-shadow: -2px 2px 2px rgba(0,0,0,.10); }"
+            }, {
+                name: "Prisma Illya",
+                authorName: "Akari",
+                authorTrip: "!anon......",
+                "default": true,
+                bgImg: false,
+                replyOp: "1.0",
+                navOp: "1.0",
+                mainColor: "fcfcfc",
+                brderColor: "cccaca",
+                inputColor: "fcfcfc",
+                inputbColor: "cccaca",
+                headerBGColor: "f9f9f9",
+                headerColor: "febeef",
+                boardColor: "4c4c4c",
+                bgColor: "fcfcfc",
+                textColor: "4c4c4c",
+                blinkColor: "feaad6",
+                headerLColor: "feaad6",
+                headerLHColor: "a8515f",
+                linkColor: "ff96cd",
+                linkHColor: "a8515f",
+                qlColor: "bf85cc",
+                nameColor: "e1427d",
+                tripColor: "feaad6",
+                titleColor: "feaad6",
+                quoteColor: "b5a0dc",
+                unreadColor: "feaad6",
+                postHLColor: "ffffff",
+                quotesYouHLColor: "e1427d",
+                ownPostHLColor: "e1427d",
+                threadHLColor: "ffffff",
+                replybgHLColor: "ffffff",
+                replyslctColor: "ffffff",
+                customCSS: ".reply {\nborder: 1px solid #cccaca!important;\n}\ndiv.inline .post {\npadding: 0px 0px !important;\n}\n.inline {\nbackground-color: #fcfcfc!important;\n}\n#qp .post {\npadding: 0px !important;\n}\n.dialog {\nborder: 0px !important;\n}\n.qphl {\noutline: 0!important;\nbox-shadow: 0 0 2px 2px rgba(255,150,205,.6)!important;\n}\ninput:focus, textarea:focus {\nborder: 1px solid #cccaca!important;\n}\ndiv.captcha-root {\nborder: 0 !important;\npadding-top: 1px !important\n}\n:root.post-info div.reply>.postInfo {\npadding-top: 4px !important\n}"
             }],
 
             init: function() {

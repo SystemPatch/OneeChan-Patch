@@ -1,3 +1,10 @@
+### v5.6.4
+*2024-08-25*
+
+- Add skins: Cyber Blue, Colorblind, Stalenhag (noBG), Blue Phallus, Prisma Illya
+- Add additional fonts to font list
+- Hide [Advertise on 4Chan] banner
+
 ### v5.6.3
 *2018-11-27*
 
