@@ -232,8 +232,8 @@
                     name: "Consolas",
                     value: "Consolas"
                 }, {
-                    name: "Droid Sans",
-                    value: "Droid Sans"
+                    name: "Open Sans",
+                    value: "Open Sans"
                 }, {
                     name: "Segoe UI",
                     value: "Segoe UI"
@@ -244,14 +244,14 @@
                     name: "Arial",
                     value: "Arial"
                 }, {
-                    name: "Lucida Grande",
-                    value: "Lucida Grande"
+                    name: "SF Pro",
+                    value: "SF Pro"
                 }, {
                     name: "Helvetica",
                     value: "Helvetica"
                 }, {
-                    name: "Deja Vu Sans",
-                    value: "Deja Vu Sans"
+                    name: "DejaVu Sans",
+                    value: "DejaVu Sans"
                 }, {
                     name: "Roboto",
                     value: "Roboto"
@@ -260,16 +260,22 @@
                     value: "Verdana"
                 }, {
                     name: "Noto",
-                    value: "Noto"
+                    value: "Noto Sans"
                 }, {
                     name: "PT Sans",
                     value: "PT Sans"
                 }, {
-                    name: "Liberation",
-                    value: "Liberation"
+                    name: "Liberation Sans",
+                    value: "Liberation Sans"
+                }, {
+                    name: "Liberation Serif",
+                    value: "Liberation Serif"
+                }, {
+                    name: "Liberation Mono",
+                    value: "Liberation Mono"
                 }, {
                     name: "Source Sans",
-                    value: "Source Sans"
+                    value: "Source Sans 3"
                 }, {
                     name: "Libre Baskerville",
                     value: "Libre Baskerville"
