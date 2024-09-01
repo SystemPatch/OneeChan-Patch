@@ -4,4 +4,4 @@ For a (hopefully) active build, try this version: https://github.com/KevinParnel
 
 For a vintage build with 4channel fixes, use this one: https://github.com/dnsev/OneeChan
 
-##[Userscript Install](https://github.com/SystemPatch/OneeChan/raw/master/builds/OneeChan.user.js)
+### [Userscript Install](https://github.com/SystemPatch/OneeChan/raw/master/builds/OneeChan.user.js)
