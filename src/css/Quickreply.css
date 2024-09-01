@@ -2,7 +2,7 @@
 #qr {
   box-shadow: none !important;
   border-radius: 0 !important;
-  min-width: 297px !important;
+  min-width: 294px !important;
   box-shadow: none !important;
 }
 #qr .close {
@@ -84,8 +84,18 @@
   min-height: 58px !important;
   margin-bottom: 1px;
 }
+#t-resp {
+    width: 170px !important;
+}
 :root.force-qr #qr {
-  max-width: 297px;
+  max-width: 294px;
+  margin-right: 3px !important;
+}
+:root.force-qr.left-sidebar #qr {
+  margin-left: 3px !important;
+}
+:root.force-qr #qr textarea {
+  min-width: 294px;
 }
 /* Vertical QR */
 :root.vertical-qr #qr > div > label > div {

@@ -1,14 +1,21 @@
 ### v5.6.4
-*2024-08-25*
+*2024-09-01*
 
-- Add skins: Cyber Blue, Colorblind, Stalenhag (noBG), Blue Phallus, Prisma Illya
-- Add additional fonts to font list
+- Added themes: Cyber Blue, Colorblind, Stalenhag (noBG), Blue Phallus, Prisma Illya
+- Added the following font families (Sans/Serif/Mono) to font list: Verdana, [DejaVu](https://dejavu-fonts.github.io), [Roboto](https://fonts.google.com/?query=Roboto), [Noto](https://fonts.google.com/noto/fonts), [PT](https://fonts.google.com/?query=ParaType), [Liberation](https://github.com/liberationfonts/liberation-fonts/releases), [Source](https://fonts.google.com/?query=Source), and [Libre/Dosis](https://fonts.google.com/?query=Impallari+Type)
+- Replaced older fonts with modern variants: [Open Sans](https://fonts.google.com/specimen/Open+Sans) (replacing Droid Sans) and [SF Pro](https://developer.apple.com/fonts/) (replacing Lucida Grande)
+- Each font will need to be installed locally before they can be used
+- Increase font size range
+- Colored scrollbars: Currently configured for thin scrollbars, and uses the selected theme's 'Header Text' and 'Body Background' colors for the main scrollbar, and 'Text' and 'Input Background' colors for text boxes
+- Cleanup and tweaks to CSS relating to SS-like Sidebar
+- Add 'Apply' button to settings page, to make adjustments without closing the settings
 - Hide [Advertise on 4Chan] banner
 
 ### v5.6.3
 *2018-11-27*
 
 - 4channel fixes
+- Removed code relating to unsafe-eval errors that were occuring (see [#1](https://github.com/SystemPatch/OneeChan/issues/1))
 
 ### v5.6.2
 *2018-06-05*

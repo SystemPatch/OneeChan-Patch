@@ -384,3 +384,12 @@ select:focus,
 #swf-embed-close {
   right: 1px !important;
 }
+/* Scrollbars */
+:root {
+    scrollbar-color: " + $SS.theme.titleColor.hex + $SS.theme.bgColor.hex + ";
+    scrollbar-width: thin;
+}
+.field {
+    scrollbar-color: " + $SS.theme.textColor.hex + $SS.theme.inputColor.hex + ";
+    scrollbar-width: thin;
+}

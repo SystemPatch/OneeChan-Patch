@@ -237,6 +237,9 @@
                     name: "Segoe UI",
                     value: "Segoe UI"
                 }, {
+                    name: "Verdana",
+                    value: "Verdana"
+                }, {
                     name: "Calibri",
                     value: "Calibri"
                 }, {
@@ -252,17 +255,38 @@
                     name: "DejaVu Sans",
                     value: "DejaVu Sans"
                 }, {
+                    name: "DejaVu Serif",
+                    value: "DejaVu Serif"
+                }, {
+                    name: "DejaVu Mono",
+                    value: "DejaVu Sans Mono"
+                }, {
                     name: "Roboto",
                     value: "Roboto"
                 }, {
-                    name: "Verdana",
-                    value: "Verdana"
+                    name: "Roboto Serif",
+                    value: "Roboto Serif 20pt"
                 }, {
-                    name: "Noto",
+                    name: "Roboto Mono",
+                    value: "Roboto Mono"
+                }, {
+                    name: "Noto Sans",
                     value: "Noto Sans"
+                }, {
+                    name: "Noto Serif",
+                    value: "Noto Serif"
+                }, {
+                    name: "Noto Sans Mono",
+                    value: "Noto Sans Mono"
                 }, {
                     name: "PT Sans",
                     value: "PT Sans"
+                }, {
+                    name: "PT Serif",
+                    value: "PT Serif"
+                }, {
+                    name: "PT Mono",
+                    value: "PT Mono"
                 }, {
                     name: "Liberation Sans",
                     value: "Liberation Sans"
@@ -276,11 +300,23 @@
                     name: "Source Sans",
                     value: "Source Sans 3"
                 }, {
+                    name: "Source Serif",
+                    value: "Source Serif 4"
+                }, {
+                    name: "Source Code",
+                    value: "Source Code Pro"
+                }, {
                     name: "Libre Baskerville",
                     value: "Libre Baskerville"
+                }, {
+                    name: "Libre Franklin",
+                    value: "Libre Franklin"
+                }, {
+                    name: "Dosis",
+                    value: "Dosis"
                 }]
             ],
-            "Font Size": [13, "Set the general size of text (Pixels). Min: 10px, Max: 18px"],
+            "Font Size": [13, "Set the general size of text (Pixels). Min: 8px, Max: 40px"],
             "Backlink Font Size": [9, "Set the font size of backlinks."],
             "Bitmap Font": [false, "Check this if you are using a bitmap font."],
             ":: Compatibility": ["header", ""],
@@ -301,8 +337,8 @@
             "Mascots": [],
             "Hidden Mascots": []
         },
-        MAX_FONT_SIZE = 18,
-        MIN_FONT_SIZE = 10,
+        MAX_FONT_SIZE = 40,
+        MIN_FONT_SIZE = 8,
         NAME = "OneeChan",
         NAMESPACE = "OneeChan.",
         VERSION = "<%= version %>",
@@ -1224,7 +1260,7 @@
                             " name='" + key + "' " + (defaultConfig[key][3] === true ? " has-suboption" : "") + " type=checkbox></label>";
                     }
 
-                    optionsHTML += "</div></div><div class='options-close'><a class='options-button' name=save>Save</a><a class='options-button' name=cancel>Cancel</a></div>";
+                    optionsHTML += "</div></div><div class='options-close'><a class='options-button' name=apply>Apply</a><a class='options-button' name=save>Save</a><a class='options-button' name=cancel>Cancel</a></div>";
                     tOptions.html(optionsHTML);
                     overlay.append(tOptions);
 
@@ -1307,6 +1343,7 @@
                                 $(this).hide();
                             });
                     });
+                    $("a[name=apply]", tOptions).bind("click", $SS.options.save);
                     $("a[name=save]", tOptions).bind("click", function() {
                         $SS.options.saveAndClose = true;
                         $SS.options.save();
@@ -3084,13 +3121,13 @@
                 titleColor: "feaad6",
                 quoteColor: "b5a0dc",
                 unreadColor: "feaad6",
-                postHLColor: "ffffff",
+                postHLColor: "b5a0dc",
                 quotesYouHLColor: "e1427d",
                 ownPostHLColor: "e1427d",
                 threadHLColor: "ffffff",
                 replybgHLColor: "ffffff",
                 replyslctColor: "ffffff",
-                customCSS: ".reply {\nborder: 1px solid #cccaca!important;\n}\ndiv.inline .post {\npadding: 0px 0px !important;\n}\n.inline {\nbackground-color: #fcfcfc!important;\n}\n#qp .post {\npadding: 0px !important;\n}\n.dialog {\nborder: 0px !important;\n}\n.qphl {\noutline: 0!important;\nbox-shadow: 0 0 2px 2px rgba(255,150,205,.6)!important;\n}\ninput:focus, textarea:focus {\nborder: 1px solid #cccaca!important;\n}\ndiv.captcha-root {\nborder: 0 !important;\npadding-top: 1px !important\n}\n:root.post-info div.reply>.postInfo {\npadding-top: 4px !important\n}"
+                customCSS: "div.inline .post {\npadding: 0px 0px !important;\n}\n.inline {\nbackground-color: #fcfcfc!important;\n}\n#qp .post {\npadding: 0px !important;\n}\n.dialog {\nborder: 0px !important;\n}\n.qphl {\noutline: 0!important;\nbox-shadow: 0 0 2px 2px rgba(255,150,205,.6)!important;\n}\ninput:focus, textarea:focus {\nborder: 1px solid #cccaca!important;\n}\ndiv.captcha-root {\nborder: 0 !important;\npadding-top: 1px !important\n}\n:root.post-info div.reply>.postInfo {\npadding-top: 4px !important\n}"
             }],
 
             init: function() {
