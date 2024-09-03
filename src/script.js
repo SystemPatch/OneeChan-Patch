@@ -1535,6 +1535,11 @@
                     e.stopPropagation();
                     $SS.options.show();
                 }
+                if (e.ctrlKey && e.keyCode === 113) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    $SS.init(true);
+                }
             },
             loadSystemFonts: function(evt) {
                 var loadFontBTN = $(evt.target),
