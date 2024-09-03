@@ -89,9 +89,11 @@
 }
 :root.force-qr #qr {
   max-width: 294px;
+}
+:root.force-qr #qr:not(:root.vertical-qr #qr) {
   margin-right: 3px !important;
 }
-:root.force-qr.left-sidebar #qr {
+:root.force-qr.left-sidebar #qr:not(:root.vertical-qr #qr) {
   margin-left: 3px !important;
 }
 :root.force-qr #qr textarea {
@@ -105,19 +107,50 @@
   resize: vertical !important;
 }
 :root.vertical-qr #qr {
-  min-width: 297px !important;
+  min-width: 294px !important;
   top: auto !important;
   position: fixed;
   right: 0 !important;
   left: auto !important;
+  transform: translateX(100%);
+  transition: transform .3s ease-in-out .1s !important;
+}
+:root.vertical-qr.left-sidebar #qr {
+  transform: translateX(-100%);
+}
+:root.vertical-qr #qr:hover,
+:root.vertical-qr #qr.focus {
+  transform: translateX(0%) !important;
+}
+:root.vertical-qr.force-qr #qr:hover,
+:root.vertical-qr.force-qr #qr.focus {
+  transform: translateX(-1%) !important;
+}
+:root.vertical-qr.force-qr.left-sidebar #qr:hover,
+:root.vertical-qr.force-qr.left-sidebar #qr.focus {
+  transform: translateX(1%) !important;
 }
 :root.vertical-qr #qr .move {
   position: absolute;
+  transform: rotate(-90deg);
+  right: 257px;
+  bottom: 88px;
   width: 105px;
   cursor: default;
   padding: 2px 0 2px 2px;
   text-align: center;
-  bottom: 88px;
+}
+:root.vertical-qr.force-qr #qr .move {
+  right: 251px;
+}
+:root.vertical-qr.left-sidebar #qr .move {
+  transform: rotate(90deg);
+  transform-origin: bottom right;
+  left: 192px;
+  bottom: 46px;
+}
+:root.vertical-qr.force-qr.left-sidebar #qr .move {
+  left: 186px;
 }
 :root.vertical-qr #qr:hover .move {
   transition: opacity .42s linear;
@@ -142,18 +175,6 @@
 :root.vertical-qr #qr .move #autohide,
 :root.vertical-qr #qr > div > select {
   display: none;
-}
-:root.vertical-qr #qr:hover,
-:root.vertical-qr #qr.focus {
-  transform: translateX(0%) !important;
-}
-:root.vertical-qr #qr {
-  transform: translateX(100%);
-  transition: transform .3s ease-in-out .1s;
-}
-:root.vertical-qr #qr .move {
-  transform: rotate(-90deg);
-  right: 86%;
 }
 /* Fade QR */
 :root.fade-qr #qr form {
