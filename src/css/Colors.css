@@ -365,6 +365,17 @@ select:focus,
   padding: 3px 6px !important;
   border: 1px solid;
 }
+:root.style-stats.fourchan-xt #thread-stats,
+:root.style-stats.fourchan-xt #updater,
+:root.style-stats.fourchan-xt #stats {
+  padding: 1px 6px !important;
+}
+:root.style-stats.fourchan-xt #stats {
+  padding: 1px 6px !important;
+}
+:root.style-stats.shortcut-icons.fourchan-xt #shortcuts .shortcut {
+    height: 16px;
+}
 /* Mascots */
 :root.mascot-grayscale #mascot img {
   filter: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 height=%220%22 color-interpolation-filters=%22sRGB%22><filter id=%22grayscale%22><feColorMatrix id=%22color%22 type=%22saturate%22 values=%220%22 /></filter></svg>#grayscale');
