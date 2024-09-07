@@ -1,7 +1,19 @@
+### v5.7.0
+*2024-09-07*
+
+- 4Chan XT support: Update header settings icon to support XT, with an SVG icon to match XT's standard
+- XT specific CSS adjustments
+- Adjustments to Quick Reply CSS
+- Set Quick Reinitilize to <kbd>CTRL</kbd> + <kbd>F2</kbd>
+- Add z-index to /f/'s Ruffle embed
+- Update URLs in script
+- Basic support for scrollbars added to settings. See previous patch notes for colors used
+- Webkit scrollbars added as an option, to add theme colors to CustomCSS code. Note that it will also force width size and hide scrollbar buttons, so add '!important' to your code where necessary
+
 ### v5.6.4
 *2024-09-01*
 
-- Added themes: Cyber Blue, Colorblind, Stalenhag (noBG), Blue Phallus, Prisma Illya
+- Added themes: Cyber Blue, Colorblind, Stalenhag (noBG), Blue Phallus, Prisma Magica
 - Added the following font families (Sans/Serif/Mono) to font list: Verdana, [DejaVu](https://dejavu-fonts.github.io), [Roboto](https://fonts.google.com/?query=Roboto), [Noto](https://fonts.google.com/noto/fonts), [PT](https://fonts.google.com/?query=ParaType), [Liberation](https://github.com/liberationfonts/liberation-fonts/releases), [Source](https://fonts.google.com/?query=Source), and [Libre/Dosis](https://fonts.google.com/?query=Impallari+Type)
 - Replaced older fonts with modern variants: [Open Sans](https://fonts.google.com/specimen/Open+Sans) (replacing Droid Sans) and [SF Pro](https://developer.apple.com/fonts/) (replacing Lucida Grande)
 - Each font will need to be installed locally before they can be used
