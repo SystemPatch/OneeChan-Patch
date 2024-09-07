@@ -2,7 +2,7 @@
 #qr {
   box-shadow: none !important;
   border-radius: 0 !important;
-  min-width: 294px !important;
+  min-width: 298px !important;
   box-shadow: none !important;
 }
 #qr .close {
@@ -88,16 +88,16 @@
     width: 170px !important;
 }
 :root.force-qr #qr {
-  max-width: 294px;
+  max-width: 298px;
 }
-:root.force-qr #qr:not(:root.vertical-qr #qr) {
-  margin-right: 3px !important;
+:root.force-qr.qr-background #qr {
+  margin-right: 1px !important;
 }
-:root.force-qr.left-sidebar #qr:not(:root.vertical-qr #qr) {
-  margin-left: 3px !important;
+:root.force-qr.qr-background.left-sidebar #qr {
+  margin-left: 1px !important;
 }
 :root.force-qr #qr textarea {
-  min-width: 294px;
+  min-width: 298px;
 }
 /* Vertical QR */
 :root.vertical-qr #qr > div > label > div {
@@ -107,7 +107,7 @@
   resize: vertical !important;
 }
 :root.vertical-qr #qr {
-  min-width: 294px !important;
+  min-width: 298px !important;
   top: auto !important;
   position: fixed;
   right: 0 !important;
@@ -122,35 +122,21 @@
 :root.vertical-qr #qr.focus {
   transform: translateX(0%) !important;
 }
-:root.vertical-qr.force-qr #qr:hover,
-:root.vertical-qr.force-qr #qr.focus {
-  transform: translateX(-1%) !important;
-}
-:root.vertical-qr.force-qr.left-sidebar #qr:hover,
-:root.vertical-qr.force-qr.left-sidebar #qr.focus {
-  transform: translateX(1%) !important;
-}
 :root.vertical-qr #qr .move {
   position: absolute;
   transform: rotate(-90deg);
-  right: 257px;
+  right: 86%;
   bottom: 88px;
   width: 105px;
   cursor: default;
   padding: 2px 0 2px 2px;
   text-align: center;
 }
-:root.vertical-qr.force-qr #qr .move {
-  right: 251px;
-}
 :root.vertical-qr.left-sidebar #qr .move {
   transform: rotate(90deg);
   transform-origin: bottom right;
-  left: 192px;
+  left: 63.5%;
   bottom: 46px;
-}
-:root.vertical-qr.force-qr.left-sidebar #qr .move {
-  left: 186px;
 }
 :root.vertical-qr #qr:hover .move {
   transition: opacity .42s linear;
