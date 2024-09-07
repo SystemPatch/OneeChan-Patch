@@ -9,7 +9,7 @@
     "downloads": "https://github.com/SystemPatch/OneeChan/raw/stable/builds/",
     "appid": "cnbankbnhjiakpmcjbecinckfbceeacf",
     "buildsPath": "builds/",
-    "mainBranch": "master",
+    "mainBranch": "stable",
     "matches": [
       "*://boards.4chan.org/*",
       "*://boards.4channel.org/*"
@@ -44,7 +44,7 @@
   },
   "author": "seaweedchan",
   "contributors": [
-    "Nebukazar<nebukazar.github.com>",
+    "Nebukazar",
     "dnsev",
     "SystemPatch"
   ],

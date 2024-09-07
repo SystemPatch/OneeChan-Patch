@@ -342,9 +342,9 @@
         NAME = "OneeChan",
         NAMESPACE = "OneeChan.",
         VERSION = "<%= version %>",
-        CHANGELOG = "https://github.com/SystemPatch/OneeChan/blob/master/CHANGELOG.md",
+        CHANGELOG = "https://github.com/SystemPatch/OneeChan/blob/<%= meta.mainBranch %>/CHANGELOG.md",
         inputImages = "iVBORw0KGgoAAAANSUhEUgAAAAgAAAAgCAYAAAAv8DnQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAP9JREFUOMvV0CFLQ2EYxfHfrtdiURgbmCxOmFPBJgZZ0CQD0Q+goFkwabWIyWIWFgwmy7Qp7DPI3GD7ACZlYLNcy31ljG0aDHrSy3N43nOef6ZULBiifczEQ8wV7OAtGmBO4wgfOI2whsXUnMAJ8rhCJ8IxDpHDHpZwixqM5XPZBBtYxioauEgjRLjBI2bRxTneQ6EYCS4xiTu89DbONJrtP88hwnV64hm28YRqyPsFDkmSGKUYFubnsqignM7rqDWa7dcAqoLdnsXwrgZQ5QG/l8MVIxX1ZPar/lUyUOsv+aMzv+0Qw3OrM4VNrKfzB9yXioVu6LDVx+EA4/+Gwycw/Uz36O07WwAAAABJRU5ErkJggg==",
-        fontListSWF = "https://ahodesuka.github.com/FontList.swf",
+        fontListSWF = "https://ahodesuka.github.io/FontList.swf",
         themeInputs = [{
             dName: "Reply Background",
             name: "mainColor",
@@ -1184,8 +1184,8 @@
                         "<a class='options-button' title='Export your settings as JSON.' name=Export>Export</a><a class='options-button' id='import-settings'><input type=file class='import-input' riced=true accept='application/json'>Import</a><a class='options-button' title='Reset OneeChan settings.' name=resetSettings>Reset</a>" +
                         "<span id=oneechan-version><span>OneeChan</span> v" + VERSION + "<span class=link-delim> | </span>" +
                         "<a href='https://github.com/SystemPatch/OneeChan/wiki' id=changelog-link target='_blank' title='Learn about OneeChan.'>Wiki</a><span class=link-delim> | </span>" +
-                        "<a href='https://github.com/SystemPatch/OneeChan/blob/master/CHANGELOG.md' id=changelog-link target='_blank' title='Read the changelog.'>Changelog</a><span class=link-delim> | </span>" +
-                        "<a href='https://github.com/SystemPatch/OneeChan/blob/master/CONTRIBUTING.md#reporting-bugs-and-suggestions' id=issues-link target='_blank' title='Report an issue.'>Issues</a></p>",
+                        "<a href='https://github.com/SystemPatch/OneeChan/blob/<%= meta.mainBranch %>/CHANGELOG.md' id=changelog-link target='_blank' title='Read the changelog.'>Changelog</a><span class=link-delim> | </span>" +
+                        "<a href='https://github.com/SystemPatch/OneeChan/blob/<%= meta.mainBranch %>/CONTRIBUTING.md#reporting-bugs-and-suggestions' id=issues-link target='_blank' title='Report an issue.'>Issues</a></p>",
                         key, val, des;
 
                     for (key in defaultConfig) {
