@@ -3116,7 +3116,7 @@
                 highlightColor: "ffffff",
                 customCSS: ".reply { box-shadow: -2px 2px 2px rgba(0,0,0,.10); }"
             }, {
-                name: "Prisma Illya",
+                name: "Prisma Magica",
                 authorName: "Akari",
                 authorTrip: "!anon......",
                 "default": true,
@@ -3149,7 +3149,6 @@
                 threadHLColor: "ffffff",
                 replybgHLColor: "ffffff",
                 replyslctColor: "ffffff",
-                customCSS: "div.inline .post {\npadding: 0px 0px !important;\n}\n.inline {\nbackground-color: #fcfcfc!important;\n}\n#qp .post {\npadding: 0px !important;\n}\n.dialog {\nborder: 0px !important;\n}\n.qphl {\noutline: 0!important;\nbox-shadow: 0 0 2px 2px rgba(255,150,205,.6)!important;\n}\ninput:focus, textarea:focus {\nborder: 1px solid #cccaca!important;\n}\ndiv.captcha-root {\nborder: 0 !important;\npadding-top: 1px !important\n}\n:root.post-info div.reply>.postInfo {\npadding-top: 4px !important\n}"
             }],
 
             init: function() {
