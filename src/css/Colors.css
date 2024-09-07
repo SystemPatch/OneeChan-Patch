@@ -370,6 +370,12 @@ select:focus,
 :root.style-stats.fourchan-xt #stats {
   padding: 0px 6px !important;
 }
+:root.style-stats.fourchan-xt #header-bar .menu-button i {
+    border-top: .5em solid;
+    border-right: .36em solid transparent;
+    border-left: .36em solid transparent;
+    margin: .36em .16em;
+}
 :root.style-stats.shortcut-icons.fourchan-xt #shortcuts .shortcut {
   height: 1.25em;
 }
