@@ -371,10 +371,10 @@ select:focus,
   padding: 0px 6px !important;
 }
 :root.style-stats.shortcut-icons.fourchan-xt #shortcuts .shortcut {
-  height: 18px;
+  height: 1.25em;
 }
 :root.style-stats.shortcut-icons.fourchan-xt #shortcuts svg.icon {
-  height: 16px;
+  height: 1em;
 }
 /* Mascots */
 :root.mascot-grayscale #mascot img {
