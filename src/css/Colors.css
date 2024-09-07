@@ -368,13 +368,13 @@ select:focus,
 :root.style-stats.fourchan-xt #thread-stats,
 :root.style-stats.fourchan-xt #updater,
 :root.style-stats.fourchan-xt #stats {
-  padding: 1px 6px !important;
-}
-:root.style-stats.fourchan-xt #stats {
-  padding: 1px 6px !important;
+  padding: 0px 6px !important;
 }
 :root.style-stats.shortcut-icons.fourchan-xt #shortcuts .shortcut {
-    height: 16px;
+  height: 18px;
+}
+:root.style-stats.shortcut-icons.fourchan-xt #shortcuts svg.icon {
+  height: 16px;
 }
 /* Mascots */
 :root.mascot-grayscale #mascot img {
