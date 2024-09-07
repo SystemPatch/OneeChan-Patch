@@ -374,7 +374,7 @@ select:focus,
   height: 1.25em;
 }
 :root.style-stats.shortcut-icons.fourchan-xt #shortcuts svg.icon {
-  height: 1em;
+  height: 1.14em;
 }
 /* Mascots */
 :root.mascot-grayscale #mascot img {
