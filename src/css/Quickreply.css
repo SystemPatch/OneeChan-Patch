@@ -56,6 +56,9 @@
 :root.expand-inputs .persona .field:focus {
   flex: 3;
 }
+#qr textarea {
+  min-width: 302px;
+}
 #qr:not(.has-captcha) textarea {
   min-height: 190px !important;
 }
