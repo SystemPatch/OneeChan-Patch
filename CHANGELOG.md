@@ -1,3 +1,7 @@
+### v5.7.1
+*2024-09-07*
+- Port over fixes from KevinParnell/OneeChan relating to missing mascots breaking the script. [1](https://github.com/KevinParnell/OneeChan/pull/23/commits/e6c5d2cdfc8b680d8a090ce29e0beabddae09ccb) [2](https://github.com/KevinParnell/OneeChan/pull/21/commits/25429d124f3080beebb4d5c94463b69f312a9d8c)
+
 ### v5.7.0
 *2024-09-07*
 
