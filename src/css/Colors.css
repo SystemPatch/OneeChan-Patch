@@ -148,7 +148,7 @@ body.is_catalog .panel,
   background: rgb\(" + $SS.theme.mainColor.rgb + ") !important;
 }
 :root.recolor-even .thread>.replyContainer:nth-of-type(even):not(.hidden) .post {
-  background: rgb\(" + $SS.theme.mainColor.shiftRGB(-10) + ") !important;
+  background: rgba(" + $SS.theme.mainColor.shiftRGB(-10) + "," + $SS.theme.replyOp + ") !important;
 }
 :root:not(.header-gradient) #header-bar {
   background: rgba(" + $SS.theme.headerBGColor.rgb + "," + $SS.theme.navOp + ") !important;
