@@ -440,3 +440,9 @@ select:focus,
     width: 8px;
   }
 }
+/* 4chan XT: fxtwitter embed card */
+.fxt-card {
+  color: " + $SS.theme.textColor.hex + " !important;
+  background-color: rgba(" + $SS.theme.bgColor.rgb + "," + $SS.theme.replyOp + ") !important;
+  border: 1px solid " + $SS.theme.brderColor.hex + " !important;
+}
