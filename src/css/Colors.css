@@ -134,6 +134,7 @@ body {
 .reply,
 body.is_catalog .panel,
 :root.catalog-mode .panel,
+.dialog,
 #post-preview,
 #tegaki,
 .boxbar,
@@ -144,7 +145,8 @@ body.is_catalog .panel,
   background: rgba(" + $SS.theme.mainColor.rgb + "," + $SS.theme.replyOp + ") !important;
 }
 .tab-label,
-.dialog {
+#fourchanx-settings,
+#oneechan-settings {
   background: rgb\(" + $SS.theme.mainColor.rgb + ") !important;
 }
 :root.recolor-even .thread>.replyContainer:nth-of-type(even):not(.hidden) .post {
