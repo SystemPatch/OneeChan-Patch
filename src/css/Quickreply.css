@@ -3,7 +3,9 @@
   box-shadow: none !important;
   border-radius: 0 !important;
   min-width: 298px !important;
-  box-shadow: none !important;
+}
+#qr:not(:root.vertical-qr #qr) .move {
+  min-width: 302px;
 }
 #qr .close {
   padding: 2px 3px 2px 4px !important;
@@ -56,8 +58,8 @@
 :root.expand-inputs .persona .field:focus {
   flex: 3;
 }
-#qr textarea {
-  min-width: 302px;
+#qr:not(:root.force-qr #qr) textarea {
+  min-width: 302px !important;
 }
 #qr:not(.has-captcha) textarea {
   min-height: 190px !important;
