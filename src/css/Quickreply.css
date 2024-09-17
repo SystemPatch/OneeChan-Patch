@@ -108,7 +108,8 @@
 :root.vertical-qr #qr > div > label > div {
   display: none;
 }
-:root.vertical-qr #qr textarea {
+:root.vertical-qr #qr textarea,
+:root.force-qr #qr textarea {
   resize: vertical !important;
 }
 :root.vertical-qr #qr {
