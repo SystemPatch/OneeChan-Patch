@@ -456,3 +456,7 @@ select {
   word-break: break-word;
   margin-bottom: 15px; /* unrelated to issue #90 */
 }
+td.teaser-col {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
