@@ -352,12 +352,13 @@ table.flashListing .highlightPost {
   bottom: 0;
 }
 #mascot img {
-  margin-bottom:" + $SS.mascot.offset + "px;
-  margin-right:" + $SS.mascot.hoffset + "px;
-  height:" + $SS.mascot.height + ";
-  width:" + $SS.mascot.width + ";
-  max-width:" + $SS.mascot.maxwidth + ";
+  margin-bottom: " + $SS.mascot.offset + "px;
+  margin-right: " + $SS.mascot.hoffset + "px;
+  height: " + $SS.mascot.height + ";
+  width: " + $SS.mascot.width + ";
+  max-width: " + $SS.mascot.maxwidth + ";
   transform: " + $SS.mascot.flip + ";
+  clip-path: inset(" + $SS.mascot.tclip + "px " + $SS.mascot.lclip + "px " + $SS.mascot.bclip + "px " + $SS.mascot.rclip + "px);
   pointer-events: none;
 }
 :root.left-sidebar #mascot img,
