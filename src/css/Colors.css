@@ -150,7 +150,7 @@ body.is_catalog .panel,
 #oneechan-options {
   background: rgb\(" + $SS.theme.mainColor.rgb + ") !important;
 }
-:root.recolor-even .thread>.replyContainer:nth-of-type(even):not(.hidden) .post,
+:root.recolor-even .thread>.replyContainer:nth-of-type(even):not(.hidden) .post:not(.reply:target),
 :root.recolor-even .flashListing tr:nth-of-type(2n):not(.highlightPost) {
   background: rgba(" + $SS.theme.mainColor.shiftRGB(-10) + "," + $SS.theme.replyOp + ") !important;
 }

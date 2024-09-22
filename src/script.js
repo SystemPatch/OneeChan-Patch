@@ -3174,7 +3174,7 @@
                 quotesYouHLColor: "e1427d",
                 ownPostHLColor: "e1427d",
                 threadHLColor: "ffffff",
-                replybgHLColor: "ffffff",
+                replybgHLColor: "ffdfff",
                 replyslctColor: "ffffff",
             }],
 
