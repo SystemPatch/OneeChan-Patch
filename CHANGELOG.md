@@ -1,3 +1,15 @@
+### v5.7.2
+*2024-09-21*
+- Add clip setting for mascots.
+- Add 'Untether QR from Sidebar' option. Allows for floating QR identical to X.
+- Adjust styling for QR so some elements don't end up slightly smaller than minimal size when Force QR is disabled
+- X and Oneechan settings will no longer use the theme's reply opacity.
+- Recolored replies now use the theme's reply opacity and will not overwrite the highlight of linked replies.
+- Add a background to the table cells in the expired threads archive and /f/. Improves readability if using a BG image.
+- Wordbreak added to the expired threads archive's excerpt column. Prevents the table from pushing under the sidebar in some cases.
+- XT: If 'Style Thread Stats' is active and the stats are not in the header, the original values will be used.
+- XT: fxtwitter embeds will now use the theme's style.
+
 ### v5.7.1
 *2024-09-07*
 - Port over fixes from KevinParnell/OneeChan relating to missing mascots breaking the script. [1](https://github.com/KevinParnell/OneeChan/pull/23/commits/e6c5d2cdfc8b680d8a090ce29e0beabddae09ccb) [2](https://github.com/KevinParnell/OneeChan/pull/21/commits/25429d124f3080beebb4d5c94463b69f312a9d8c)
