@@ -1,8 +1,9 @@
 // ==UserScript==
 // @name         <%= meta.name %>
 // @version      <%= version %>
-// @namespace    <%= name %>
+// @namespace    <%= namespace %>
 // @description  <%= description %>
+// @author       <%= meta.author %>
 // @minGMVer     <%= meta.min.greasemonkey %>
 // @minFFVer     <%= meta.min.firefox %>
 // @license      <%= license %>; <%= meta.repo %>blob/<%= meta.mainBranch %>/License
