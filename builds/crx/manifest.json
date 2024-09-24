@@ -15,7 +15,7 @@
     "run_at": "document_start"
   }],
   "homepage_url": "https://github.com/SystemPatch/OneeChan/",
-  "update_url": "https://github.com/SystemPatch/OneeChan/raw/stable/builds/updates.xml",
+  "update_url": "https://github.com/SystemPatch/OneeChan/raw/refs/heads/patch/builds/updates.xml",
   "minimum_chrome_version": "32",
   "permissions": [
     "storage",
