@@ -5,6 +5,12 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
+.party-hat {
+  margin-left: -23px;
+  padding-left: " + $SS.conf["Margin Left"] + "px;
+  margin-top: -75px;
+  z-index: 10;
+}
 /* Fix margin top when fixed top header */
 :root.show-ads .ad-cnt {
   margin-top: auto !important;
