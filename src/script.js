@@ -360,7 +360,7 @@
         NAME = "OneeChan",
         NAMESPACE = "OneeChan.",
         VERSION = "<%= version %>",
-        CHANGELOG = "https://github.com/SystemPatch/OneeChan/blob/<%= meta.betaBranch %>/CHANGELOG.md",
+        CHANGELOG = "https://github.com/<%= maintainer %>/OneeChan/blob/<%= meta.betaBranch %>/CHANGELOG.md",
         inputImages = "iVBORw0KGgoAAAANSUhEUgAAAAgAAAAgCAYAAAAv8DnQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAP9JREFUOMvV0CFLQ2EYxfHfrtdiURgbmCxOmFPBJgZZ0CQD0Q+goFkwabWIyWIWFgwmy7Qp7DPI3GD7ACZlYLNcy31ljG0aDHrSy3N43nOef6ZULBiifczEQ8wV7OAtGmBO4wgfOI2whsXUnMAJ8rhCJ8IxDpHDHpZwixqM5XPZBBtYxioauEgjRLjBI2bRxTneQ6EYCS4xiTu89DbONJrtP88hwnV64hm28YRqyPsFDkmSGKUYFubnsqignM7rqDWa7dcAqoLdnsXwrgZQ5QG/l8MVIxX1ZPar/lUyUOsv+aMzv+0Qw3OrM4VNrKfzB9yXioVu6LDVx+EA4/+Gwycw/Uz36O07WwAAAABJRU5ErkJggg==",
         fontListSWF = "https://ahodesuka.github.io/FontList.swf",
         themeInputs = [{
@@ -1201,9 +1201,9 @@
                         "<p class='buttons-container'>" +
                         "<a class='options-button' title='Export your settings as JSON.' name=Export>Export</a><a class='options-button' id='import-settings'><input type=file class='import-input' riced=true accept='application/json'>Import</a><a class='options-button' title='Reset OneeChan settings.' name=resetSettings>Reset</a>" +
                         "<span id=oneechan-version><span>OneeChan</span> v" + VERSION + "<span class=link-delim> | </span>" +
-                        "<a href='https://github.com/SystemPatch/OneeChan/wiki' id=changelog-link target='_blank' title='Learn about OneeChan.'>Wiki</a><span class=link-delim> | </span>" +
-                        "<a href='https://github.com/SystemPatch/OneeChan/blob/<%= meta.betaBranch %>/CHANGELOG.md' id=changelog-link target='_blank' title='Read the changelog.'>Changelog</a><span class=link-delim> | </span>" +
-                        "<a href='https://github.com/SystemPatch/OneeChan/blob/<%= meta.mainBranch %>/CONTRIBUTING.md#reporting-bugs-and-suggestions' id=issues-link target='_blank' title='Report an issue.'>Issues</a></p>",
+                        "<a href='https://github.com/<%= maintainer %>/OneeChan/wiki' id=changelog-link target='_blank' title='Learn about OneeChan.'>Wiki</a><span class=link-delim> | </span>" +
+                        "<a href='https://github.com/<%= maintainer %>/OneeChan/blob/<%= meta.betaBranch %>/CHANGELOG.md' id=changelog-link target='_blank' title='Read the changelog.'>Changelog</a><span class=link-delim> | </span>" +
+                        "<a href='https://github.com/<%= maintainer %>/OneeChan/blob/<%= meta.mainBranch %>/CONTRIBUTING.md#reporting-bugs-and-suggestions' id=issues-link target='_blank' title='Report an issue.'>Issues</a></p>",
                         key, val, des;
 
                     for (key in defaultConfig) {
@@ -1399,7 +1399,7 @@
                     p = $("<p class='buttons-container'>");
 
                 p.append($("<a class='options-button' name=addTheme title='Create a new theme.'>Create", tOptions).bind("click", $SS.options.showTheme));
-                p.append($("<a class='options-button' href='https://github.com/SystemPatch/OneeChan/wiki/Custom-Themes' title='Learn more about custom themes and download new ones.' target='_blank'>Custom Themes"));
+                p.append($("<a class='options-button' href='https://github.com/<%= maintainer %>/OneeChan/wiki/Custom-Themes' title='Learn more about custom themes and download new ones.' target='_blank'>Custom Themes"));
                 p.append($("<div id='import-link' title='Import a new theme (.json) file.'>").append($("<input type=file class='import-input' riced=true>")
                     .bind("change", function() {
                         var file = this.files[0],

@@ -50,6 +50,7 @@
     "dnsev",
     "SystemPatch"
   ],
+  "maintainer": "SystemPatch",
   "namespace": "SystemPatch",
   "license": "GPL-3.0",
   "readmeFilename": "README.md",
