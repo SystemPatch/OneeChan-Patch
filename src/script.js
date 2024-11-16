@@ -329,6 +329,9 @@
                 }, {
                     name: "Dosis",
                     value: "Dosis"
+                }, {
+                    name: "GorDIN",
+                    value: "GorDIN"
                 }]
             ],
             "Font Size": [13, "Set the general size of text (Pixels). Min: 8px, Max: 40px"],
