@@ -138,7 +138,7 @@ body.is_catalog .panel,
 #post-preview,
 #tegaki,
 .boxbar,
-:root.op-background .postContainer.opContainer,
+:root.op-background .postContainer.opContainer:not(.inline .opContainer),
 .flashListing tr:nth-of-type(2n+1),
 .dd-menu ul,
 :root.catalog-hover-expand .catalog-container:hover > .post {
@@ -225,17 +225,17 @@ hr {
 }
 /* Borders */
 .reply,
-:root.op-background .postContainer.opContainer,
+:root.op-background .postContainer.opContainer:not(#qp .opContainer, .inline .opContainer),
 .dd-menu ul {
   border-width: 0 1px 1px 0;
   border-style: solid;
 }
 :root.borders-all .reply,
-:root.borders-all.op-background .postContainer.opContainer {
+:root.borders-all.op-background .postContainer.opContainer:not(#qp .opContainer, .inline .opContainer) {
   border-width: 1px !important;
 }
 :root.borders-none .reply,
-:root.borders-none.op-background .postContainer.opContainer {
+:root.borders-none.op-background .postContainer.opContainer:not(#qp .opContainer, .inline .opContainer) {
   border: none;
 }
 #menu,
@@ -268,7 +268,7 @@ hr {
   border-radius: 0 !important;
 }
 .reply,
-:root.op-background .postContainer.opContainer,
+:root.op-background .postContainer.opContainer:not(#qp .opContainer, .inline .opContainer),
 .dialog,
 .entry,
 .inline,
