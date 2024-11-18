@@ -100,7 +100,9 @@ div.post {
   box-shadow: inset rgba(0,0,0,.05) 0 -1px 2px;
   padding-top: 2px !important;
 }
-:root.post-info .fileText{
+:root.post-info .fileText,
+#qp .opContainer .fileText,
+.inline .opContainer .fileText {
   margin-top: 2px !important;
 }
 /* Backlinks */
