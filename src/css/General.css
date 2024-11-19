@@ -50,7 +50,6 @@ div.post {
 .postMessage > .inline {
   margin-left: 0px !important;
 }
-.inline .op>.postInfo,
 #qp .op>.postInfo {
   min-width: 600px;
 }
@@ -103,7 +102,7 @@ div.post {
 :root.post-info .fileText,
 #qp .opContainer .fileText,
 .inline .opContainer .fileText {
-  margin-top: 2px !important;
+  padding-top: 2px !important;
 }
 /* Backlinks */
 :root.backlink-bottom .post {
