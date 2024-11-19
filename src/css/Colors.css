@@ -448,7 +448,7 @@ select:focus,
   }
 }
 /* 4chan XT: fxtwitter embed card */
-:root {
+:root.fourchan-xt {
   --xt-fxt-fg: " + $SS.theme.textColor.hex + ";
   --xt-background: rgba(" + $SS.theme.bgColor.rgb + "," + $SS.theme.replyOp + ");
   --xt-border: " + $SS.theme.brderColor.hex + ";
