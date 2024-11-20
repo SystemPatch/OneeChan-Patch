@@ -1,7 +1,7 @@
 {
   "name": "<%= meta.name %>",
   "version": "<%= version %>",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "description": "<%= description %>",
   "icons": {
     "16": "icon16.png",
@@ -19,6 +19,9 @@
   "minimum_chrome_version": "<%= meta.min.chrome %>",
   "permissions": [
     "storage",
+    "scripting"
+  ],
+  "host_permissions": [
     "*://www.4chan.org/*",
     "*://boards.4chan.org/*",
     "*://www.4channel.org/*",

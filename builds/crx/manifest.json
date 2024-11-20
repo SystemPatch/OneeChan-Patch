@@ -1,7 +1,7 @@
 {
   "name": "OneeChan-Patch",
   "version": "5.7.2",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "description": "Customizable rice and themes for 4chan X.",
   "icons": {
     "16": "icon16.png",
@@ -19,6 +19,9 @@
   "minimum_chrome_version": "32",
   "permissions": [
     "storage",
+    "scripting"
+  ],
+  "host_permissions": [
     "*://www.4chan.org/*",
     "*://boards.4chan.org/*",
     "*://www.4channel.org/*",
