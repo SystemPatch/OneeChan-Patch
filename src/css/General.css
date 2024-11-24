@@ -408,12 +408,12 @@ table.flashListing .highlightPost {
 }
 /* Ads */
 :root.ad-opacity .center img,
-:root.ad-opacity .danbo-slot img {
+:root.ad-opacity .danbo-slot {
   opacity: 0.5;
   transition: opacity .3s ease-out 0s;
 }
 :root.ad-opacity .center img:hover,
-:root.ad-opacity .danbo-slot img:hover {
+:root.ad-opacity .danbo-slot:hover {
   opacity: 1.0 !important;
   transition: opacity .3s ease-in 0s;
 }
