@@ -3533,7 +3533,7 @@
                 $("html").optionClass("Show 4chan Ads", true, "show-ads");
                 $("html").optionClass("Show Top Ad", false, "hide-top");
                 $("html").optionClass("Show Middle Ad", false, "hide-middle");
-                $("html").optionClass("Show Bottom Ad", false, "hide-bottom");
+                $("html").optionClass("Show Bottom Ad", false, "hide-bottom-ad");
                 $("html").optionClass("Show Navigation Links", false, "hide-navlinks");
                 $("html").optionClass("Show Top Links", false, "hide-navlinktop");
                 $("html").optionClass("Show Bottom Links", false, "hide-navlinkbot");
