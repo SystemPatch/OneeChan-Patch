@@ -3531,7 +3531,7 @@
                 $("html").optionClass("Highlight Current Board", false, "header-highlight");
                 $("html").optionClass("Show Blotter", false, "hide-blotter");
                 $("html").optionClass("Show 4chan Ads", true, "show-ads");
-                $("html").optionClass("Show Top Ad", false, "hide-top");
+                $("html").optionClass("Show Top Ad", false, "hide-top-ad");
                 $("html").optionClass("Show Middle Ad", false, "hide-middle");
                 $("html").optionClass("Show Bottom Ad", false, "hide-bottom-ad");
                 $("html").optionClass("Show Navigation Links", false, "hide-navlinks");

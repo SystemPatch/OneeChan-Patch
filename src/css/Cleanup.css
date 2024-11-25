@@ -5,14 +5,14 @@
 iframe[src='about:blank'],
 #absbot,
 #styleSelector,
-.topad.center:not(:root.show-ads .topad.center),
-.middlead.center:not(:root.show-ads .middlead.center),
-.bottomad.center:not(:root.show-ads .bottomad.center),
-#danbo-s-t.danbo-slot:not(:root.show-ads #danbo-s-t.danbo-slot),
-#danbo-s-b.danbo-slot:not(:root.show-ads #danbo-s-b.danbo-slot),
-:root.show-ads.hide-top .topad.center,
-:root.show-ads.hide-top #danbo-s-t.danbo-slot,
-:root.show-ads.hide-middle .middlead.center,
+:root:not(.show-ads) .topad.center,
+:root:not(.show-ads) .middlead.center,
+:root:not(.show-ads) .bottomad.center,
+:root:not(.show-ads) #danbo-s-t.danbo-slot,
+:root:not(.show-ads) #danbo-s-b.danbo-slot,
+:root.show-ads.hide-top-ad .topad.center,
+:root.show-ads.hide-top-ad #danbo-s-t.danbo-slot,
+:root.show-ads.hide-board-banners .middlead.center,
 :root.show-ads.hide-bottom-ad .bottomad.center,
 :root.show-ads.hide-bottom-ad #danbo-s-b.danbo-slot,
 #delPassword,
@@ -46,17 +46,14 @@ hr:not(#unread-line),
 :root.hide-navlinks .navLinks.navLinksBot.desktop,
 :root.hide-navlinks .navLinks,
 .ad-plea,
-.adl:not(:root.show-ads .adl),
-:root.show-ads.hide-top #danbo-s-t + .adl,
-hr + .adl,
+:root:not(.show-ads) .adl,
+:root.show-ads.hide-top-ad #danbo-s-t + .adl,
 :root.show-ads.hide-bottom-ad #danbo-s-b + .adl,
+hr + .adl,
 #mascot img[src=''],
 .exif:not([style]),
 [hidden] {
   display: none;
-}
-:root.hide-board-banners .center {
-  display: none !important;
 }
 /* 4chan Pass */
 .stylechanger {
