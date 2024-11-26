@@ -181,6 +181,9 @@ table {
 .adl {
   text-align: center !important;
 }
+.adl {
+    font-size: 10px;
+}
 #qf-box {
     width: 120px;
 }
