@@ -963,10 +963,11 @@
                     });
 
                 // 4chan ads being added with JS
-                if (!$SS.conf["Show Top Ad"]) {
+                if (!$SS.conf["Show 4chan Ads"]||!$SS.conf["Show Top Ad"]) {
                     $(".topad.center").remove();
                     $("#danbo-s-t.danbo-slot").remove();
-                } else if (!$SS.conf["Show Bottom Ad"]) {
+                }
+                if (!$SS.conf["Show 4chan Ads"]||!$SS.conf["Show Bottom Ad"]) {
                     $(".bottomad.center").remove();
                     $("#danbo-s-b.danbo-slot").remove();
                 }
