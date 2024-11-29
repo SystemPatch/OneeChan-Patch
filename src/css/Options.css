@@ -245,8 +245,8 @@ select[name='Font Family']>option {
   opacity: 0;
 }
 .mascot-preview.selected {
-  background-color:rgba(" + $SS.theme.linkColor.rgb + ",.6)!important;
-  box-shadow:inset rgba(0,0,0,.15) 0 0 15px, rgba(" + $SS.theme.linkColor.rgb + ",.6) 0 0 2px;
+  background-color:rgba\(" + $SS.theme.linkColor.rgb + ",.6)!important;
+  box-shadow:inset rgba(0,0,0,.15) 0 0 15px, rgba\(" + $SS.theme.linkColor.rgb + ",.6) 0 0 2px;
 }
 .mascot-preview a {
   color: #ffffff !important;
@@ -410,7 +410,7 @@ span.option>select,
 #oneechan-options select {
   max-height: 20px;
   margin-top: 1px !important;
-  padding: 0px 3px !important;
+  padding: 0 3px !important;
 }
 #oneechan-options textarea {
   background:transparent!important;

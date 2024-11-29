@@ -6,10 +6,13 @@ body {
   margin-bottom: 0;
 }
 .party-hat {
-  margin-left: -23px;
+  margin-left: -11px;
   padding-left: " + $SS.conf["Margin Left"] + "px;
   margin-top: -75px;
   z-index: 10;
+}
+:root.force-indent .party-hat {
+  margin-left: -23px;
 }
 /* Fix margin top when fixed top header */
 :root.show-ads .ad-cnt {
@@ -37,12 +40,9 @@ div.post {
   content: '';
   display: block;
 }
-:root.op-background .postContainer.opContainer {
-  margin-top: 2px;
-}
 .thread>.replyContainer,
 .threadContainer>.replyContainer {
-  margin-bottom:" + $SS.conf["Margin Between Replies"] + "px !important;
+  margin-bottom: " + $SS.conf["Margin Between Replies"] + "px !important;
 }
 .inline {
   margin-left: 13px !important;
@@ -50,7 +50,6 @@ div.post {
 .postMessage > .inline {
   margin-left: 0px !important;
 }
-.inline .op>.postInfo,
 #qp .op>.postInfo {
   min-width: 600px;
 }
@@ -98,6 +97,11 @@ div.post {
 /* Style Post Info option */
 :root.post-info .reply>.postInfo {
   box-shadow: inset rgba(0,0,0,.05) 0 -1px 2px;
+  padding-top: 2px !important;
+}
+:root.post-info .fileText,
+#qp .opContainer .fileText,
+.inline .opContainer .fileText {
   padding-top: 2px !important;
 }
 /* Backlinks */
@@ -207,7 +211,8 @@ input[type=checkbox]:checked+.riceCheck::before {
 :root:not(.fixed) .boardBanner {
   top: 0;
 }
-.center {
+.center,
+.danbo-slot {
   margin: 5px !important;
 }
 #full-board-list>a,
@@ -219,7 +224,8 @@ input[type=checkbox]:checked+.riceCheck::before {
 }
 .globalMessage, h2, h3 {
   margin: auto;
-}#custom-board-list,
+}
+#custom-board-list,
 #full-board-list,
 .shortcut {
   vertical-align: baseline !important;
@@ -334,7 +340,7 @@ table.flashListing {
   margin-bottom: 20px;
 }
 table.flashListing .highlightPost {
-  background: rgba(" + $SS.theme.mainColor.shiftRGB(-25) + "," + $SS.theme.replyOp + ") !important;
+  background: rgba\(" + $SS.theme.mainColor.shiftRGB(-25) + "," + $SS.theme.replyOp + ") !important;
 }
 .flashListing td {
   padding-left: 4px !important;
@@ -402,11 +408,13 @@ table.flashListing .highlightPost {
   z-index: -1;
 }
 /* Ads */
-:root.ad-opacity .center img {
+:root.ad-opacity .center img,
+:root.ad-opacity .danbo-slot {
   opacity: 0.5;
   transition: opacity .3s ease-out 0s;
 }
-:root.ad-opacity .center img:hover {
+:root.ad-opacity .center img:hover,
+:root.ad-opacity .danbo-slot:hover {
   opacity: 1.0 !important;
   transition: opacity .3s ease-in 0s;
 }

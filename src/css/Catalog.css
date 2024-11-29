@@ -30,7 +30,7 @@ div.thread {
 /* Background */
 :root.catalog-background #threads div.thread,
 :root.catalog-background .catalog-thread {
-  background: rgba(" + $SS.theme.mainColor.rgb + "," + $SS.theme.replyOp + ") !important;
+  background: var(--onee-main-op) !important;
 }
 :root.rounded-corners.catalog-background #threads div.thread,
 :root.rounded-corners.catalog-background .catalog-thread {

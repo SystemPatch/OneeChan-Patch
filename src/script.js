@@ -48,15 +48,15 @@
             "Underline All Links": [false, "Underlines all links in the page."],
             "Show Banner": [false, "Toggle visibility of banner.", null, true],
             "Reduce Banner Opacity": [false, "Reduce opacity of the banner for easier viewing.", "Show Banner", true, true],
-            "Show Board Banners": [false, "Toggle visibility of board banners."],
             "Show Board Name": [true, "Toggle visibility of the board name."],
             "Show Reply to Thread Button": [false, "Toggle visibility of the Start a Thread / Reply to Thread button."],
             "Show Checkboxes": [false, "Hides checkboxes and deleteform to be replaced by 4chan X menus. Refresh to apply."],
             "Show Blotter": [true, "Toggle visibility of the 4chan news blotter."],
             "Show 4chan Ads": [false, "Opts into 4chan\'s banner ads.", null, true],
+            "Show Board Banners": [false, "Toggle visibility of board banners.", "Show 4chan Ads", true, true],
             "Show Top Ad": [true, "Show the top 4chan banner ad.", "Show 4chan Ads", true, true],
-            "Show Middle Ad": [true, "Show the middle 4chan banner ad.", "Show 4chan Ads", true, true],
             "Show Bottom Ad": [true, "Show the bottom 4chan banner ad.", "Show 4chan Ads", true, true],
+            "Show Buy Ad Banner": [true, "Show the [Advertise on 4chan] banner below ads.", "Show 4chan Ads", true, true],
             "Reduce Ad Opacity": [false, "Reduce the opacity of ads until hover for easier viewing.", "Show 4chan Ads", true, true],
             "Show Navigation Links": [true, "Toggle visibility of the navigation links at the top and bottom of the threads.", null, true],
             "Show Top Links": [true, "Toggle visibility of the top navigation links.", "Show Navigation Links", true, true],
@@ -91,7 +91,7 @@
                     value: 3
                 }]
             ],
-            "Tether QR to Sidebar": [true, "Sets QR to the vertical bounds of the sidebar"],
+            "Tether QR to Sidebar": [true, "Sets QR to the vertical bounds of the sidebar. Disable for floating QR."],
             "Transparent QR": [false, "Reduces opacity of the QR box."],
             "Remove Background": [false, "Removes the QR background."],
             "Remove Controls": [false, "Removes the QR controls and checkbox."],
@@ -329,6 +329,9 @@
                 }, {
                     name: "Dosis",
                     value: "Dosis"
+                }, {
+                    name: "GorDIN",
+                    value: "GorDIN"
                 }]
             ],
             "Font Size": [13, "Set the general size of text (Pixels). Min: 8px, Max: 40px"],
@@ -357,7 +360,7 @@
         NAME = "OneeChan",
         NAMESPACE = "OneeChan.",
         VERSION = "<%= version %>",
-        CHANGELOG = "https://github.com/SystemPatch/OneeChan/blob/<%= meta.mainBranch %>/CHANGELOG.md",
+        CHANGELOG = "https://github.com/<%= maintainer %>/OneeChan/blob/<%= meta.mainBranch %>/CHANGELOG.md",
         inputImages = "iVBORw0KGgoAAAANSUhEUgAAAAgAAAAgCAYAAAAv8DnQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAP9JREFUOMvV0CFLQ2EYxfHfrtdiURgbmCxOmFPBJgZZ0CQD0Q+goFkwabWIyWIWFgwmy7Qp7DPI3GD7ACZlYLNcy31ljG0aDHrSy3N43nOef6ZULBiifczEQ8wV7OAtGmBO4wgfOI2whsXUnMAJ8rhCJ8IxDpHDHpZwixqM5XPZBBtYxioauEgjRLjBI2bRxTneQ6EYCS4xiTu89DbONJrtP88hwnV64hm28YRqyPsFDkmSGKUYFubnsqignM7rqDWa7dcAqoLdnsXwrgZQ5QG/l8MVIxX1ZPar/lUyUOsv+aMzv+0Qw3OrM4VNrKfzB9yXioVu6LDVx+EA4/+Gwycw/Uz36O07WwAAAABJRU5ErkJggg==",
         fontListSWF = "https://ahodesuka.github.io/FontList.swf",
         themeInputs = [{
@@ -960,13 +963,11 @@
                     });
 
                 // 4chan ads being added with JS
-                if (!$SS.conf["Show Top Ad"]) {
+                if (!$SS.conf["Show 4chan Ads"]||!$SS.conf["Show Top Ad"]) {
                     $(".topad.center").remove();
-                    $(".aboveMidAd.center").remove();
                     $("#danbo-s-t.danbo-slot").remove();
-                } else if (!$SS.conf["Show Middle Ad"]) {
-                    $(".middlead.center").remove();
-                } else if (!$SS.conf["Show Bottom Ad"]) {
+                }
+                if (!$SS.conf["Show 4chan Ads"]||!$SS.conf["Show Bottom Ad"]) {
                     $(".bottomad.center").remove();
                     $("#danbo-s-b.danbo-slot").remove();
                 }
@@ -1198,9 +1199,9 @@
                         "<p class='buttons-container'>" +
                         "<a class='options-button' title='Export your settings as JSON.' name=Export>Export</a><a class='options-button' id='import-settings'><input type=file class='import-input' riced=true accept='application/json'>Import</a><a class='options-button' title='Reset OneeChan settings.' name=resetSettings>Reset</a>" +
                         "<span id=oneechan-version><span>OneeChan</span> v" + VERSION + "<span class=link-delim> | </span>" +
-                        "<a href='https://github.com/SystemPatch/OneeChan/wiki' id=changelog-link target='_blank' title='Learn about OneeChan.'>Wiki</a><span class=link-delim> | </span>" +
-                        "<a href='https://github.com/SystemPatch/OneeChan/blob/<%= meta.mainBranch %>/CHANGELOG.md' id=changelog-link target='_blank' title='Read the changelog.'>Changelog</a><span class=link-delim> | </span>" +
-                        "<a href='https://github.com/SystemPatch/OneeChan/blob/<%= meta.mainBranch %>/CONTRIBUTING.md#reporting-bugs-and-suggestions' id=issues-link target='_blank' title='Report an issue.'>Issues</a></p>",
+                        "<a href='https://github.com/<%= maintainer %>/OneeChan/wiki' id=changelog-link target='_blank' title='Learn about OneeChan.'>Wiki</a><span class=link-delim> | </span>" +
+                        "<a href='https://github.com/<%= maintainer %>/OneeChan/blob/<%= meta.mainBranch %>/CHANGELOG.md' id=changelog-link target='_blank' title='Read the changelog.'>Changelog</a><span class=link-delim> | </span>" +
+                        "<a href='https://github.com/<%= maintainer %>/OneeChan/blob/<%= meta.mainBranch %>/CONTRIBUTING.md#reporting-bugs-and-suggestions' id=issues-link target='_blank' title='Report an issue.'>Issues</a></p>",
                         key, val, des;
 
                     for (key in defaultConfig) {
@@ -1396,7 +1397,7 @@
                     p = $("<p class='buttons-container'>");
 
                 p.append($("<a class='options-button' name=addTheme title='Create a new theme.'>Create", tOptions).bind("click", $SS.options.showTheme));
-                p.append($("<a class='options-button' href='https://github.com/SystemPatch/OneeChan/wiki/Custom-Themes' title='Learn more about custom themes and download new ones.' target='_blank'>Custom Themes"));
+                p.append($("<a class='options-button' href='https://github.com/<%= maintainer %>/OneeChan/wiki/Custom-Themes' title='Learn more about custom themes and download new ones.' target='_blank'>Custom Themes"));
                 p.append($("<div id='import-link' title='Import a new theme (.json) file.'>").append($("<input type=file class='import-input' riced=true>")
                     .bind("change", function() {
                         var file = this.files[0],
@@ -3493,7 +3494,6 @@
                 $("html").optionClass("Fit Width", true, "reply-fit-width");
                 $("html").optionClass("Show Banner", false, "hide-banner");
                 $("html").optionClass("Reduce Banner Opacity", true, "banner-opacity");
-                $("html").optionClass("Show Board Banners", false, "hide-board-banners");
                 $("html").optionClass("Show Post Info On Hover", true, "info-on-hover");
                 $("html").optionClass("Show Reply to Thread Button", false, "hide-button");
                 $("html").optionClass("Show Reply Header", true, "post-info");
@@ -3528,14 +3528,15 @@
                 $("html").optionClass("Highlight Current Board", false, "header-highlight");
                 $("html").optionClass("Show Blotter", false, "hide-blotter");
                 $("html").optionClass("Show 4chan Ads", true, "show-ads");
-                $("html").optionClass("Show Top Ad", false, "hide-top");
-                $("html").optionClass("Show Middle Ad", false, "hide-middle");
-                $("html").optionClass("Show Bottom Ad", false, "hide-bottom");
+                $("html").optionClass("Show Board Banners", false, "hide-board-banners");
+                $("html").optionClass("Show Top Ad", false, "hide-top-ad");
+                $("html").optionClass("Show Bottom Ad", false, "hide-bottom-ad");
+                $("html").optionClass("Show Buy Ad Banner", false, "hide-adl");
+                $("html").optionClass("Reduce Ad Opacity", true, "ad-opacity");
                 $("html").optionClass("Show Navigation Links", false, "hide-navlinks");
                 $("html").optionClass("Show Top Links", false, "hide-navlinktop");
                 $("html").optionClass("Show Bottom Links", false, "hide-navlinkbot");
                 $("html").optionClass("Show Previous/Next buttons", false, "hide-prevnext");
-                $("html").optionClass("Reduce Ad Opacity", true, "ad-opacity");
                 $("html").optionClass("Mascots Overlap Posts", false, "mascot-overlap");
                 $("html").optionClass("Reduce Mascot Opacity", true, "mascot-opacity");
                 $("html").optionClass("Grayscale Mascots", true, "mascot-grayscale");

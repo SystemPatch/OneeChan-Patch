@@ -4,7 +4,7 @@
   border-radius: 0 !important;
   min-width: 298px !important;
 }
-#qr:not(:root.vertical-qr #qr) .move {
+:root:not(.vertical-qr) #qr .move {
   min-width: 302px;
 }
 #qr .close {
@@ -12,14 +12,14 @@
 }
 #qr .riceCheck,
 #qr input[type=checkbox] {
-  margin: 0px 4px 1px!important;
+  margin: 0 4px 1px!important;
   vertical-align: baseline;
   position: relative;
   top: 3px;
 }
 #qr-filename-container .riceCheck,
 #qr-filename-container input[type=checkbox] {
-  margin: 0px 0px 1px!important;
+  margin: 0 0 1px!important;
 }
 #qr-file-button,
 #qr input[type='submit'] {
@@ -27,7 +27,7 @@
   margin: 0 !important;
 }
 #qr-file-button,
-#qr-filename-container:not(:root.fourchan-xt #qr-filename-container) {
+:root:not(.fourchan-xt) #qr-filename-container {
   margin-right: 1px !important;
 }
 #qr-spoiler-label + input[type='submit'] {
@@ -35,7 +35,7 @@
   margin-top: 1px !important;
 }
 #qr > form > select {
-  margin: 1px 0px !important;
+  margin: 1px 0 !important;
 }
 #qr select[data-name="thread"] {
   margin: 1px 0 1px 0;
@@ -58,7 +58,7 @@
 :root.expand-inputs .persona .field:focus {
   flex: 3;
 }
-#qr:not(:root.force-qr #qr) textarea {
+:root:not(.force-qr) #qr textarea {
   min-width: 302px !important;
 }
 #qr:not(.has-captcha) textarea {
@@ -185,4 +185,8 @@ input[type="number"] {
 }
 ::-webkit-outer-spin-button { 
   -webkit-appearance: none;
+}
+/* 4chan XT */
+#file-n-submit .row.space {
+  margin-top: 1px;
 }

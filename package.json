@@ -3,10 +3,11 @@
   "version": "5.7.3",
   "description": "Customizable rice and themes for 4chan X.",
   "meta": {
-    "name": "OneeChan",
+    "name": "OneeChan-Patch",
+    "author": "SystemPatch",
     "repo": "https://github.com/SystemPatch/OneeChan/",
     "page": "https://github.com/SystemPatch/OneeChan/",
-    "downloads": "https://github.com/SystemPatch/OneeChan/raw/stable/builds/",
+    "downloads": "https://github.com/SystemPatch/OneeChan/raw/refs/heads/stable/builds/",
     "appid": "cnbankbnhjiakpmcjbecinckfbceeacf",
     "buildsPath": "builds/",
     "mainBranch": "stable",
@@ -19,8 +20,8 @@
       "userjs": "OneeChan.user.js"
     },
     "min": {
-      "chrome": "32",
-      "firefox": "26",
+      "chrome": "88",
+      "firefox": "109",
       "greasemonkey": "1.15"
     }
   },
@@ -48,7 +49,8 @@
     "dnsev",
     "SystemPatch"
   ],
-  "namespace": "seaweedchan.github.com",
+  "maintainer": "SystemPatch",
+  "namespace": "SystemPatch",
   "license": "GPL-3.0",
   "readmeFilename": "README.md",
   "engines": {
