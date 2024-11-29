@@ -42,7 +42,7 @@ div.post {
 }
 .thread>.replyContainer,
 .threadContainer>.replyContainer {
-  margin-bottom:" + $SS.conf["Margin Between Replies"] + "px !important;
+  margin-bottom: " + $SS.conf["Margin Between Replies"] + "px !important;
 }
 .inline {
   margin-left: 13px !important;
@@ -224,7 +224,8 @@ input[type=checkbox]:checked+.riceCheck::before {
 }
 .globalMessage, h2, h3 {
   margin: auto;
-}#custom-board-list,
+}
+#custom-board-list,
 #full-board-list,
 .shortcut {
   vertical-align: baseline !important;
@@ -339,7 +340,7 @@ table.flashListing {
   margin-bottom: 20px;
 }
 table.flashListing .highlightPost {
-  background: rgba(" + $SS.theme.mainColor.shiftRGB(-25) + "," + $SS.theme.replyOp + ") !important;
+  background: rgba\(" + $SS.theme.mainColor.shiftRGB(-25) + "," + $SS.theme.replyOp + ") !important;
 }
 .flashListing td {
   padding-left: 4px !important;
