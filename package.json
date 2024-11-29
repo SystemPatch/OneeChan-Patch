@@ -7,11 +7,10 @@
     "author": "SystemPatch",
     "repo": "https://github.com/SystemPatch/OneeChan/",
     "page": "https://github.com/SystemPatch/OneeChan/",
-    "downloads": "https://github.com/SystemPatch/OneeChan/raw/refs/heads/patch/builds/",
+    "downloads": "https://github.com/SystemPatch/OneeChan/raw/refs/heads/stable/builds/",
     "appid": "cnbankbnhjiakpmcjbecinckfbceeacf",
     "buildsPath": "builds/",
     "mainBranch": "stable",
-    "betaBranch": "patch",
     "matches": [
       "*://boards.4chan.org/*",
       "*://boards.4channel.org/*"
