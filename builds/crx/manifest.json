@@ -1,7 +1,7 @@
 {
-  "name": "OneeChan-Patch",
-  "version": "5.7.2",
-  "manifest_version": 3,
+  "name": "OneeChan",
+  "version": "5.7.3",
+  "manifest_version": 2,
   "description": "Customizable rice and themes for 4chan X.",
   "icons": {
     "16": "icon16.png",
