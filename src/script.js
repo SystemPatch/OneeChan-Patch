@@ -3532,11 +3532,11 @@
                 $("html").optionClass("Show Top Ad", false, "hide-top-ad");
                 $("html").optionClass("Show Bottom Ad", false, "hide-bottom-ad");
                 $("html").optionClass("Show Buy Ad Banner", false, "hide-adl");
+                $("html").optionClass("Reduce Ad Opacity", true, "ad-opacity");
                 $("html").optionClass("Show Navigation Links", false, "hide-navlinks");
                 $("html").optionClass("Show Top Links", false, "hide-navlinktop");
                 $("html").optionClass("Show Bottom Links", false, "hide-navlinkbot");
                 $("html").optionClass("Show Previous/Next buttons", false, "hide-prevnext");
-                $("html").optionClass("Reduce Ad Opacity", true, "ad-opacity");
                 $("html").optionClass("Mascots Overlap Posts", false, "mascot-overlap");
                 $("html").optionClass("Reduce Mascot Opacity", true, "mascot-opacity");
                 $("html").optionClass("Grayscale Mascots", true, "mascot-grayscale");
