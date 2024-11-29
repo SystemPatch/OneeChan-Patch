@@ -69,7 +69,8 @@ body.is_catalog .button:hover,
   color: " + $SS.theme.linkHColor.hex + " !important;
 }
 /* Header */
-#header-bar, a.current {
+#header-bar,
+a.current {
   color: " + $SS.theme.headerColor.hex + " !important;
 }
 #header-bar a:not(.current) {
