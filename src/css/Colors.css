@@ -100,7 +100,8 @@ s:hover .quote,
 .teaser b,
 .post-subject,
 .option.header .option-title,
-.kwd {
+.kwd,
+.tab-label {
   color: " + $SS.theme.titleColor.hex + " !important;
 }
 .option.header {

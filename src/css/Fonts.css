@@ -144,10 +144,12 @@ a.options-button,
 .name,
 .subject,
 .option.header .option-title,
-a.current {
+a.current,
+.tab-label.selected {
   font-weight: " + ($SS.conf["Bitmap Font"] ? 4 : 7) + "00 !important;
 }
-.qr-link {
+.qr-link,
+.tab-label:not(.selected):not(:hover) {
   font-weight: normal;
 }
 /* Font Style */
