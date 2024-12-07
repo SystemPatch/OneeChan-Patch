@@ -80,10 +80,10 @@ a.current {
   color: " + $SS.theme.headerLHColor.hex + " !important;
 }
 #custom-board-list .current {
-    border-bottom: 1px solid rgba\(" + $SS.theme.linkColor.rgb + ",1) !important;;
+  border-bottom: 1px solid rgba\(" + $SS.theme.linkColor.rgb + ",1) !important;;
 }
 #custom-board-list .current:hover {
-    border-bottom: 1px solid rgba\(" + $SS.theme.linkHColor.rgb + ",1) !important;;
+  border-bottom: 1px solid rgba\(" + $SS.theme.linkHColor.rgb + ",1) !important;;
 }
 /* Greentext */
 .postMessage>.quote,
@@ -369,11 +369,11 @@ select:focus,
   rgba(0,0,0,.6) 0 0 2px;
 }
 .thumb {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px rgba(0, 0, 0, .25);
 }
 #qr,
 #thread-watcher {
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .1) !important;
 }
 /* Thread Stats */
 :root.style-stats #thread-stats,
@@ -437,7 +437,7 @@ select:focus,
 :root.webkit-bars {
   ::-webkit-scrollbar {
     width: 12px;
-    background-color: " + $SS.theme.bgColor.hex + ";
+    background-color: var(--onee-bg);
   }
   ::-webkit-scrollbar-thumb {
     background-color: " + $SS.theme.titleColor.hex + ";

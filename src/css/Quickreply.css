@@ -105,7 +105,9 @@
   min-width: 298px;
 }
 /* Vertical QR */
-:root.vertical-qr #qr > div > label > div {
+:root.vertical-qr #qr > div > label > div,
+:root.vertical-qr #qr .move #autohide,
+:root.vertical-qr #qr > div > select {
   display: none;
 }
 :root.vertical-qr #qr textarea,
@@ -164,10 +166,6 @@
 :root.vertical-qr #qr form {
   display: block !important;
 }
-:root.vertical-qr #qr .move #autohide,
-:root.vertical-qr #qr > div > select {
-  display: none;
-}
 /* Fade QR */
 :root.fade-qr #qr form {
   display: block !important;
@@ -180,9 +178,7 @@
 input[type="number"] {
   -moz-appearance: textfield;
 }
-::-webkit-inner-spin-button { 
-  -webkit-appearance: none;
-}
+::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button { 
   -webkit-appearance: none;
 }

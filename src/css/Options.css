@@ -184,12 +184,9 @@ select[name='Font Family']>option {
 .theme-preview.nsfw.selected .both {
   transition:opacity .3s, right .3s;
 }
-.theme-preview.nsfw .notsafe {
-  opacity:1;
-  right:3px;
-  z-index:1;
-}
-.theme-preview.selected .safe {
+.theme-preview.nsfw .notsafe,
+.theme-preview.selected .safe,
+.theme-preview.selected.nsfw .both {
   opacity:1;
   right:3px;
   z-index:1;
@@ -198,11 +195,6 @@ select[name='Font Family']>option {
   opacity:0 !important;
   right:300px !important;
   z-index:0 !important;
-}
-.theme-preview.selected.nsfw .both {
-  opacity:1;
-  right:3px;
-  z-index:1;  
 }
 /* Add Theme */
 #add-theme {

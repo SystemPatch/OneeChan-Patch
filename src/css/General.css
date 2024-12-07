@@ -335,6 +335,9 @@ hr {
   opacity: 0.2;
 }
 /* /f/ */
+#swf-embed {
+  z-index: 21;
+}
 table.flashListing {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -346,9 +349,6 @@ table.flashListing .highlightPost {
   padding-left: 4px !important;
   padding-right: 4px !important;
   text-align: center !important;
-}
-#swf-embed {
-  z-index: 21;
 }
 #delform[action='https://sys.4chan.org/f/imgboard.php'],
 #delform[action='https://sys.4chan.org/f/imgboard.php'] .postblock {
