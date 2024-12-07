@@ -204,7 +204,7 @@ textarea,
 select,
 .captcha-root {
   background: " + $SS.theme.inputColor.hex + " !important;
-  transition: background .2s;
+  transition: background .2s, color .2s, border-color .2s !important;
 }
 input[type=checkbox],
 .riceCheck {
@@ -217,7 +217,6 @@ textarea:hover,
 select:hover,
 .captcha-root:hover {
   background: rgb\(" + $SS.theme.inputColor.hover + ") !important;
-  transition: background .2s;
 }
 hr {
   background-image: linear-gradient\(to left, rgba\(" + $SS.theme.brderColor.rgb + ",0), rgb\(" + $SS.theme.brderColor.rgb + "), rgba\(" + $SS.theme.brderColor.rgb + ",0));
