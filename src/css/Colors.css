@@ -437,7 +437,6 @@ select:focus,
 :root.webkit-bars {
   ::-webkit-scrollbar {
     width: 12px;
-    background-color: var(--onee-bg);
   }
   ::-webkit-scrollbar-thumb {
     background-color: " + $SS.theme.titleColor.hex + ";
