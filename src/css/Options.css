@@ -166,12 +166,12 @@ select[name='Font Family']>option {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 445px;
+  height: 438px;
   text-align:left!important;
   width:800px!important;
 }
 :root.ua-blink #add-theme {
-  height: 450px !important;
+  height: 442px !important;
   max-height: 100%;
 }
 #add-theme>label {
