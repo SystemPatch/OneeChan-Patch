@@ -44,14 +44,14 @@
                 0, "Right margin custom width (pixels).", "Right Margin", 999, true
             ],
             "Style Thread Stats": [false, "Makes thread stats stand out more. Disable 'Updater and Stats in Header' if using ccd0 4chan X."],
-            "Rounded Corners": [false, "Styles replies, menus and Quick Reply to have subtly rounded corners."],
+            "Rounded Corners": [true, "Styles replies, menus and Quick Reply to have subtly rounded corners."],
             "Underline All Links": [false, "Underlines all links in the page."],
-            "Show Banner": [false, "Toggle visibility of banner.", null, true],
+            "Show Banner": [true, "Toggle visibility of the 4chan banner.", null, true],
             "Reduce Banner Opacity": [false, "Reduce opacity of the banner for easier viewing.", "Show Banner", true, true],
             "Show Board Name": [true, "Toggle visibility of the board name."],
             "Show Reply to Thread Button": [false, "Toggle visibility of the Start a Thread / Reply to Thread button."],
             "Show Checkboxes": [false, "Hides checkboxes and deleteform to be replaced by 4chan X menus. Refresh to apply."],
-            "Show Blotter": [true, "Toggle visibility of the 4chan news blotter."],
+            "Show Blotter": [false, "Toggle visibility of the 4chan news blotter."],
             "Show 4chan Ads": [false, "Opts into 4chan\'s banner ads.", null, true],
             "Show Board Banners": [false, "Toggle visibility of board banners.", "Show 4chan Ads", true, true],
             "Show Top Ad": [true, "Show the top 4chan banner ad.", "Show 4chan Ads", true, true],
@@ -76,11 +76,11 @@
                 }], true
             ],
             "Disable In Catalog View": [false, "Disables the sidebar when viewing the catalog. Native catalog only!"],
-            "SS-like Sidebar": [false, "Darkens the sidebar and adds a border like 4chan Style Script."],
-            "Minimal Sidebar": [true, "Shrinks the sidebar and disables the banner."],
+            "SS-like Sidebar": [true, "Darkens the sidebar and adds a border like 4chan Style Script."],
+            "Minimal Sidebar": [false, "Shrinks the sidebar and disables the banner."],
             ":: Quick Reply": ["header", ""],
             "Autohide Style": [
-                1, "Changes how the quick reply is hidden. Enable Autohide QR in 4chan X.", [{
+                2, "Changes how the quick reply is hidden. Please enable Autohide QR in 4chan X. Vertical Tabbed only works with the sidebar enabled", [{
                     name: "Normal",
                     value: 1
                 }, {
@@ -96,11 +96,11 @@
             "Remove Background": [false, "Removes the QR background."],
             "Remove Controls": [false, "Removes the QR controls and checkbox."],
             "Expanding Form Inputs": [true, "Makes certain form elements expand on focus."],
-            "Force QR to Sidebar Size": [false, "QR will no longer extend past the sidebar size."],
+            "Force QR to Sidebar Size": [true, "QR will no longer extend past the sidebar size."],
             ":: Mascots": ["header", ""],
             "Hide Mascots in Catalog": [true, "Hides the mascot when viewing the catalog."],
             "Mascots Overlap Posts": [false, "Mascots will render above posts and threads."],
-            "Reduce Mascot Opacity": [true, "Reduces opacity of mascots until hover. Warning: Overrides pointer events."],
+            "Reduce Mascot Opacity": [false, "Reduces opacity of mascots until hover. Warning: Overrides pointer events."],
             "Grayscale Mascots": [false, "Desaturates mascots."],
             ":: Replies": ["header", ""],
             "Fit Width": [true, "Replies stretch to the width of the page."],
@@ -113,7 +113,7 @@
             "OP Background": [false, "Give OP a background similar to a reply."],
             "Recolor Even Replies": [false, "Makes every other post a darker color. If Quote Threading is enabled darkens every root reply."],
             "Reduce Thumbnail Opacity": [false, "Reduces opacity of thumbnails."],
-            "Backlink Icons": [true, "Use icons for backlinks instead of text."],
+            "Backlink Icons": [false, "Use icons for backlinks instead of text."],
             "Backlinks on Bottom": [false, "Move backlinks to the bottom right of replies."],
             "Borders": [
                 2, "Changes which sides of replies have borders.", [{
@@ -159,13 +159,13 @@
                 }]
             ],
             ":: Catalog": ["header", ""],
-            "Justified Text": [true, "Justifies the teaser text of every thread to be more uniform."],
+            "Justified Text": [false, "Justifies the teaser text of every thread to be more uniform."],
             "Show Background": [true, "Threads receive a matching background."],
             "Unified Thumbnail Size": [false, "Makes all thumbnails the same size regardless of aspect ratio."],
             ":: 4chan X Header": ["header", ""],
             "Show Header Background Gradient": [true, "Gives the header bar a gradient background."],
             "Show Header Shadow": [true, "Gives the header a drop shadow."],
-            "Highlight Current Board": [true, "Gives the current board link a bottom highlight border."],
+            "Highlight Current Board": [false, "Gives the current board link a bottom highlight border."],
             ":: Highlighting": ["header", ""],
             "Highlight (OP) quotes": [false, "Highlights all (OP) mentions."],
             "Highlight (You) quotes": [false, "Highlights all posts quoting (You)"],
@@ -335,7 +335,7 @@
                 }]
             ],
             "Font Size": [13, "Set the general size of text (Pixels). Min: 8px, Max: 40px"],
-            "Backlink Font Size": [9, "Set the font size of backlinks."],
+            "Backlink Font Size": [10, "Set the font size of backlinks."],
             "Bitmap Font": [false, "Check this if you are using a bitmap font."],
             ":: Compatibility": ["header", ""],
             "Version Fix": [
@@ -349,8 +349,8 @@
             ],
             "Themes": [],
             "Hidden Themes": [],
-            "Selected Theme": 13,
-            "NSFW Theme": 12,
+            "Selected Theme": 1,
+            "NSFW Theme": 0,
             "Selected Mascots": [54],
             "Mascots": [],
             "Hidden Mascots": []
@@ -1290,7 +1290,7 @@
                         if (this.files[0].name.match(/\.json$/) == null) {
                             alert('Only JSON files are accepted!');
                             return;
-                        } else if (!confirm('Your current settings will be overwritten, are you sure?')) {
+                        } else if (!confirm('Your current settings will be entirely overwritten, are you sure?')) {
                             return;
                         }
                         reader.onload = (function(tFile) {
@@ -1398,7 +1398,7 @@
 
                 p.append($("<a class='options-button' name=addTheme title='Create a new theme.'>Create", tOptions).bind("click", $SS.options.showTheme));
                 p.append($("<a class='options-button' href='https://github.com/<%= maintainer %>/OneeChan/wiki/Custom-Themes' title='Learn more about custom themes and download new ones.' target='_blank'>Custom Themes"));
-                p.append($("<div id='import-link' title='Import a new theme (.json) file.'>").append($("<input type=file class='import-input' riced=true accept='application/json'>")
+                p.append($("<div id='import-link' title='Import a new theme file.'>").append($("<input type=file class='import-input' riced=true accept='application/json'>")
                     .bind("change", function() {
                         var file = this.files[0],
                             reader = new FileReader(),
@@ -1714,7 +1714,7 @@
                     innerHTML += "<label><span class='option-title'>" + themeInputs[i].dName + ":</span>" +
                     "<input type=text class=jsColor name=" + themeInputs[i].name + " value=" + (bEdit ? tEdit[themeInputs[i].name] : "") + "></label>";
 
-                innerHTML += "<label id=customCSS><span class='option-title'>Custom CSS:</span><textarea name=customCSS class=field>" + (bEdit ? tEdit.customCSS || "" : "") + "</textarea>" +
+                innerHTML += "<label id=customCSS><span class='option-title'>Custom CSS:</span><textarea name=customCSS class='field'>" + (bEdit ? tEdit.customCSS || "" : "") + "</textarea>" +
                     "</label><div>" +
                     "<a class='options-button' name=export>Export</a>" +
                     "<a class='options-button' name=" + (bEdit ? "edit" : "add") + ">Save</a><a class='options-button' name=cancel>Cancel</a></div>";
@@ -2083,6 +2083,78 @@
         /* THEMES */
         Themes: {
             defaults: [{
+                name: "Yotsuba",
+                authorName: "moot",
+                authorTrip: "!Εр8рui8Vw2",
+                "default": true,
+                bgImg: "iVBORw0KGgoAAAANSUhEUgAAAAEAAADICAIAAACmkByiAAAAWElEQVR4AaWSwQ3AIAwDbfbfpdt0nKrPUp3QCfHgkfjsCMh47mskmU5HGvbmuuh9dVce8M4it/SfMZglGeZx/ccyu/Vsv4/N29f331AY5Bi3+hdo4A92+wXvCwR9mXztrAAAAABJRU5ErkJggg==",
+                bgRPA: "repeat-x top center scroll",
+                replyOp: "1.0",
+                navOp: "0.9",
+                bgColor: "ffffee",
+                mainColor: "f0e0d6",
+                brderColor: "d9bFb7",
+                inputColor: "ffffff",
+                inputbColor: "aaaaaa",
+                blinkColor: "800000",
+                unreadColor: "000080",
+                linkColor: "0000ee",
+                linkHColor: "dd0000",
+                qlColor: "000080",
+                nameColor: "117743",
+                quoteColor: "789922",
+                textColor: "800000",
+                tripColor: "228854",
+                titleColor: "cc1105",
+                headerColor: "800000",
+                headerLColor: "800000",
+                headerLHColor: "dd0000",
+                headerBGColor: "f0e0d6",
+                boardColor: "800000",
+                postHLColor: "228854",
+                quotesYouHLColor: "dd0000",
+                ownPostHLColor: "228854",
+                threadHLColor: "dd0000",
+                replybgHLColor: "d6bad0",
+                replyslctColor: "228854",
+                customCSS: "span.postNum.desktop > a {\ncolor: #800000 !important\n}\nspan.postNum.desktop > a:hover {\ncolor: #dd0000 !important\n}\n.menu-button {\ncolor: #800000 !important\n}"
+            }, {
+                name: "Yotsuba B",
+                authorName: "moot",
+                authorTrip: "!Εр8рui8Vw2",
+                "default": true,
+                bgImg: "iVBORw0KGgoAAAANSUhEUgAAAAEAAADICAIAAACmkByiAAAASUlEQVR4AcWRuQ0AIBDDzuy/HAVrMAM9slCorqAJziNgrj2qSg/cGhHnjPqDDPxOfYiebwFj+XobeLGI7p39fW1/Ib58d55Bwh3x9wRv6r75UwAAAABJRU5ErkJggg==",
+                bgRPA: "repeat-x top center scroll",
+                replyOp: "1.0",
+                navOp: "0.9",
+                bgColor: "eef2ff",
+                mainColor: "d6daf0",
+                brderColor: "b7c5d9",
+                inputColor: "ffffff",
+                inputbColor: "aaaaaa",
+                blinkColor: "34345c",
+                unreadColor: "34345C",
+                linkColor: "34345c",
+                linkHColor: "dd0000",
+                qlColor: "dd0000",
+                nameColor: "117743",
+                quoteColor: "789922",
+                textColor: "000000",
+                tripColor: "228854",
+                titleColor: "0f0c5d",
+                headerColor: "34345c",
+                headerLColor: "34345c",
+                headerLHColor: "dd0000",
+                headerBGColor: "d6daf0",
+                boardColor: "af0a0f",
+                postHLColor: "228854",
+                quotesYouHLColor: "228854",
+                ownPostHLColor: "228854",
+                threadHLColor: "dd0000",
+                replybgHLColor: "d6bad0",
+                replyslctColor: "228854",
+                customCSS: "span.postNum.desktop > a {\ncolor: #000000 !important\n}\nspan.postNum.desktop > a:hover {\ncolor: #dd0000 !important\n}"
+            }, {
                 name: "Vimyanized Dark",
                 authorName: "Seaweed",
                 authorTrip: "!!lq+3fff+/ev",
@@ -2496,78 +2568,6 @@
                 replyslctColor: "8abeb7",
                 customCSS: "span.postNum.desktop > a {\ncolor: #c5c8c6 !important\n}\nspan.postNum.desktop > a:hover {\ncolor: #81a2be !important\n}"
             }, {
-                name: "Yotsuba",
-                authorName: "moot",
-                authorTrip: "!Εр8рui8Vw2",
-                "default": true,
-                bgImg: "iVBORw0KGgoAAAANSUhEUgAAAAEAAADICAIAAACmkByiAAAAWElEQVR4AaWSwQ3AIAwDbfbfpdt0nKrPUp3QCfHgkfjsCMh47mskmU5HGvbmuuh9dVce8M4it/SfMZglGeZx/ccyu/Vsv4/N29f331AY5Bi3+hdo4A92+wXvCwR9mXztrAAAAABJRU5ErkJggg==",
-                bgRPA: "repeat-x top center scroll",
-                replyOp: "1.0",
-                navOp: "0.9",
-                bgColor: "ffffee",
-                mainColor: "f0e0d6",
-                brderColor: "d9bFb7",
-                inputColor: "ffffff",
-                inputbColor: "aaaaaa",
-                blinkColor: "800000",
-                unreadColor: "000080",
-                linkColor: "0000ee",
-                linkHColor: "dd0000",
-                qlColor: "000080",
-                nameColor: "117743",
-                quoteColor: "789922",
-                textColor: "800000",
-                tripColor: "228854",
-                titleColor: "cc1105",
-                headerColor: "800000",
-                headerLColor: "800000",
-                headerLHColor: "dd0000",
-                headerBGColor: "f0e0d6",
-                boardColor: "800000",
-                postHLColor: "228854",
-                quotesYouHLColor: "dd0000",
-                ownPostHLColor: "228854",
-                threadHLColor: "dd0000",
-                replybgHLColor: "d6bad0",
-                replyslctColor: "228854",
-                customCSS: "span.postNum.desktop > a {\ncolor: #800000 !important\n}\nspan.postNum.desktop > a:hover {\ncolor: #dd0000 !important\n}\n.menu-button {\ncolor: #800000 !important\n}"
-            }, {
-                name: "Yotsuba B",
-                authorName: "moot",
-                authorTrip: "!Εр8рui8Vw2",
-                "default": true,
-                bgImg: "iVBORw0KGgoAAAANSUhEUgAAAAEAAADICAIAAACmkByiAAAASUlEQVR4AcWRuQ0AIBDDzuy/HAVrMAM9slCorqAJziNgrj2qSg/cGhHnjPqDDPxOfYiebwFj+XobeLGI7p39fW1/Ib58d55Bwh3x9wRv6r75UwAAAABJRU5ErkJggg==",
-                bgRPA: "repeat-x top center scroll",
-                replyOp: "1.0",
-                navOp: "0.9",
-                bgColor: "eef2ff",
-                mainColor: "d6daf0",
-                brderColor: "b7c5d9",
-                inputColor: "ffffff",
-                inputbColor: "aaaaaa",
-                blinkColor: "34345c",
-                unreadColor: "34345C",
-                linkColor: "34345c",
-                linkHColor: "dd0000",
-                qlColor: "dd0000",
-                nameColor: "117743",
-                quoteColor: "789922",
-                textColor: "000000",
-                tripColor: "228854",
-                titleColor: "0f0c5d",
-                headerColor: "34345c",
-                headerLColor: "34345c",
-                headerLHColor: "dd0000",
-                headerBGColor: "d6daf0",
-                boardColor: "af0a0f",
-                postHLColor: "228854",
-                quotesYouHLColor: "228854",
-                ownPostHLColor: "228854",
-                threadHLColor: "dd0000",
-                replybgHLColor: "d6bad0",
-                replyslctColor: "228854",
-                customCSS: "span.postNum.desktop > a {\ncolor: #000000 !important\n}\nspan.postNum.desktop > a:hover {\ncolor: #dd0000 !important\n}"
-            }, {
                 name: "Yotsuba Purple",
                 authorName: "Seaweed",
                 authorTrip: "!!lq+3fff+/ev",
@@ -2942,7 +2942,7 @@
                 threadHLColor: "a0a0a0",
                 replybgHLColor: "141414",
                 replyslctColor: "ffffff",
-                customCSS: ".boardBanner .boardTitle {\ntext-shadow: 0 0 3px #a0a0a0 !important;\nletter-spacing: 0px !important;\npadding-top: 30px !important;\n}"
+                customCSS: ".boardBanner .boardTitle {\ntext-shadow: 0 0 3px #a0a0a0 !important;\nletter-spacing: 0px !important;\n}"
             }, {
                 name: "Cold Snap",
                 authorName: "Kori",
@@ -4421,13 +4421,13 @@
             } else
                 obj = window.location;
 
-            var pathname = obj.pathname.substr(1).split("/");
+            var pathname = obj.pathname.slice(1).split("/");
 
             return {
                 sub: obj.hostname.split(".")[0],
                 board: pathname[0],
                 home: location.hostname === "www.4chan.org",
-                nsfw: /^(b|d|e|f|gif|h|hr|r|s|t|u|wg|i|ic|r9k|hm|y|hc|pol|soc|aco|s4s|trash)$/.test(pathname[0]),
+                nsfw: /^(aco|b|bant|d|e|f|gif|h|hr|r|s|t|u|wg|i|ic|r9k|hm|y|hc|pol|soc|s4s|trash)$/.test(pathname[0]),
                 reply: pathname[1] === "thread",
                 catalog: pathname[1] === "catalog",
                 archive: pathname[1] === "archive"
