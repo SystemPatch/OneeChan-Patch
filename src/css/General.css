@@ -258,6 +258,7 @@ hr {
 .boardTitle {
   cursor:default;
   letter-spacing:-2px;
+  padding-top: 3px;
 }
 /* Banner */
 #bannerCnt {
@@ -421,6 +422,9 @@ table.flashListing .highlightPost {
 /* Navlinks */
 body.is_index div.navLinks {
   padding: 5px 0;
+}
+body.is_thread div.navLinks:not(.navLinksBot) {
+  padding: .4% 0 .4% 0;
 }
 .navLinks.navLinksBot.desktop {
   margin-bottom: 5px;
