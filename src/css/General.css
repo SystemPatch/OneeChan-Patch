@@ -99,10 +99,17 @@ div.post {
   box-shadow: inset rgba(0,0,0,.05) 0 -1px 2px;
   padding-top: 2px !important;
 }
+:root.post-info.reply-fit-width .reply>.postInfo {
+  padding-top: 4px !important;
+}
 :root.post-info .fileText,
 #qp .opContainer .fileText,
 .inline .opContainer .fileText {
   padding-top: 2px !important;
+}
+:root.post-info .inline .reply,
+:root.post-info #hoverUI .reply {
+  padding: 0 0 1px !important;
 }
 /* Backlinks */
 :root.backlink-bottom .post {
