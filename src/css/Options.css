@@ -166,12 +166,12 @@ select[name='Font Family']>option {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 438px;
+  height: 445px;
   text-align:left!important;
   width:800px!important;
 }
 :root.ua-blink #add-theme {
-  height: 442px !important;
+  height: 450px !important;
   max-height: 100%;
 }
 #add-theme>label {
@@ -184,7 +184,7 @@ select[name='Font Family']>option {
 }
 #add-theme>label#customCSS>textarea {
   font-family: monospace;
-  height: 9.5em;
+  height: 10.2em;
   resize: none;
   width: 99%;
   max-height: 25em;
