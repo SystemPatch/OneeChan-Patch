@@ -90,7 +90,7 @@
   width: inherit !important;
   letter-spacing: -1px;
   position: fixed;
-  padding-top: 1px;
+  padding-top: .05em;
 }
 :root.mini-sidebar:root.right-sidebar .boardTitle {
   right: 32px;
