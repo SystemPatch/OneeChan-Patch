@@ -358,11 +358,11 @@ table.flashListing .highlightPost {
   padding-right: 4px !important;
   text-align: center !important;
 }
-#delform[action='https://sys.4chan.org/f/imgboard.php'],
-#delform[action='https://sys.4chan.org/f/imgboard.php'] .postblock {
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important;
+body.board_f #delform .file-info {
+  padding-left: 5px;
+}
+body.board_f #delform .fileText {
+  margin-left: 0 !important;
 }
 /* Mascot */
 #mascot img,

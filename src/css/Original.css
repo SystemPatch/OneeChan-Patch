@@ -126,6 +126,9 @@ table.flashListing {
   margin-left: auto;
   margin-right: auto;
 }
+table.flashListing .postblock {
+  padding: 5px;
+}
 div.pagelist div.pages {
   padding: 4px;
 }

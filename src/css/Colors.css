@@ -21,7 +21,8 @@ select,
 .captcha-root,
 .tegaki-label,
 .dd-menu ul,
-.boxbar {
+.boxbar,
+.postblock {
   color: " + $SS.theme.textColor.hex + " !important;
 }
 /* Names */
@@ -148,7 +149,7 @@ body.is_catalog .panel,
 #tegaki,
 .boxbar,
 :root.op-background .postContainer.opContainer:not(.inline .opContainer),
-.flashListing tr:nth-of-type(2n+1),
+.flashListing tr:nth-of-type(2n+1):not(.highlightPost),
 .dd-menu ul,
 :root.catalog-hover-expand .catalog-container:hover > .post {
   background: var(--onee-main-op) !important;
@@ -301,6 +302,7 @@ textarea,
 :root.vertical-qr #qr .move,
 #qr select,
 select,
+.postblock,
 #post-preview,
 .captcha-root,
 .dd-menu ul,

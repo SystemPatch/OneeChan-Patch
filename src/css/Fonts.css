@@ -152,6 +152,10 @@ a.current,
 .tab-label:not(.selected):not(:hover) {
   font-weight: normal;
 }
+/* /f/ */
+.postblock {
+  font-weight: 700;
+}
 /* Font Style */
 .summary {
   font-style:" + ($SS.conf["Bitmap Font"] ? 'none' : 'italic') + ";
