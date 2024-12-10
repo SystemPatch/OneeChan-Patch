@@ -1067,9 +1067,10 @@
             var css,
                 reload = $("#ch4SS").exists();
 
-            if (reload || $("link[rel=stylesheet]", document.head).exists())
+            if ($SS.location.dead)
+                return;
+            else if (reload || $("link[rel=stylesheet]", document.head).exists())
                 $(document).unbind("DOMNodeInserted", $SS.insertCSS);
-            else return;
 
             css = "<%= grunt.file.read('tmp/style.min.css').replace(/\\(^\")/g, '') %>";
 
@@ -1135,8 +1136,11 @@
                         $SS.exportOptions[key] = $SS.conf[key];
                     };
                 };
-                $SS.conf["Margin Left"] = $SS.conf["Left Margin"] !== 999 ? $SS.conf["Left Margin"] : $SS.conf["Custom Left Margin"];
-                $SS.conf["Margin Right"] = $SS.conf["Right Margin"] !== 999 ? $SS.conf["Right Margin"] : $SS.conf["Custom Right Margin"];
+
+                if (!$SS.location.report) {
+                    $SS.conf["Margin Left"] = $SS.conf["Left Margin"] !== 999 ? $SS.conf["Left Margin"] : $SS.conf["Custom Left Margin"];
+                    $SS.conf["Margin Right"] = $SS.conf["Right Margin"] !== 999 ? $SS.conf["Right Margin"] : $SS.conf["Custom Right Margin"];
+                };
                 $SS.conf["Margin Post Message"] = $SS.conf["Post Message Margin"] === 1 ? "4px 16px" : ($SS.conf["Post Message Margin"] === 3 ? "20px 40px" : "");
                 $SS.conf["Width Decoration"] = $SS.conf["Post Decoration Width"] !== 999 ? $SS.conf["Post Decoration Width"] : $SS.conf["Custom Decoration Width"];
             },
@@ -4427,6 +4431,8 @@
                 sub: obj.hostname.split(".")[0],
                 board: pathname[0],
                 home: location.hostname === "www.4chan.org",
+                report: location.hostname === "sys.4chan.org",
+                dead: document.title === "4chan - 404 Not Found",
                 nsfw: /^(aco|b|bant|d|e|f|gif|h|hr|r|s|t|u|wg|i|ic|r9k|hm|y|hc|pol|soc|s4s|trash)$/.test(pathname[0]),
                 reply: pathname[1] === "thread",
                 catalog: pathname[1] === "catalog",
