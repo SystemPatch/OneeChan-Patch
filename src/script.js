@@ -334,7 +334,7 @@
                     value: "GorDIN"
                 }]
             ],
-            "Font Size": [13, "Set the general size of text (Pixels). Min: 8px, Max: 40px"],
+            "Font Size": [13, "Set the general size of text (Pixels). Min: 8px, Max: 24px"],
             "Backlink Font Size": [10, "Set the font size of backlinks."],
             "Bitmap Font": [false, "Check this if you are using a bitmap font."],
             ":: Compatibility": ["header", ""],
@@ -355,7 +355,7 @@
             "Mascots": [],
             "Hidden Mascots": []
         },
-        MAX_FONT_SIZE = 40,
+        MAX_FONT_SIZE = 24,
         MIN_FONT_SIZE = 8,
         NAME = "OneeChan",
         NAMESPACE = "OneeChan.",
