@@ -370,37 +370,30 @@ select:focus,
   rgba(0,0,0,.6) 0 0 2px;
 }
 .thumb {
-  box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+  box-shadow: 0 0 5px rgba(0,0,0,.25);
 }
 #qr,
 #thread-watcher {
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, .1) !important;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.1) !important;
 }
 /* Thread Stats */
 :root.style-stats #thread-stats,
 :root.style-stats #updater,
 :root.style-stats #stats {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
   padding: 3px 6px !important;
   border: 1px solid;
 }
 /* Thread Stats - XT Fixes */
 :root.style-stats.fourchan-xt:not(.float) #thread-stats,
-:root.style-stats.fourchan-xt:not(.float) #updater,
-:root.style-stats.fourchan-xt:not(.float) #stats {
+:root.style-stats.fourchan-xt:not(.float) #updater {
   padding: 0px 6px !important;
 }
-:root.style-stats.fourchan-xt:not(.float) #header-bar .menu-button i {
-    border-top: .5em solid;
-    border-right: .36em solid transparent;
-    border-left: .36em solid transparent;
-    margin: .36em .16em;
-}
-:root.style-stats.shortcut-icons.fourchan-xt:not(.float) #shortcuts .shortcut {
+:root.style-stats.shortcut-icons.fourchan-xt:not(.float) #shortcuts .shortcut:not(.shortcut:last-of-type) {
   height: 1.25em;
 }
 :root.style-stats.shortcut-icons.fourchan-xt:not(.float) #shortcuts svg.icon {
-  height: 1.14em;
+  margin-top: 2px;
 }
 /* Mascots */
 :root.mascot-grayscale #mascot img {
