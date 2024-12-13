@@ -162,17 +162,23 @@ a.current,
 }
 /* 4chan X Header Icons */
 #header-bar .menu-button i {
-  border-top: .46em solid !important;
-  border-right: .33em solid transparent !important;
-  border-left: .33em solid transparent !important;
-  margin: .16em !important;
+  border-top: .5em solid !important;
+  border-right: .34em solid transparent !important;
+  border-left: .34em solid transparent !important;
 }
-:root.shortcut-icons #shortcuts .fa::before {
-  font-size:" + (($SS.conf["Font Size"] < 15) ? 14 : ($SS.conf["Font Size"] - 1)) + "px !important;
+.fa::before  {
+  font-size:" + $SS.conf["Font Size"] + "px !important;
 }
-:root.shortcut-icons.fourchan-xt #shortcuts .shortcut {
-  height: 1em;
+:root.shortcut-icons #shortcuts .shortcut .fa::before {
+  font-size:" + ($SS.conf["Font Size"] + 2) + "px !important;
 }
+:root.shortcut-icons.fourchan-xt #shortcuts .shortcut,
 #shortcuts svg.icon {
-  height: 1em;
+  height:" + ($SS.conf["Font Size"] + 1) + "px;
+}
+.menu-button svg.icon {
+  height:" + $SS.conf["Font Size"] + "px;
+}
+.file svg.icon {
+  height:" + ($SS.conf["Font Size"] - 1) + "px !important;
 }
