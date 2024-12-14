@@ -172,7 +172,7 @@
 }
 :root.fade-qr #qr.autohide:not(.focus):not(:hover) {
   opacity: 0.2 !important;
-  transition: opacity .2s ease-in-out 1s;
+  transition: opacity .2s ease-in-out 1s !important;
 }
 /* Oekaki */
 input[type="number"] {
