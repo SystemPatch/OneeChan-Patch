@@ -50,6 +50,7 @@ div.post {
 /* Fit Expanded Images option */
 :root.fit-eximg.fit-height .full-image {
   max-height: calc(100vh - 8rem) !important;
+  max-width: calc(75vw - 20rem) !important;
 }
 /* Fit Width option */
 :root.reply-fit-width .reply.post {
