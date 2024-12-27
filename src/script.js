@@ -104,6 +104,7 @@
             "Grayscale Mascots": [false, "Desaturates mascots."],
             ":: Replies": ["header", ""],
             "Fit Width": [true, "Replies stretch to the width of the page."],
+            "Fit Expanded Images": [false, "Expanded images will better fit to the viewport. Enable 'Fit height' in 4chan X's header menu to use."],
             "Show Reply Header": [true, "Shows reply header background and line border."],
             "Show Post Info On Hover": [false, "Shows post number and file info on hover only."],
             "Show File Info": [true, "Hides filename, dimensions and size info."],
@@ -115,6 +116,8 @@
             "Reduce Thumbnail Opacity": [false, "Reduces opacity of thumbnails."],
             "Backlink Icons": [false, "Use icons for backlinks instead of text."],
             "Backlinks on Bottom": [false, "Move backlinks to the bottom right of replies."],
+            "Backlink Shadow": [false, "Add a shadow to the backlink text."],
+            "Show 4chan Pass users": [true, "Show a four leaf clover indicating a pass user."],
             "Borders": [
                 2, "Changes which sides of replies have borders.", [{
                     name: "Normal (4chan default)",
@@ -3515,6 +3518,9 @@
                 $("html").optionClass("Recolor Even Replies", true, "recolor-even");
                 $("html").optionClass("Backlink Icons", true, "backlink-icon");
                 $("html").optionClass("Backlinks on Bottom", true, "backlink-bottom");
+                $("html").optionClass("Backlink Shadow", true, "backlink-shadow");
+                $("html").optionClass("Show 4chan Pass users", true, "no-pu");
+                $("html").optionClass("Fit Expanded Images", true, "fit-eximg");
                 $("html").optionClass("Autohide Style", 2, "vertical-qr");
                 $("html").optionClass("Autohide Style", 3, "fade-qr");
                 $("html").optionClass("Tether QR to Sidebar", false, "qr-float");

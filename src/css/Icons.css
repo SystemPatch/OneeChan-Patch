@@ -4,6 +4,15 @@
 .closeIcon::after {
   content: 'x';
 }
+/* Show 4chan Pass users */
+:root.no-pu .n-pu {
+  vertical-align: middle;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-top: -2px;
+  background: url(//s.4cdn.org/image/minileaf.gif);
+}
 /* Thread watcher favicon */
 .watch-thread-link {
   margin-bottom: -7px;

@@ -47,6 +47,10 @@ div.post {
 .postMessage {
   margin: " + $SS.conf["Margin Post Message"] + " !important;
 }
+/* Fit Expanded Images option */
+:root.fit-eximg.fit-height .full-image {
+  max-height: calc(100vh - 8rem) !important;
+}
 /* Fit Width option */
 :root.reply-fit-width .reply.post {
   display: block !important;

@@ -117,6 +117,9 @@ s:hover .quote,
 .backlink {
   color: " + $SS.theme.blinkColor.hex + " !important;
 }
+:root.backlink-shadow .backlink {
+  text-shadow: 1px 1px 5px;
+}
 .quotelink {
   color: " + $SS.theme.qlColor.hex + " !important;
 }
