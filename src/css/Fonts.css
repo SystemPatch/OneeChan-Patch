@@ -166,6 +166,10 @@ a.current,
   border-right: .34em solid transparent !important;
   border-left: .34em solid transparent !important;
 }
+:root.fixed.bottom-header #header-bar .menu-button i {
+    border-top: none !important;
+    border-bottom: .5em solid !important;
+}
 .fa::before  {
   font-size:" + $SS.conf["Font Size"] + "px !important;
 }
