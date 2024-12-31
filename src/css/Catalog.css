@@ -8,6 +8,13 @@ div.thread {
   clear: both;
   padding-bottom: 10px;
 }
+/* Native Catalog */
+#ctrl {
+  padding-top: 4px;
+}
+#threads {
+  padding: 10px 0 !important;
+}
 /* Catalog Link */
 .pages.cataloglink {
   margin-left: 12px;
@@ -22,9 +29,9 @@ div.thread {
   opacity: 0.7 !important;
   transition: opacity .3s ease-in 0s;
 }
-/* Catalog Fonts */
+/* Catalog Comment */
 :root.catalog-justify .teaser,
-:root.catalog-justify .catalog-thread > .comment {
+:root.catalog-justify .catalog-post > .postMessage {
   text-align: justify !important;
 }
 /* Background */
@@ -37,7 +44,7 @@ div.thread {
   border-radius: 3px !important;
 }
 :root.catalog-background .teaser,
-:root.catalog-background .catalog-thread > .comment {
+:root.catalog-background .catalog-post > .postMessage {
   margin: 0 5px 5px 5px;
 }
 :root.catalog-background .thumb,
@@ -55,4 +62,10 @@ div.thread {
 :root.catalog-thumbsize img.catalog-thumb  {
   width: 150px !important;
   height: 150px !important;
+}
+:root.catalog-thumbsize #threads.large .thumb,
+:root.catalog-thumbsize #threads.extended-large .thumb,
+:root.catalog-thumbsize #delform>.catalog-large img.catalog-thumb  {
+  width: 250px !important;
+  height: 250px !important;
 }
