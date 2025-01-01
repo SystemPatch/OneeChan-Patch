@@ -58,7 +58,7 @@
 :root.expand-inputs .persona .field:focus {
   flex: 3;
 }
-:root:not(.force-qr) #qr textarea {
+#qr textarea {
   min-width: 302px !important;
 }
 #qr:not(.has-captcha) textarea {
@@ -102,7 +102,7 @@
   margin-left: 1px !important;
 }
 :root.force-qr #qr textarea {
-  min-width: 298px;
+  min-width: 298px !important;
 }
 /* Vertical QR */
 :root.vertical-qr #qr > div > label > div,
