@@ -1,8 +1,10 @@
 "Mascot" images are property of their respective owners and will be removed on request.
-4chan Style Script Copyright © 2011-2012 ahodesuka http://github.com/ahodesuka/4chan-Style-Script
-Appchan X Copyright © 2013-2014 Zixaphir http://github.com/zixaphir/appchan-x
-jscolor, JavaScript Color Picker v1.3.11 http://jscolor.com Copyright © 2008-2011 Jan Odvarko, http://odvarko.cz under GNU Lesser General Public License, http://www.gnu.org/copyleft/lesser.html
-4chan SS Icons from http://raphaeljs.com/icons/ Copyright © 2008 Dmitry Baranovskiy
+OneeChan/StyleChan Copyright © 2014-2024 nebukazar aka 3nly https://github.com/3nly/StyleChan
+OneeChan Copyright © 2011-2013 Jordan Bates https://github.com/seaweedchan/OneeChan
+4chan Style Script Copyright © 2011-2012 ahodesuka https://github.com/ahodesuka/4chan-Style-Script
+Appchan X Copyright © 2013-2014 Zixaphir https://github.com/zixaphir/appchan-x
+jscolor, JavaScript Color Picker v1.3.11 https://jscolor.com Copyright © 2008-2011 Jan Odvarko, https://odvarko.cz under GNU Lesser General Public License, https://www.gnu.org/copyleft/lesser.html
+4chan SS Icons from https://raphaeljs.com/icons/ Copyright © 2008 Dmitry Baranovskiy
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
@@ -24,7 +26,7 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
-OneeChan: Copyright © 2011-2013 Jordan Bates <jtbates@asu.edu>
+OneeChan-Patch: Copyright © 2018-2024 SystemPatch https://github.com/SystemPatch
 
 Contributors:
 * ahodesuka
@@ -35,7 +37,7 @@ Contributors:
 * Hupotronic
 * libricoleur
 * tracerneo
-* Nebukazar
+* nebukazar aka 3nly
 
 All the people who've taken the time to write bug reports.
 * Thank you.
