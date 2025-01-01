@@ -77,7 +77,7 @@
             ],
             "Disable In Catalog View": [false, "Disables the sidebar when viewing the catalog. Native catalog only!"],
             "SS-like Sidebar": [true, "Darkens the sidebar and adds a border like 4chan Style Script."],
-            "Minimal Sidebar": [false, "Shrinks the sidebar and disables the banner."],
+            "Minimal Sidebar": [false, "Shrinks the sidebar and moves the banner."],
             ":: Quick Reply": ["header", ""],
             "Autohide Style": [
                 2, "Changes how the quick reply is hidden. Please enable Autohide QR in 4chan X. Vertical Tabbed only works with the sidebar enabled", [{
@@ -2231,7 +2231,7 @@
                 replyslctColor: "cc6563"
             }, {
                 name: "Surf", //Inspired by Blue Tone
-                authorName: "Nebukazar",
+                authorName: "nebukazar",
                 authorTrip: "!/Am.NeBUqQ",
                 "default": true,
                 bgImg: false,
@@ -2747,7 +2747,7 @@
                 customCSS: "#delform {\nbackground:rgba(22,22,22,.8)!important;\nborder:0!important;\npadding:1px!important;\nbox-shadow:rgba(0,0,0,.8) 0 0 10px;\n}\ndiv.reply.post {\nbackground-image: url('data:image/gif;base64,R0lGODdhCQAJAIgAADMzMysrKywAAAAACQAJAAACDwxgeMrZF5Jckz1UXaYQFgA7') !important;\nborder-bottom: #1f1f1f !important;\n}\n.thread:not(.stub){\nbackground:0!important\n}\na:not([href='javascript:;']){\ntext-shadow:#0f0f0f 0 1px;\n}"
             }, {
                 name: "Yasashii",
-                authorName: "Nebukazar",
+                authorName: "nebukazar",
                 authorTrip: "!/Am.NeBUqQ",
                 "default": true,
                 bgImg: false,
@@ -2985,6 +2985,41 @@
                 replybgHLColor: "eeeeee",
                 replyslctColor: "476b8f"
             }, {
+                name: "Blue Phallus",
+                authorName: "iluvOP",
+                authorTrip: "!Tripfags can die.",
+                "default": true,
+                bgImg: false,
+                replyOp: "1.0",
+                navOp: "0.9",
+                mainColor: "242436",
+                brderColor: "242436",
+                inputColor: "242436",
+                inputbColor: "262638",
+                headerBGColor: "242436",
+                headerColor: "da637e",
+                boardColor: "7787a3",
+                bgColor: "20202f",
+                textColor: "a7a7ad",
+                blinkColor: "4b5e57",
+                headerLColor: "4c626d",
+                headerLHColor: "da637e",
+                linkColor: "7787a3",
+                linkHColor: "da637e",
+                qlColor: "4b5e57",
+                nameColor: "da637e",
+                tripColor: "63918b",
+                titleColor: "da637e",
+                quoteColor: "b1b792",
+                unreadColor: "64657b",
+                postHLColor: "da637e",
+                quotesYouHLColor: "da637e",
+                ownPostHLColor: "da637e",
+                threadHLColor: "da637e",
+                replybgHLColor: "20202f",
+                replyslctColor: "da637e",
+                customCSS: ".reply { box-shadow: -2px 2px 2px rgba(0,0,0,.10); }"
+            }, {
                 name: "Midnight Caek",
                 authorName: "Zixaphir",
                 authorTrip: "!M.........",
@@ -3012,12 +3047,12 @@
                 titleColor: "aaaaaa",
                 quoteColor: "71793e",
                 unreadColor: "57577b",
-                postHLColor: "ffffff",
+                postHLColor: "7c2d2d",
                 quotesYouHLColor: "7c2d2d",
-                ownPostHLColor: "ffffff",
+                ownPostHLColor: "7c2d2d",
                 threadHLColor: "aaaaaa",
                 replybgHLColor: "0e0e0e",
-                replyslctColor: "ffffff"
+                replyslctColor: "7c2d2d"
             }, {
                 name: "Cyber Blue",
                 authorName: "Jelloman",
@@ -3121,35 +3156,6 @@
                 replybgHLColor: "00161d",
                 replyslctColor: "ffffff",
                 bgRPA: "repeat-y top center fixed"
-            }, {
-                name: "Blue Phallus",
-                authorName: "iluvOP",
-                authorTrip: "Tripfags can die.",
-                "default": true,
-                bgImg: false,
-                replyOp: "1.0",
-                navOp: "0.9",
-                mainColor: "242436",
-                brderColor: "242436",
-                inputColor: "242436",
-                inputbColor: "262638",
-                headerBGColor: "242436",
-                headerColor: "da637e",
-                boardColor: "7787a3",
-                bgColor: "20202f",
-                textColor: "a7a7ad",
-                blinkColor: "4b5e57",
-                headerLColor: "4c626d",
-                headerLHColor: "da637e",
-                linkColor: "7787a3",
-                linkHColor: "da637e",
-                nameColor: "da637e",
-                tripColor: "63918b",
-                titleColor: "da637e",
-                quoteColor: "b1b792",
-                unreadColor: "64657b",
-                highlightColor: "ffffff",
-                customCSS: ".reply { box-shadow: -2px 2px 2px rgba(0,0,0,.10); }"
             }, {
                 name: "Prisma Magica",
                 authorName: "Akari",
