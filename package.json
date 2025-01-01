@@ -13,7 +13,17 @@
     "mainBranch": "stable",
     "matches": [
       "*://boards.4chan.org/*",
-      "*://boards.4channel.org/*"
+      "*://sys.4chan.org/*"
+    ],
+    "exclude_matches": [
+      "*://www.4chan.org/",
+      "*://www.4chan.org/*",
+      "*://www.4chan.org/advertise",
+      "*://www.4chan.org/advertise?*",
+      "*://www.4chan.org/pass",
+      "*://www.4chan.org/pass?*",
+      "*://www.4chan.org/donate",
+      "*://www.4chan.org/donate?*"
     ],
     "files": {
       "metajs": "OneeChan.meta.js",
@@ -45,12 +55,11 @@
   },
   "author": "seaweedchan",
   "contributors": [
-    "Nebukazar",
-    "dnsev",
+    "3nly<3nly.github.com>",
     "SystemPatch"
   ],
   "maintainer": "SystemPatch",
-  "namespace": "SystemPatch",
+  "namespace": "oneechan.moe",
   "license": "GPL-3.0",
   "readmeFilename": "README.md",
   "engines": {
