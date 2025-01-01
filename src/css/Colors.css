@@ -67,7 +67,8 @@ body.is_catalog .button:hover,
 :root.catalog-mode .button:hover,
 .lit,
 #header-bar #notifications a:hover,
-.tegaki-tb-btn:hover {
+.tegaki-tb-btn:hover,
+#import-link>.options-button:hover {
   color: " + $SS.theme.linkHColor.hex + " !important;
 }
 /* Header */
