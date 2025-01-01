@@ -21,6 +21,11 @@
   bottom: 4px !important;
   background-image: url(\"data:image/svg+xml," + $SS.theme.icons.star + "\") !important;
 }
+/* Fix for XT not setting position in Firefox, remove if no longer needed */
+:root.ua-gecko.fourchan-xt .watch-thread-link {
+  display: inline-block;
+  position: relative;
+}
 /* Backlinks */
 :root.backlink-icon .backlink {
   background-image: url(\"data:image/svg+xml," + $SS.theme.icons.backlink + "\") !important;
