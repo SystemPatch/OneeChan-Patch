@@ -91,7 +91,7 @@
                     value: 3
                 }]
             ],
-            "Tether QR to Sidebar": [true, "Sets QR to the vertical bounds of the sidebar. Disable for floating QR."],
+            "Tether QR to Sidebar": [true, "Sets QR to the vertical bounds of the sidebar. Disable for floating QR. Vertical Tabbed QR will ignore this setting."],
             "Transparent QR": [false, "Reduces opacity of the QR box."],
             "Remove Background": [false, "Removes the QR background."],
             "Remove Controls": [false, "Removes the QR controls and checkbox."],
