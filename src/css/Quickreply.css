@@ -37,8 +37,8 @@
 #qr > form > select {
   margin: 1px 0 !important;
 }
-#qr select[data-name="thread"] {
-  margin: 1px 0 1px 0;
+#qr select[data-name=thread] {
+  margin: 1px 0;
   max-width: 133px;
   min-width: 80px;
 }
