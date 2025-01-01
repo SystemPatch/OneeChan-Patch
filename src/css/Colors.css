@@ -45,7 +45,8 @@ select,
   color: " + $SS.theme.tripColor.hex + " !important;
 }
 /* Links */
-a,
+a:not(s>a),
+s:hover>a:not(:hover),
 .typ,
 .atn,
 body.is_catalog .button,
