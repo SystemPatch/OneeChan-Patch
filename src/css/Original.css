@@ -25,7 +25,7 @@
   clear: left;
 }
 .mu-s {
-  font-weight: bold;
+  font-weight: 700;
 }
 .mu-i {
   font-style: italic;
@@ -52,19 +52,16 @@ div.op.post div.file .fileThumb {
   margin-left: 13px !important;
   margin-bottom: 2px !important;
 }
-.postContainer {
-  display: block;
-}
 /* Padding according to header position */
-.fixed.bottom-header.is_thread body {
+.fixed.bottom-header body.is_thread {
   padding-bottom: 0em;
   padding-top: .5em;
 }
-.fixed.bottom-header.is_index body {
+.fixed.bottom-header body.is_index {
   padding-bottom: 4.5em;
   padding-top: .5em;
 }
-.fixed.bottom-header.is_catalog body,
+.fixed.bottom-header body.is_catalog,
 .fixed.bottom-header.catalog-mode body {
   padding-bottom: 3em;
   padding-top: .5em;
@@ -72,21 +69,21 @@ div.op.post div.file .fileThumb {
 .fixed.bottom-header body {
   padding-top: .5em;
 }
-:root.is_index.bottom-header:not(.autohide) body {
+:root.bottom-header:not(.autohide) body.is_index {
   padding-bottom: 5em !important;
 }
-.fixed.top-header.is_index body {
+.fixed.top-header body.is_index {
   padding-bottom: 2.5em;
-  padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 3) + "em !important;
+  padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 2.4) + "em !important;
 }
-.fixed.top-header.is_thread body {
-  padding-bottom: 0em;
-  padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 3) + "em !important;
+.fixed.top-header body.is_thread {
+  padding-bottom: 0;
+  padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 2.4) + "em !important;
 }
-.fixed.top-header.is_catalog body,
+.fixed.top-header body.is_catalog,
 .fixed.top-header.catalog-mode body {
   padding-bottom: .5em;
-  padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 3) + "em !important;
+  padding-top: " + (($SS.conf["Font Size"] <= 11) ? 3.2 : 2.4) + "em !important;
 }
 .fixed.top-header.autohide body {
   padding-top: 2em !important;
@@ -131,16 +128,16 @@ s {
 }
 span.spoiler,
 s,
-s:not(:hover) > a,
-s:not(:hover) > .linkify {
-  color: rgb(0, 0, 0) !important;
-  background: none repeat scroll 0 0 rgb(0, 0, 0) !important;
+s:not(:hover)>a,
+s:not(:hover)>.linkify {
+  color: #000;
+  background: none repeat scroll 0 0 #000;
 }
 span.spoiler:hover,
 s:hover,
 span.spoiler:focus,
 s:focus {
-  color: rgb(255, 255, 255) !important;
+  color: #fff;
 }
 #globalMessage,
 .boardBanner {
@@ -181,14 +178,12 @@ span.hide-announcement {
 .bottomCtrl.desktop {
   float: right;
 }
-.fixed.bottom-header.is_index .bottomCtrl.desktop,
-.fixed.bottom-header.is_thread .bottomCtrl.desktop {
-  float: right;
+.fixed.bottom-header body.is_index .bottomCtrl.desktop,
+.fixed.bottom-header body.is_thread .bottomCtrl.desktop {
   margin-bottom: 35px;
 }
-.fixed.top-header.is_thread .bottomCtrl.desktop,
-.fixed.top-header.is_index .bottomCtrl.desktop {
-  float: right;
+.fixed.top-header body.is_thread .bottomCtrl.desktop,
+.fixed.top-header body.is_index .bottomCtrl.desktop {
   margin-bottom: 8px;
 }
 /* Other */
@@ -206,7 +201,6 @@ span.hide-announcement {
 }
 /* Blotter */
 #blotter {
-  margin-bottom: 10px;
+  margin: auto;
   font-size: 11px;
-  width: auto;
 }
