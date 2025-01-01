@@ -3,10 +3,8 @@
   margin-left: 5px;
   margin-right: 5px;
 }
-div.thread {
+#threads .thread {
   margin: 2px 1px 0 0;
-  clear: both;
-  padding-bottom: 10px;
 }
 /* Native Catalog */
 #ctrl {

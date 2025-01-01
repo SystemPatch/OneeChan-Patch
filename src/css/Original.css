@@ -101,6 +101,11 @@ div.post {
 :root:not(.reply-fit-width) #delform .stub ~ div.reply:not([hidden]) {
   display: none !important;
 }
+div.thread {
+  margin: 0;
+  clear: both;
+  padding-bottom: 10px;
+}
 table.flashListing {
   border-spacing: 1px;
   margin-left: auto;
