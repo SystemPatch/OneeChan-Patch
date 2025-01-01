@@ -459,3 +459,17 @@ select:focus,
   --xt-background: rgba\(" + $SS.theme.bgColor.rgb + "," + $SS.theme.replyOp + ");
   --xt-border: " + $SS.theme.brderColor.hex + ";
 }
+/* Alternative Spoiler Color */
+:root.alt-spoiler .span.spoiler,
+:root.alt-spoiler s,
+:root.alt-spoiler s:not(:hover)>a,
+:root.alt-spoiler s:not(:hover)>.linkify {
+  color: #fff;
+  background: none repeat scroll 0 0 #fff;
+}
+:root.alt-spoiler span.spoiler:hover,
+:root.alt-spoiler s:hover,
+:root.alt-spoiler span.spoiler:focus,
+:root.alt-spoiler s:focus {
+  color: #000;
+}

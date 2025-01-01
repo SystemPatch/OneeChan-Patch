@@ -45,6 +45,7 @@
             ],
             "Style Thread Stats": [false, "Makes thread stats stand out more. Disable 'Updater and Stats in Header' if using ccd0 4chan X."],
             "Rounded Corners": [true, "Styles replies, menus and Quick Reply to have subtly rounded corners."],
+            "Invert Spoiler": [false, "Inverts colors for text spoilers."],
             "Underline All Links": [false, "Underlines all links in the page."],
             "Show Banner": [true, "Toggle visibility of the 4chan banner.", null, true],
             "Reduce Banner Opacity": [false, "Reduce opacity of the banner for easier viewing.", "Show Banner", true, true],
@@ -3522,6 +3523,7 @@
                 $("html").optionClass("Sidebar Position", 2, "left-sidebar");
                 $("html").optionClass("Minimal Sidebar", true, "mini-sidebar");
                 $("html").optionClass("Recolor Even Replies", true, "recolor-even");
+                $("html").optionClass("Invert Spoiler", true, "alt-spoiler");
                 $("html").optionClass("Backlink Icons", true, "backlink-icon");
                 $("html").optionClass("Backlinks on Bottom", true, "backlink-bottom");
                 $("html").optionClass("Backlink Shadow", true, "backlink-shadow");
