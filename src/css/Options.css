@@ -61,7 +61,7 @@
   border-top: none !important;
 }
 .option-title {
-  line-height:20px!important;
+  line-height:22px;
 }
 #main-section .option:first-child {
   border-top:0!important;
@@ -260,7 +260,6 @@ select[name='Font Family']>option {
 #add-mascot .option-title,
 #add-theme .option-title {
   float:left;
-  line-height:22px;
   padding-left:5px;
 }
 #add-mascot>label,
