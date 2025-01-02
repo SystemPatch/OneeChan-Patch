@@ -328,6 +328,18 @@
                     name: "Source Code",
                     value: "Source Code Pro"
                 }, {
+                    name: "Aptos",
+                    value: "Aptos"
+                }, {
+                    name: "Aptos Display",
+                    value: "Aptos Display"
+                }, {
+                    name: "Aptos Serif",
+                    value: "Aptos Serif"
+                }, {
+                    name: "Aptos Mono",
+                    value: "Aptos Mono"
+                }, {
                     name: "Libre Baskerville",
                     value: "Libre Baskerville"
                 }, {
