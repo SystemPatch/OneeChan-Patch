@@ -274,6 +274,12 @@
                     name: "Garamond",
                     value:"Garamond"
                 }, {
+                    name: "EB Garamond",
+                    value:"EB Garamond"
+                }, {
+                    name: "Cascadia Mono",
+                    value:"Cascadia Mono"
+                }, {
                     name: "DejaVu Sans",
                     value: "DejaVu Sans"
                 }, {
