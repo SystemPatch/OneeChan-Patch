@@ -271,8 +271,8 @@
                     name: "Helvetica",
                     value: "Helvetica"
                 }, {
-                    name: "EB Garamond",
-                    value:"EB Garamond"
+                    name: "Garamond",
+                    value:"Garamond"
                 }, {
                     name: "DejaVu Sans",
                     value: "DejaVu Sans"
