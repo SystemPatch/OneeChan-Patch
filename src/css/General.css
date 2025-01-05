@@ -479,3 +479,7 @@ td.teaser-col {
   overflow-wrap: break-word;
   word-break: break-word;
 }
+/* Report form */
+#reportTypes {
+  margin-top: 5px;
+}

@@ -19,6 +19,7 @@ textarea,
 .pln,
 select,
 .captcha-root,
+#t-root,
 .tegaki-label,
 .dd-menu ul,
 .boxbar,
@@ -208,7 +209,8 @@ textarea,
 .riceCheck,
 #qr-filename-container,
 select,
-.captcha-root {
+.captcha-root,
+#t-root {
   background: " + $SS.theme.inputColor.hex + " !important;
   transition: background .2s, color .2s, border-color .2s !important;
 }
@@ -221,7 +223,8 @@ input:not(.jsColor):hover,
 #qr-filename-container:hover,
 textarea:hover,
 select:hover,
-.captcha-root:hover {
+.captcha-root:hover,
+#t-root:hover {
   background: rgb\(" + $SS.theme.inputColor.hover + ") !important;
 }
 hr {
@@ -310,6 +313,7 @@ select,
 .postblock,
 #post-preview,
 .captcha-root,
+#t-root,
 .dd-menu ul,
 :root.werkTyme .catalog-thread:not(:hover),
 :root.werkTyme:not(.catalog-hover-expand) .catalog-thread,
@@ -333,7 +337,8 @@ textarea:focus,
 #qr-filename-container:focus,
 #qr-filename-container.focus,
 select:focus,
-.captcha-root:focus {
+.captcha-root:focus,
+#t-root:focus {
   border: 1px solid var(--onee-link) !important;
 }
 #search-box:hover,

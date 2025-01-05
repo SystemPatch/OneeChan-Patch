@@ -1007,7 +1007,8 @@
 
             }
 
-            $SS.insertMascot();
+            if (!$SS.location.report)
+                $SS.insertMascot();
             $SS.riceInputs.init();
 
         },
@@ -3540,9 +3541,12 @@
                 $("html").optionClass("Post Decoration Style", 1, "hl-border");
                 $("html").optionClass("Post Decoration Style", 2, "hl-outline");
                 $("html").optionClass("Post Decoration Style", 3, "hl-border-down");
-                $("html").optionClass("Sidebar Position", 1, "right-sidebar");
-                $("html").optionClass("Sidebar Position", 2, "left-sidebar");
-                $("html").optionClass("Minimal Sidebar", true, "mini-sidebar");
+                if (!$SS.location.report) {
+                    $("html").optionClass("Sidebar Position", 1, "right-sidebar");
+                    $("html").optionClass("Sidebar Position", 2, "left-sidebar");
+                    $("html").optionClass("Minimal Sidebar", true, "mini-sidebar");
+                    $("html").optionClass("SS-like Sidebar", true, "ss-sidebar");
+                }
                 $("html").optionClass("Recolor Even Replies", true, "recolor-even");
                 $("html").optionClass("Invert Spoiler", true, "alt-spoiler");
                 $("html").optionClass("Backlink Icons", true, "backlink-icon");
@@ -3557,7 +3561,6 @@
                 $("html").optionClass("Remove Background", true, "qr-background");
                 $("html").optionClass("Remove Controls", true, "qr-controls");
                 $("html").optionClass("Force QR to Sidebar Size", true, "force-qr");
-                $("html").optionClass("SS-like Sidebar", true, "ss-sidebar");
                 $("html").optionClass("Indent OP", false, "force-indent");
                 $("html").optionClass("Allow Wrapping Around OP", false, "force-wrapping");
                 $("html").optionClass("OP Background", true, "op-background");
