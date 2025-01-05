@@ -3544,8 +3544,8 @@
                 if (!$SS.location.report) {
                     $("html").optionClass("Sidebar Position", 1, "right-sidebar");
                     $("html").optionClass("Sidebar Position", 2, "left-sidebar");
-                    $("html").optionClass("Minimal Sidebar", true, "mini-sidebar");
                     $("html").optionClass("SS-like Sidebar", true, "ss-sidebar");
+                    $("html").optionClass("Minimal Sidebar", true, "mini-sidebar");
                 }
                 $("html").optionClass("Recolor Even Replies", true, "recolor-even");
                 $("html").optionClass("Invert Spoiler", true, "alt-spoiler");
