@@ -191,6 +191,9 @@ span.hide-announcement {
 .fixed.top-header body.is_index .bottomCtrl.desktop {
   margin-bottom: 8px;
 }
+.identityIcon {
+  margin-bottom: -3px;
+}
 /* Other */
 #navlinks {
   top: 135px;
