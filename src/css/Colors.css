@@ -399,6 +399,9 @@ select:focus,
 :root.style-stats.fourchan-xt:not(.float) #updater {
   padding: 0px 6px !important;
 }
+:root.style-stats.shortcut-icons.fourchan-xt:not(.float) #thread-stats {
+  display: inline-block;
+}
 :root.style-stats.shortcut-icons.fourchan-xt:not(.float) #shortcuts .shortcut:not(.shortcut:last-of-type) {
   height: 1.25em;
 }
