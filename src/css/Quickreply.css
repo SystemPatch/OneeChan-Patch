@@ -12,14 +12,19 @@
 }
 #qr .riceCheck,
 #qr input[type=checkbox] {
-  margin: 0 4px 1px!important;
+  margin: 0 4px 1px;
   vertical-align: baseline;
   position: relative;
   top: 3px;
 }
+:root.fourchan-xt #qr .move .riceCheck,
+:root.fourchan-xt #qr .move input[type=checkbox] {
+  margin: 0 4px 2px;
+  top: 2px;
+}
 #qr-filename-container .riceCheck,
 #qr-filename-container input[type=checkbox] {
-  margin: 0 0 1px!important;
+  margin: 0 0 1px;
 }
 #qr-file-button,
 #qr input[type='submit'] {
@@ -131,6 +136,7 @@
   transform: translateX(0%) !important;
 }
 :root.vertical-qr #qr .move {
+  display: block;
   position: absolute;
   transform: rotate(-90deg);
   right: 86%;
@@ -139,6 +145,10 @@
   cursor: default;
   padding: 2px 0 2px 2px;
   text-align: center;
+}
+/* Remove flex from qr label in XT */
+:root.vertical-qr #qr .move label {
+  display: inline;
 }
 :root.vertical-qr.left-sidebar #qr .move {
   transform: rotate(90deg);
