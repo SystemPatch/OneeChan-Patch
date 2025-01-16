@@ -176,13 +176,9 @@ a.current,
 :root.shortcut-icons #shortcuts .shortcut .fa::before {
   font-size: " + ($SS.conf["Font Size"] + 2) + "px !important;
 }
-:root.shortcut-icons.fourchan-xt #shortcuts .shortcut,
 #shortcuts svg.icon {
-  height: " + ($SS.conf["Font Size"] + 1) + "px;
+  font-size: " + ($SS.conf["Font Size"] + 1) + "px;
 }
 .menu-button svg.icon {
-  height: " + $SS.conf["Font Size"] + "px;
-}
-.file svg.icon {
-  height: " + ($SS.conf["Font Size"] - 1) + "px !important;
+  font-size: " + $SS.conf["Font Size"] + "px;
 }
