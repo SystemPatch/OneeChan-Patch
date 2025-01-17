@@ -117,7 +117,7 @@ s:hover .quote,
   text-shadow: none !important;
 }
 /* Backlinks */
-.backlink {
+.backlink, .backlink.deadlink {
   color: " + $SS.theme.blinkColor.hex + " !important;
 }
 :root.backlink-shadow .backlink {
