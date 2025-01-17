@@ -1106,9 +1106,7 @@
                 $(document.head).append($("<style type='text/css' id=ch4SS>").text(css));
         },
         insertMascot: function() {
-            if ($SS.conf["Hide Mascots in Catalog"] && $SS.location.catalog) {
-                return;
-            } else if ($SS.conf["Hide Mascots in Catalog"] && $(".catalog-mode").exists()) {
+            if ($SS.conf["Hide Mascots in Catalog"] && $SS.location.catalog || $SS.conf["Hide Mascots in Catalog"] && $(".catalog-mode").exists() || $SS.location.dead) {
                 return;
             }
 
