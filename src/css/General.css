@@ -252,8 +252,11 @@ hr {
   width: 100%;
 }
 #unread-line {
-  margin-top: " + (($SS.conf["Margin Between Replies"] < -2) ? -6 : -3) + "px !important;
+  margin-top: " + (($SS.conf["Margin Between Replies"] < -2) ? -7 : -3) + "px !important;
   margin-bottom: " + (($SS.conf["Margin Between Replies"] < -2) ? -4 : -3) + "px !important;
+}
+:root.borders-none #unread-line {
+  margin-top: " + (($SS.conf["Margin Between Replies"] < -2) ? -6 : -3) + "px !important;
 }
 /* Scroll Marker */
 :root:not(.autohide) #scroll-marker {
