@@ -191,13 +191,21 @@ span.hide-announcement {
 .fixed.top-header body.is_index .bottomCtrl.desktop {
   margin-bottom: 8px;
 }
-.identityIcon {
-  margin-bottom: -3px;
+/* Index Navigation */
+input[value='Next'],
+input[value='Previous'] {
+  padding: 4px 13px;
 }
 /* Other */
 #navlinks {
   top: 135px;
   right: 10px;
+}
+#ctrl-top {
+  margin: 5px 0 5px 0;
+}
+.identityIcon {
+  margin-bottom: -3px;
 }
 :root.isLight img[src*='//boards.4chan.org/js/jsMath/fonts/'] {
   filter: invert(100%);

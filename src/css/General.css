@@ -288,15 +288,26 @@ hr {
   transition: opacity .3s ease-out 0s;
 }
 :root.banner-opacity #bannerCnt:hover {
-  opacity: 1.0 !important;
+  opacity: 1;
 }
 /* Pages */
-.pages strong>a {
-  border-radius: 3px;
+.pages.cataloglink {
+  margin-left: 12px;
 }
-.pages strong>a:hover {
-  opacity: .7 !important;
+.pages strong>a {
   transition: opacity .3s ease-in 0s;
+}
+.pages.cataloglink a,
+input[value='Next'],
+input[value='Previous'] {
+  font-weight: 700;
+  transition: opacity .3s ease-in 0s;
+}
+.pages strong>a:hover,
+.pages.cataloglink a:hover,
+input[value='Next']:hover,
+input[value='Previous']:hover {
+  opacity: .7;
 }
 .pagelist {
   margin-left: 18px;
@@ -308,6 +319,9 @@ hr {
 .pages a {
   padding: 5px 10px;
   margin-left: -1px;
+}
+.pages strong>a {
+  padding-top: 4px;
 }
 .next,
 .prev {
@@ -409,7 +423,7 @@ body.board_f #delform .fileText {
 }
 :root.mascot-opacity #mascot img:hover,
 :root.mascot-opacity #mascotprev img:hover {
-  opacity: 1.0 !important;
+  opacity: 1;
 }
 :root.mascot-overlap #mascot img {
   z-index: -1;
@@ -422,7 +436,7 @@ body.board_f #delform .fileText {
 }
 :root.ad-opacity .center img:hover,
 :root.ad-opacity .danbo-slot:hover {
-  opacity: 1.0 !important;
+  opacity: 1;
 }
 /* Navlinks */
 body.is_index div.navLinks {
@@ -453,7 +467,7 @@ body.is_thread div.navLinks:not(.navLinksBot) {
   transition: opacity .3s ease-out 0s;
 }
 :root.thumb-opacity .fileThumb img:not(.full-image):hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 /* Post Info on Hover */
 :root.info-on-hover .postContainer .fileText {

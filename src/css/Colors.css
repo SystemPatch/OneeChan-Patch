@@ -12,6 +12,9 @@ body,
 div.boardBanner,
 #menu,
 input:not(.jsColor),
+a.summary,
+.pages.cataloglink a,
+.pages strong>a,
 textarea,
 #qr-filename-container,
 #post-preview,
@@ -55,10 +58,6 @@ body.is_catalog .button,
 .options-button,
 .tegaki-tb-btn {
   color: var(--onee-link) !important;
-}
-a.summary,
-.pages strong>a {
-  color: " + $SS.theme.textColor.hex + " !important;
 }
 #header-bar #notifications a {
   color: #ffffff !important;
@@ -188,13 +187,17 @@ body.is_catalog .panel,
 .options-button,
 .qr-link,
 .pages.cataloglink,
-.pages strong>a {
+.pages strong>a,
+input[value='Next'],
+input[value='Previous'] {
   background: linear-gradient\(rgb\(" + $SS.theme.mainColor.shiftRGB(15) + "), var(--onee-main)) !important;
 }
 .options-button:hover,
 .import-input:hover + .options-button,
 .pages strong>a:hover,
-.dd-menu li:hover {
+.dd-menu li:hover,
+input[value='Next']:hover,
+input[value='Previous']:hover {
   background: rgb\(" + $SS.theme.mainColor.shiftRGB(15) + ");
 }
 .focused.entry {
@@ -204,7 +207,7 @@ body.is_catalog .panel,
 :root.vertical-qr #qr .move {
   background: var(--onee-main);
 }
-input:not(.jsColor),
+input[type=text]:not(.jsColor),
 textarea,
 .riceCheck,
 #qr-filename-container,
@@ -218,7 +221,7 @@ input[type=checkbox],
 .riceCheck {
   background: rgb\(" + $SS.theme.inputColor.shiftRGB(25) + ") !important;
 }
-input:not(.jsColor):hover,
+input[type=text]:not(.jsColor):hover,
 .riceCheck:hover,
 #qr-filename-container:hover,
 textarea:hover,
@@ -270,6 +273,10 @@ hr {
 :root.rounded-corners .fileThumb img:not(.full-image),
 :root.rounded-corners .catalog-thumb,
 :root.rounded-corners .dd-menu ul,
+:root.rounded-corners .pages.cataloglink,
+:root.rounded-corners .pages strong>a,
+:root.rounded-corners input[value='Next'],
+:root.rounded-corners input[value='Previous'],
 :root.rounded-corners.werkTyme .catalog-thread:not(:hover),
 :root.rounded-corners.werkTyme:not(.catalog-hover-expand) .catalog-thread,
 :root.rounded-corners.catalog-hover-expand .catalog-container:hover > .post,
@@ -324,7 +331,9 @@ select,
 .options-button,
 .qr-link,
 .pages.cataloglink,
-.pages strong>a {
+.pages strong>a,
+input[value='Next'],
+input[value='Previous'] {
   border-style: solid;
   border-width: 1px;
   border-color: rgb\(" + $SS.theme.mainColor.shiftRGB(-15) + ") rgb\(" + $SS.theme.mainColor.shiftRGB(-15) + ") rgb\(" + $SS.theme.mainColor.shiftRGB(-30) + ") !important;
@@ -332,7 +341,7 @@ select,
 a.quotelink.forwardlink, a.backlink.forwardlink {
   border-bottom: 1px dashed;
 }
-input:focus,
+input[type=text]:focus,
 textarea:focus,
 #qr-filename-container:focus,
 #qr-filename-container.focus,

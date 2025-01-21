@@ -62,7 +62,6 @@
             "Show Navigation Links": [true, "Toggle visibility of the navigation links at the top and bottom of the threads.", null, true],
             "Show Top Links": [true, "Toggle visibility of the top navigation links.", "Show Navigation Links", true, true],
             "Show Bottom Links": [true, "Toggle visibility of the bottom navigation links.", "Show Navigation Links", true, true],
-            "Show Previous/Next buttons": [false, "Shows previous / next buttons in paged navigation mode."],
             ":: Sidebar": ["header", ""],
             "Sidebar Position": [
                 1, "Change the position of the sidebar or disable it altogether.", [{
@@ -3576,7 +3575,6 @@
                 $("html").optionClass("Show Navigation Links", false, "hide-navlinks");
                 $("html").optionClass("Show Top Links", false, "hide-navlinktop");
                 $("html").optionClass("Show Bottom Links", false, "hide-navlinkbot");
-                $("html").optionClass("Show Previous/Next buttons", false, "hide-prevnext");
                 $("html").optionClass("Mascots Overlap Posts", false, "mascot-overlap");
                 $("html").optionClass("Reduce Mascot Opacity", true, "mascot-opacity");
                 $("html").optionClass("Grayscale Mascots", true, "mascot-grayscale");
