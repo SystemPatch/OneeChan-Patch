@@ -321,7 +321,7 @@ input[value='Previous']:hover {
   margin-left: -1px;
 }
 .pages strong>a {
-  padding-top: 4px;
+  padding-top: 3px;
 }
 .next,
 .prev {
