@@ -156,7 +156,7 @@ div.sideArrows {
   opacity: .3;
 }
 hr,
-#boardNavDesktopFoot {
+:root:not(.hide-bottom-board-list) #boardNavDesktopFoot {
   clear: both;
 }
 table {
