@@ -96,7 +96,7 @@ a.qr-link {
   font-size: 0 !important;
 }
 :root.info-on-hover .postContainer:hover .postNum {
-  font-size:" + $SS.conf["Font Size"] + "px !important;
+  font-size: " + $SS.conf["Font Size"] + "px !important;
 }
 #qr-file-button,
 #qr input[type=submit],
@@ -167,8 +167,8 @@ a.current,
   border-left: .34em solid transparent !important;
 }
 :root.fixed.bottom-header #header-bar .menu-button i {
-    border-top: none !important;
-    border-bottom: .5em solid !important;
+  border-top: none !important;
+  border-bottom: .5em solid !important;
 }
 .fa::before  {
   font-size: " + $SS.conf["Font Size"] + "px !important;

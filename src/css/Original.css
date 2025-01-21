@@ -204,7 +204,7 @@ span.hide-announcement {
   -webkit-filter: invert(100%);
 }
 /* Accommodate Oneechan icon in header */
-.centered-links:root #shortcuts {
+:root.centered-links #shortcuts {
   width: 350px !important;
 }
 /* Blotter */

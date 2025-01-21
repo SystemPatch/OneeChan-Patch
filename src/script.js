@@ -81,7 +81,7 @@
             "Minimal Sidebar": [false, "Shrinks the sidebar and moves the banner."],
             ":: Quick Reply": ["header", ""],
             "Autohide Style": [
-                2, "Changes how the quick reply is hidden. Please enable Autohide QR in 4chan X. Vertical Tabbed only works with the sidebar enabled", [{
+                2, "Changes how the quick reply is hidden. Please enable Autohide QR in 4chan X.", [{
                     name: "Normal",
                     value: 1
                 }, {
@@ -3544,7 +3544,7 @@
                     $("html").optionClass("Sidebar Position", 2, "left-sidebar");
                     $("html").optionClass("SS-like Sidebar", true, "ss-sidebar");
                     $("html").optionClass("Minimal Sidebar", true, "mini-sidebar");
-                }
+                };
                 $("html").optionClass("Recolor Even Replies", true, "recolor-even");
                 $("html").optionClass("Invert Spoiler", true, "alt-spoiler");
                 $("html").optionClass("Backlink Icons", true, "backlink-icon");

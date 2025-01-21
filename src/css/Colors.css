@@ -84,10 +84,10 @@ a.current {
   color: " + $SS.theme.headerLHColor.hex + " !important;
 }
 #custom-board-list .current {
-  border-bottom: 1px solid rgba\(" + $SS.theme.linkColor.rgb + ",1) !important;;
+  border-bottom: 1px solid rgba\(" + $SS.theme.linkColor.rgb + ",1) !important;
 }
 #custom-board-list .current:hover {
-  border-bottom: 1px solid rgba\(" + $SS.theme.linkHColor.rgb + ",1) !important;;
+  border-bottom: 1px solid rgba\(" + $SS.theme.linkHColor.rgb + ",1) !important;
 }
 /* Greentext */
 .postMessage>.quote,
@@ -177,7 +177,7 @@ body.is_catalog .panel,
   background: rgba\(" + $SS.theme.headerBGColor.rgb + "," + $SS.theme.navOp + ") !important;
 }
 :root.header-gradient #header-bar {
-  background: linear-gradient\(rgb\(" + $SS.theme.headerBGColor.shiftRGB(15) + "),rgba\(" + $SS.theme.headerBGColor.rgb + "," + $SS.theme.navOp + ")) !important;
+  background: linear-gradient\(rgb\(" + $SS.theme.headerBGColor.shiftRGB(15) + "), rgba\(" + $SS.theme.headerBGColor.rgb + "," + $SS.theme.navOp + ")) !important;
 }
 :root.header-shadow #header-bar {
   box-shadow: none !important;
@@ -189,7 +189,7 @@ body.is_catalog .panel,
 .qr-link,
 .pages.cataloglink,
 .pages strong>a {
-  background: linear-gradient\(rgb\(" + $SS.theme.mainColor.shiftRGB(15) + "),var(--onee-main)) !important;
+  background: linear-gradient\(rgb\(" + $SS.theme.mainColor.shiftRGB(15) + "), var(--onee-main)) !important;
 }
 .options-button:hover,
 .import-input:hover + .options-button,

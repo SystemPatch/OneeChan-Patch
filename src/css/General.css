@@ -200,7 +200,7 @@ input[type=checkbox]:checked+.riceCheck::before {
   top: 0;
   right: 0;
   left: 0;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
   border-bottom: 1px solid;
 }
 :root.autohide body {
@@ -225,7 +225,7 @@ input[type=checkbox]:checked+.riceCheck::before {
   margin-left: 2px;
 }
 :root.fixed:not(.autohide):not(.bottom) #globalMessage {
-  margin-bottom: 20px !important;
+  margin: 10px 0 20px !important;
 }
 .globalMessage, h2, h3 {
   margin: auto;
@@ -264,8 +264,8 @@ hr {
 }
 /* Board Title */
 .boardTitle {
-  cursor:default;
-  letter-spacing:-2px;
+  cursor: default;
+  letter-spacing: -2px;
   padding-top: .1em;
 }
 /* Banner */
@@ -378,7 +378,7 @@ body.board_f #delform .fileText {
   width: " + $SS.mascot.width + ";
   max-width: " + $SS.mascot.maxwidth + ";
   transform: " + $SS.mascot.flip + ";
-  clip-path: inset(" + $SS.mascot.tclip + "px " + $SS.mascot.lclip + "px " + $SS.mascot.bclip + "px " + $SS.mascot.rclip + "px);
+  clip-path: inset\(" + $SS.mascot.tclip + "px " + $SS.mascot.lclip + "px " + $SS.mascot.bclip + "px " + $SS.mascot.rclip + "px);
   pointer-events: none;
 }
 :root.left-sidebar #mascot img,
@@ -403,14 +403,13 @@ body.board_f #delform .fileText {
 }
 :root.mascot-opacity #mascot img,
 :root.mascot-opacity #mascotprev img {
-  opacity: 0.5;
+  opacity: .5;
   transition: opacity .3s ease-out 0s;
   pointer-events: auto !important;
 }
 :root.mascot-opacity #mascot img:hover,
 :root.mascot-opacity #mascotprev img:hover {
   opacity: 1.0 !important;
-  transition: opacity .3s ease-in 0s;
 }
 :root.mascot-overlap #mascot img {
   z-index: -1;
@@ -424,7 +423,6 @@ body.board_f #delform .fileText {
 :root.ad-opacity .center img:hover,
 :root.ad-opacity .danbo-slot:hover {
   opacity: 1.0 !important;
-  transition: opacity .3s ease-in 0s;
 }
 /* Navlinks */
 body.is_index div.navLinks {
