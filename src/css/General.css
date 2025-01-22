@@ -32,9 +32,9 @@ div.post {
   display: block;
   padding-bottom: 1px;
 }
-.thread>.replyContainer:not(.replyContainer:last-of-type),
+.thread>.replyContainer:not(.thread>.postContainer:last-of-type),
 .threadContainer>.replyContainer,
-:root.op-background .thread>.opContainer {
+:root.op-background .thread>.opContainer:not(.thread>.postContainer:last-of-type) {
   margin-bottom: " + $SS.conf["Margin Between Replies"] + "px !important;
 }
 .inline {
