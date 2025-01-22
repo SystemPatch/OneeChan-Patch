@@ -208,6 +208,7 @@ input[value='Previous']:hover {
   background: var(--onee-main);
 }
 input[type=text]:not(.jsColor),
+input.field,
 textarea,
 .riceCheck,
 #qr-filename-container,
@@ -215,13 +216,14 @@ select,
 .captcha-root,
 #t-root {
   background: " + $SS.theme.inputColor.hex + " !important;
-  transition: background .2s, color .2s, border-color .2s !important;
+  transition: background .2s, color .2s, border-color .2s, width .2s !important;
 }
 input[type=checkbox],
 .riceCheck {
   background: rgb\(" + $SS.theme.inputColor.shiftRGB(25) + ") !important;
 }
 input[type=text]:not(.jsColor):hover,
+input.field:hover,
 .riceCheck:hover,
 #qr-filename-container:hover,
 textarea:hover,
@@ -311,8 +313,6 @@ input,
 textarea,
 .riceCheck,
 #qr-filename-container,
-#search-box,
-#index-search,
 .captcha-img,
 :root.vertical-qr #qr .move,
 #qr select,
@@ -342,6 +342,7 @@ a.quotelink.forwardlink, a.backlink.forwardlink {
   border-bottom: 1px dashed;
 }
 input[type=text]:focus,
+input.field:focus,
 textarea:focus,
 #qr-filename-container:focus,
 #qr-filename-container.focus,
