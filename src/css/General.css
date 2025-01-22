@@ -49,6 +49,25 @@ div.post {
 .postMessage {
   margin: " + $SS.conf["Margin Post Message"] + " !important;
 }
+/* Index thread summary */
+:root.float-summary .summary,
+:root.float-summary.op-background.borders-none body.board_vg a.summary:last-of-type:not(.summary-bottom),
+:root.float-summary.op-background.borders-none body.board_vg span.summary:last-of-type:not(.summary-bottom) {
+  margin-top: -19px;
+  float: right;
+  padding-right: 5px;
+  position: relative;
+}
+:root.float-summary.op-background .summary:not(.summary-bottom) {
+  margin-top: " + (($SS.conf["Margin Between Replies"] <= 0) ? (($SS.conf["Margin Between Replies"] * -1) - 16) : -($SS.conf["Margin Between Replies"] + 16)) + "px;
+}
+:root.float-summary.op-background.borders-none .summary:not(.summary-bottom) {
+  margin-top: " + (($SS.conf["Margin Between Replies"] <= 0) ? (($SS.conf["Margin Between Replies"] * -1) - 19) : -($SS.conf["Margin Between Replies"] + 16)) + "px;
+}
+:root.float-summary.op-background body.board_vg a.summary:last-of-type:not(.summary-bottom),
+:root.float-summary.op-background body.board_vg span.summary:last-of-type:not(.summary-bottom) {
+  margin-top: -16px;
+}
 /* Fit Expanded Images option */
 :root.fit-eximg.fit-height .full-image {
   max-height: calc(100vh - 8rem) !important;
@@ -118,6 +137,12 @@ div.post {
   position:absolute;
   bottom:2px;
   right:6px;
+}
+:root.float-summary.backlink-bottom body.is_index .op>.postInfo>.container {
+    bottom: 9px;
+}
+:root.float-summary.backlink-bottom.borders-none body.is_index .op>.postInfo>.container {
+    bottom: 12px;
 }
 /* Menu button */
 .reply .menu-button i {

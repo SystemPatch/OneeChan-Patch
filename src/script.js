@@ -112,6 +112,7 @@
             "Indent OP": [false, "Indents the OP instead of touching the screen."],
             "Allow Wrapping Around OP": [false, "Allow for replies to wrap around OP instead of being forced onto their own line."],
             "OP Background": [false, "Give OP a background similar to a reply."],
+            "Thread Summary in OP": [false, "Moves the index thread summary to the bottom right of OP."],
             "Recolor Even Replies": [false, "Makes every other post a darker color. If Quote Threading is enabled darkens every root reply."],
             "Reduce Thumbnail Opacity": [false, "Reduces opacity of thumbnails."],
             "Backlink Icons": [false, "Use icons for backlinks instead of text."],
@@ -3561,6 +3562,7 @@
                 $("html").optionClass("Indent OP", false, "force-indent");
                 $("html").optionClass("Allow Wrapping Around OP", false, "force-wrapping");
                 $("html").optionClass("OP Background", true, "op-background");
+                $("html").optionClass("Thread Summary in OP", true, "float-summary");
                 $("html").optionClass("Expanding Form Inputs", true, "expand-inputs");
                 $("html").optionClass("Show Header Background Gradient", true, "header-gradient");
                 $("html").optionClass("Show Header Shadow", false, "header-shadow");
