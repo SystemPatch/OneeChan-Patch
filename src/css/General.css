@@ -53,20 +53,20 @@ div.post {
 :root.float-summary .summary,
 :root.float-summary.op-background.borders-none body.board_vg a.summary:last-of-type:not(.summary-bottom),
 :root.float-summary.op-background.borders-none body.board_vg span.summary:last-of-type:not(.summary-bottom) {
-  margin-top: -19px;
+  margin-top: -" + (($SS.conf["Font Size"] < 13) ? 21 : ($SS.conf["Font Size"] + 8)) + "px;
   float: right;
   padding-right: 5px;
   position: relative;
 }
 :root.float-summary.op-background .summary:not(.summary-bottom) {
-  margin-top: " + (($SS.conf["Margin Between Replies"] <= 0) ? (($SS.conf["Margin Between Replies"] * -1) - 16) : -($SS.conf["Margin Between Replies"] + 16)) + "px;
+  margin-top: " + (($SS.conf["Margin Between Replies"] <= 0) ? (($SS.conf["Margin Between Replies"] * -1) - (($SS.conf["Font Size"] < 13) ? 18 : ($SS.conf["Font Size"] + 5))) : -($SS.conf["Margin Between Replies"] + (($SS.conf["Font Size"] < 13) ? 18 : ($SS.conf["Font Size"] + 5)))) + "px;
 }
 :root.float-summary.op-background.borders-none .summary:not(.summary-bottom) {
-  margin-top: " + (($SS.conf["Margin Between Replies"] <= 0) ? (($SS.conf["Margin Between Replies"] * -1) - 19) : -($SS.conf["Margin Between Replies"] + 16)) + "px;
+  margin-top: " + (($SS.conf["Margin Between Replies"] <= 0) ? (($SS.conf["Margin Between Replies"] * -1) - (($SS.conf["Font Size"] < 13) ? 21 : ($SS.conf["Font Size"] + 8))) : -($SS.conf["Margin Between Replies"] + (($SS.conf["Font Size"] < 13) ? 18 : ($SS.conf["Font Size"] + 5)))) + "px;
 }
 :root.float-summary.op-background body.board_vg a.summary:last-of-type:not(.summary-bottom),
 :root.float-summary.op-background body.board_vg span.summary:last-of-type:not(.summary-bottom) {
-  margin-top: -16px;
+  margin-top: -" + (($SS.conf["Font Size"] < 13) ? 18 : ($SS.conf["Font Size"] + 5)) + "px;
 }
 /* Fit Expanded Images option */
 :root.fit-eximg.fit-height .full-image {
@@ -139,10 +139,10 @@ div.post {
   right:6px;
 }
 :root.float-summary.backlink-bottom body.is_index .op>.postInfo>.container {
-    bottom: 9px;
+    bottom: " + (($SS.conf["Font Size"] < 13) ? 11 : ($SS.conf["Font Size"] - 2)) + "px;
 }
 :root.float-summary.backlink-bottom.borders-none body.is_index .op>.postInfo>.container {
-    bottom: 12px;
+    bottom: " + (($SS.conf["Font Size"] < 13) ? 14 : ($SS.conf["Font Size"] + 1)) + "px;
 }
 /* Menu button */
 .reply .menu-button i {
