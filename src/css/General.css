@@ -50,6 +50,15 @@ div.post {
   margin: " + $SS.conf["Margin Post Message"] + " !important;
 }
 /* Index thread summary */
+:root.op-background:not(.float-summary) .summary:not(.summary-bottom, .preview-summary) {
+  display: block;
+  padding-top: " + (($SS.conf["Margin Between Replies"] < 0) ? (($SS.conf["Margin Between Replies"] * -1) + 2) : 0) + "px;
+  margin-top: " + (($SS.conf["Margin Between Replies"] >= 0) ? (($SS.conf["Margin Between Replies"] * -1) + 2) : 0) + "px;
+}
+:root.op-background.borders-none:not(.float-summary) .summary:not(.summary-bottom, .preview-summary) {
+  padding-top: " + (($SS.conf["Margin Between Replies"] < 0) ? (($SS.conf["Margin Between Replies"] * -1)) : 0) + "px;
+  margin-top: " + (($SS.conf["Margin Between Replies"] >= 0) ? (($SS.conf["Margin Between Replies"] * -1) + 4) : 0) + "px;
+}
 :root.float-summary .summary,
 :root.float-summary.op-background.borders-none body.board_vg a.summary:last-of-type:not(.summary-bottom),
 :root.float-summary.op-background.borders-none body.board_vg span.summary:last-of-type:not(.summary-bottom) {
