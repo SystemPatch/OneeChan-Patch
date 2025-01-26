@@ -20,9 +20,6 @@ body {
 .expanded-image {
   position: relative;
 }
-div.post {
-  margin: 4px 0;
-}
 :root.force-indent .op {
   margin-left: -12px;
 }
@@ -31,6 +28,9 @@ div.post {
   content: '';
   display: block;
   padding-bottom: 1px;
+}
+:root.op-background .op {
+  padding: 4px 0;
 }
 .thread>.replyContainer:not(.thread>.postContainer:last-of-type),
 .threadContainer>.replyContainer,
@@ -52,30 +52,18 @@ div.post {
 /* Index thread summary */
 :root.op-background:not(.float-summary) .summary:not(.summary-bottom, .preview-summary) {
   display: block;
-  padding-top: " + (($SS.conf["Margin Between Replies"] < 0) ? (($SS.conf["Margin Between Replies"] * -1) + 2) : 0) + "px;
-  margin-top: " + (($SS.conf["Margin Between Replies"] >= 0) ? (($SS.conf["Margin Between Replies"] * -1) + 2) : 0) + "px;
-}
-:root.op-background.borders-none:not(.float-summary) .summary:not(.summary-bottom, .preview-summary) {
   padding-top: " + (($SS.conf["Margin Between Replies"] < 0) ? (($SS.conf["Margin Between Replies"] * -1)) : 0) + "px;
   margin-top: " + (($SS.conf["Margin Between Replies"] >= 0) ? (($SS.conf["Margin Between Replies"] * -1) + 4) : 0) + "px;
 }
 :root.float-summary .summary,
-:root.float-summary.op-background.borders-none body.board_vg a.summary:last-of-type:not(.summary-bottom),
-:root.float-summary.op-background.borders-none body.board_vg span.summary:last-of-type:not(.summary-bottom) {
+:root.float-summary.op-background body.board_vg .summary:last-of-type:not(.summary-bottom) {
   margin-top: -" + (($SS.conf["Font Size"] < 13) ? 21 : ($SS.conf["Font Size"] + 8)) + "px;
   float: right;
   padding-right: 5px;
   position: relative;
 }
 :root.float-summary.op-background .summary:not(.summary-bottom) {
-  margin-top: " + (($SS.conf["Margin Between Replies"] <= 0) ? (($SS.conf["Margin Between Replies"] * -1) - (($SS.conf["Font Size"] < 13) ? 18 : ($SS.conf["Font Size"] + 5))) : -($SS.conf["Margin Between Replies"] + (($SS.conf["Font Size"] < 13) ? 18 : ($SS.conf["Font Size"] + 5)))) + "px;
-}
-:root.float-summary.op-background.borders-none .summary:not(.summary-bottom) {
   margin-top: " + (($SS.conf["Margin Between Replies"] <= 0) ? (($SS.conf["Margin Between Replies"] * -1) - (($SS.conf["Font Size"] < 13) ? 21 : ($SS.conf["Font Size"] + 8))) : -($SS.conf["Margin Between Replies"] + (($SS.conf["Font Size"] < 13) ? 18 : ($SS.conf["Font Size"] + 5)))) + "px;
-}
-:root.float-summary.op-background body.board_vg a.summary:last-of-type:not(.summary-bottom),
-:root.float-summary.op-background body.board_vg span.summary:last-of-type:not(.summary-bottom) {
-  margin-top: -" + (($SS.conf["Font Size"] < 13) ? 18 : ($SS.conf["Font Size"] + 5)) + "px;
 }
 /* Fit Expanded Images option */
 :root.fit-eximg.fit-height .full-image {
@@ -128,10 +116,10 @@ div.post {
 :root.post-info.reply-fit-width .reply>.postInfo {
   padding-top: 4px !important;
 }
-:root.post-info .fileText,
-#qp .opContainer .fileText,
-.inline .opContainer .fileText {
-  padding-top: 2px !important;
+:root.post-info .fileText:not(.op .fileText),
+#qp .op .fileText,
+.inline .op .fileText {
+  margin-top: 2px !important;
 }
 :root.post-info .inline .reply,
 :root.post-info #hoverUI .reply {
