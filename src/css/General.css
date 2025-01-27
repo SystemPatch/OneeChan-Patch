@@ -52,18 +52,24 @@ body {
 /* Index thread summary */
 :root.op-background:not(.float-summary) .summary:not(.summary-bottom, .preview-summary) {
   display: block;
-  padding-top: " + (($SS.conf["Margin Between Replies"] < 0) ? (($SS.conf["Margin Between Replies"] * -1)) : 0) + "px;
-  margin-top: " + (($SS.conf["Margin Between Replies"] >= 0) ? (($SS.conf["Margin Between Replies"] * -1) + 4) : 0) + "px;
+  padding-top: " + (($SS.conf["Margin Between Replies"] < -2) ? (($SS.conf["Margin Between Replies"] * -1) - 3) : 0) + "px;
+  margin-top: " + (($SS.conf["Margin Between Replies"] > 0) ? (($SS.conf["Margin Between Replies"] * -1) + 1) : -3) + "px;
 }
-:root.float-summary .summary,
-:root.float-summary.op-background body.board_vg .summary:last-of-type:not(.summary-bottom) {
-  margin-top: -" + (($SS.conf["Font Size"] < 13) ? 21 : ($SS.conf["Font Size"] + 8)) + "px;
+:root.op-background:not(.float-summary) body.board_vg .summary:last-of-type:not(.preview-summary),
+.summary-bottom {
+  display: block;
+  padding-top: 0;
+  margin-top: -3px;
+}
+:root.float-summary .summary:not(.preview-summary),
+:root.float-summary.op-background body.board_vg .summary:last-of-type:not(.summary-bottom, .preview-summary) {
+  margin-top: -" + (($SS.conf["Font Size"] < 13) ? 19 : ($SS.conf["Font Size"] + 6)) + "px;
   float: right;
   padding-right: 5px;
   position: relative;
 }
-:root.float-summary.op-background .summary:not(.summary-bottom) {
-  margin-top: " + (($SS.conf["Margin Between Replies"] <= 0) ? (($SS.conf["Margin Between Replies"] * -1) - (($SS.conf["Font Size"] < 13) ? 21 : ($SS.conf["Font Size"] + 8))) : -($SS.conf["Margin Between Replies"] + (($SS.conf["Font Size"] < 13) ? 18 : ($SS.conf["Font Size"] + 5)))) + "px;
+:root.float-summary.op-background .summary:not(.summary-bottom, .preview-summary) {
+  margin-top: " + (($SS.conf["Margin Between Replies"] <= 0) ? (($SS.conf["Margin Between Replies"] * -1) - (($SS.conf["Font Size"] < 13) ? 19 : ($SS.conf["Font Size"] + 6))) : -($SS.conf["Margin Between Replies"] + (($SS.conf["Font Size"] < 13) ? 15 : ($SS.conf["Font Size"] + 2)))) + "px;
 }
 /* Fit Expanded Images option */
 :root.fit-eximg.fit-height .full-image {
