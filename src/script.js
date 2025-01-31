@@ -116,7 +116,6 @@
             "Recolor Even Replies": [false, "Makes every other post a darker color. If Quote Threading is enabled darkens every root reply."],
             "Reduce Thumbnail Opacity": [false, "Reduces opacity of thumbnails."],
             "Backlink Icons": [false, "Use icons for backlinks instead of text."],
-            "Backlinks on Bottom": [false, "Move backlinks to the bottom right of replies."],
             "Backlink Shadow": [false, "Add a shadow to the backlink text."],
             "Show 4chan Pass users": [true, "Show a four leaf clover indicating a pass user."],
             "Borders": [
@@ -3548,7 +3547,6 @@
                 $("html").optionClass("Recolor Even Replies", true, "recolor-even");
                 $("html").optionClass("Invert Spoiler", true, "alt-spoiler");
                 $("html").optionClass("Backlink Icons", true, "backlink-icon");
-                $("html").optionClass("Backlinks on Bottom", true, "backlink-bottom");
                 $("html").optionClass("Backlink Shadow", true, "backlink-shadow");
                 $("html").optionClass("Show 4chan Pass users", true, "no-pu");
                 $("html").optionClass("Fit Expanded Images", true, "fit-eximg");

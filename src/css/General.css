@@ -131,22 +131,6 @@ body {
 :root.post-info #hoverUI .reply {
   padding: 0 0 1px !important;
 }
-/* Backlinks */
-:root.backlink-bottom .post {
-  position: relative;
-  padding-bottom: 2px;
-}
-:root.backlink-bottom .container {
-  position:absolute;
-  bottom:2px;
-  right:6px;
-}
-:root.float-summary.backlink-bottom body.is_index .op>.postInfo>.container {
-    bottom: " + (($SS.conf["Font Size"] < 13) ? 11 : ($SS.conf["Font Size"] - 2)) + "px;
-}
-:root.float-summary.backlink-bottom.borders-none body.is_index .op>.postInfo>.container {
-    bottom: " + (($SS.conf["Font Size"] < 13) ? 14 : ($SS.conf["Font Size"] + 1)) + "px;
-}
 /* Menu button */
 .reply .menu-button i {
   position: relative;
