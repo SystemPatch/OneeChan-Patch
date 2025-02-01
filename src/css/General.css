@@ -446,11 +446,14 @@ body.board_f #delform .fileText {
   opacity: 1;
 }
 /* Navlinks */
+#ctrl-top,
 body.is_index div.navLinks {
-  padding: 5px 0;
+  padding-top: 5px;
+  margin-bottom: 5px;
 }
 body.is_thread div.navLinks:not(.navLinksBot) {
-  padding: .4% 0 .4% 0;
+  padding-top: .4%;
+  margin-bottom: .4%;
 }
 .navLinks.navLinksBot.desktop {
   margin-bottom: 5px;
