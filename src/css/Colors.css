@@ -209,6 +209,7 @@ input[value='Previous']:hover {
 }
 input[type=text]:not(.jsColor),
 input.field,
+#qr input,
 textarea,
 .riceCheck,
 #qr-filename-container,
@@ -224,6 +225,7 @@ input[type=checkbox],
 }
 input[type=text]:not(.jsColor):hover,
 input.field:hover,
+#qr input:hover,
 .riceCheck:hover,
 #qr-filename-container:hover,
 textarea:hover,
@@ -343,6 +345,7 @@ a.quotelink.forwardlink, a.backlink.forwardlink {
 }
 input[type=text]:focus,
 input.field:focus,
+#qr input:focus,
 textarea:focus,
 #qr-filename-container:focus,
 #qr-filename-container.focus,
