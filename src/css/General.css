@@ -27,7 +27,6 @@ body {
   clear: both;
   content: '';
   display: block;
-  padding-bottom: 1px;
 }
 :root.op-background .op {
   padding: 4px 0;
@@ -304,9 +303,6 @@ hr {
 .pages.cataloglink {
   margin-left: 12px;
 }
-.pages strong>a {
-  transition: opacity .3s ease-in 0s;
-}
 .pages.cataloglink a,
 input[value='Next'],
 input[value='Previous'] {
@@ -332,6 +328,7 @@ input[value='Previous']:hover {
 }
 .pages strong>a {
   padding-top: 3px;
+  transition: opacity .3s ease-in 0s;
 }
 .next,
 .prev {
