@@ -12,10 +12,10 @@ body,
 div.boardBanner,
 #menu,
 input:not(.jsColor),
+textarea,
 a.summary,
 .pages.cataloglink a,
 .pages strong>a,
-textarea,
 #qr-filename-container,
 #post-preview,
 .post-last,
@@ -255,12 +255,12 @@ hr {
   border-style: solid;
 }
 :root.borders-all .reply,
-:root.borders-all.op-background .op:not(#qp .op, .inline .op) {
+:root.borders-all.op-background .op {
   border-width: 1px !important;
 }
 :root.borders-none .reply,
-:root.borders-none.op-background .op:not(#qp .op, .inline .op) {
-  border: none;
+:root.borders-none.op-background .op {
+  border: 0;
 }
 #menu,
 .catalog-thumb {
@@ -296,7 +296,7 @@ hr {
   border-radius: 0 !important;
 }
 .reply,
-:root.op-background .op:not(#qp .op, .inline .op),
+:root.op-background .op,
 .dialog,
 .entry,
 .inline,
