@@ -20,6 +20,9 @@ body {
 .expanded-image {
   position: relative;
 }
+:root.op-background .op {
+  padding: 4px 0;
+}
 :root.force-indent .op {
   margin-left: -12px;
 }
@@ -27,9 +30,6 @@ body {
   clear: both;
   content: '';
   display: block;
-}
-:root.op-background .op {
-  padding: 4px 0;
 }
 .thread>.replyContainer:not(.thread>.postContainer:last-of-type),
 .threadContainer>.replyContainer,
@@ -152,11 +152,11 @@ body {
 }
 :root.reply-fit-width .post .menu-button {
   opacity: 0;
-  transition: opacity .3s ease-out 0s !important;
+  transition: opacity .3s ease-out 0s;
 }
 :root.reply-fit-width .post:hover .menu-button {
   opacity: 1;
-  transition: opacity .3s ease-in .1s !important;
+  transition: opacity .3s ease-in .1s;
 }
 /* Code Tags */
 .prettyprint {

@@ -55,7 +55,7 @@
   opacity: 1 !important;
 }
 /*Add icon to posts with replies when using 4chan X's Bottom Backlinks setting*/
-:root.bottom-backlinks.bottom-bl-icon .post:has(.container:not(:empty))>.postInfo::after {
+:root.bottom-backlinks.bottom-bl-icon .post:has(>.container:not(:empty))>.postInfo::after {
   content: '';
   background-image: url(\"data:image/svg+xml," + $SS.theme.icons.bubble + "\");
   display: inline-block;
