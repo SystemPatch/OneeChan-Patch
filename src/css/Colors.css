@@ -260,7 +260,7 @@ hr {
 }
 :root.borders-none .reply,
 :root.borders-none.op-background .op {
-  border: 0;
+  border: 0 !important;
 }
 #menu,
 .catalog-thumb {

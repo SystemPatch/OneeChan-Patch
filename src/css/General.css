@@ -152,8 +152,6 @@ body {
 }
 :root.reply-fit-width .post .menu-button {
   opacity: 0;
-}
-:root.reply-fit-width .post:not(:hover) .menu-button {
   transition: opacity .3s ease-out 0s !important;
 }
 :root.reply-fit-width .post:hover .menu-button {
