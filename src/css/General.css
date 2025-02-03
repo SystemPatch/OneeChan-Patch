@@ -70,7 +70,7 @@ body {
 :root.float-summary.op-background .summary:not(.summary-bottom, .preview-summary) {
   margin-top: " + (($SS.conf["Margin Between Replies"] <= 0) ? (($SS.conf["Margin Between Replies"] * -1) - (($SS.conf["Font Size"] < 13) ? 19 : ($SS.conf["Font Size"] + 6))) : -($SS.conf["Margin Between Replies"] + (($SS.conf["Font Size"] < 13) ? 15 : ($SS.conf["Font Size"] + 2)))) + "px;
 }
-:root.float-summary.bottom-backlinks body.is_index .op:not(#qp .op, .inline .op):has(.container:not(:empty)) {
+:root.float-summary.bottom-backlinks body.is_index .thread:has(.summary) .op:not(#qp .op, .inline .op):has(.container:not(:empty)) {
   padding-bottom: " + ($SS.conf["Font Size"] + 2) + "px;
 }
 /* Fit Expanded Images option */
