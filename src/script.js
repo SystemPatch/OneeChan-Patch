@@ -387,7 +387,6 @@
         VERSION = "<%= version %>",
         CHANGELOG = "https://github.com/<%= maintainer %>/OneeChan/blob/<%= meta.mainBranch %>/CHANGELOG.md",
         inputImages = "iVBORw0KGgoAAAANSUhEUgAAAAgAAAAgCAYAAAAv8DnQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAP9JREFUOMvV0CFLQ2EYxfHfrtdiURgbmCxOmFPBJgZZ0CQD0Q+goFkwabWIyWIWFgwmy7Qp7DPI3GD7ACZlYLNcy31ljG0aDHrSy3N43nOef6ZULBiifczEQ8wV7OAtGmBO4wgfOI2whsXUnMAJ8rhCJ8IxDpHDHpZwixqM5XPZBBtYxioauEgjRLjBI2bRxTneQ6EYCS4xiTu89DbONJrtP88hwnV64hm28YRqyPsFDkmSGKUYFubnsqignM7rqDWa7dcAqoLdnsXwrgZQ5QG/l8MVIxX1ZPar/lUyUOsv+aMzv+0Qw3OrM4VNrKfzB9yXioVu6LDVx+EA4/+Gwycw/Uz36O07WwAAAABJRU5ErkJggg==",
-        fontListSWF = "https://ahodesuka.github.io/FontList.swf",
         themeInputs = [{
             dName: "Reply Background",
             name: "mainColor",
@@ -1268,10 +1267,16 @@
                                 "</span><input" + (val ? " checked" : "") + " name='" + key + "' type=checkbox></label>";
                         } else if (Array.isArray(defaultConfig[key][2])) // select
                         {
-                            var opts = key === "Font Family" ? $SS.fontList || defaultConfig[key][2] : defaultConfig[key][2],
-                                cFonts = [];
-                            optionsHTML += "<label class=option title=\"" + des + "\"><span class='option-title'>" + key + (key === "Font Family" ? " (<a name=loadSysFonts title='Load fonts from system. Requires flash from external site to run.'>" + ($SS.fontList ? "loaded!" : "load") + "</a>)" : "") + "</span>" +
-                                "<select name='" + key + "'" + (defaultConfig[key][3] === true ? " has-suboption" : "") + ">";
+                            var opts = defaultConfig[key][2];
+                            if (key === "Font Family") {
+                                optionsHTML += "<label class=option title=\"" + des + "\"><span class='option-title'>" + key + "</span>" +
+                                    "<input name='" + key + "' list='" + key + "' value='" + val + "')>" +
+                                    "<datalist id='" + key + "'>";
+                            }
+                            else {
+                                optionsHTML += "<label class=option title=\"" + des + "\"><span class='option-title'>" + key + "</span>" +
+                                    "<select name='" + key + "'" + (defaultConfig[key][3] === true ? " has-suboption" : "") + ">";
+                            }
 
                             for (var i = 0, MAX = opts.length; i < MAX; ++i) {
                                 var name, value;
@@ -1282,16 +1287,10 @@
                                 } else
                                     name = value = opts[i];
 
-                                if (key === "Font Family") cFonts.push(value);
-
-                                optionsHTML += "<option" + (key === "Font Family" ? " style=\"font-family:" + $SS.formatFont(value) + "!important\"" : "") +
-                                    " value='" + value + "'" + (value == val ? " selected" : "") + ">" + name + "</option>";
+                                optionsHTML += "<option value='" + value + "'" + (value == val ? " selected" : "") + ">" + name + "</option>";
                             }
 
-                            if (key === "Font Family" && cFonts.indexOf($SS.conf["Font Family"]) == -1)
-                                optionsHTML += "<option style=\"font-family:" + $SS.formatFont($SS.conf["Font Family"]) + "!important\" value='" + $SS.conf["Font Family"] + "' selected>" + $SS.conf["Font Family"] + "</option>";
-
-                            optionsHTML += "</select></label>";
+                            optionsHTML += (key === "Font Family" ? "</datalist>" : "</select>") + "</label>";
                         } else if (key === "Font Size") {
                             optionsHTML += "<label class='option visible' title=\"" + des + "\"><span class='option-title'>" + key + "</span>" +
                                 "<input type=text name='Font Size' value=" + $SS.conf["Font Size"] + "px></label>";
@@ -1408,8 +1407,6 @@
                         else if (e.keyCode === 40 && (val > MIN_FONT_SIZE || bitmap))
                             $(this).val(--val + "px");
                     });
-                    if (!$SS.fontList)
-                        $("a[name=loadSysFonts]", tOptions).bind("click", $SS.options.loadSystemFonts);
 
                     // themes tab
                     $SS.options.createThemesTab(tOptions);
@@ -1584,40 +1581,6 @@
                     e.stopPropagation();
                     $SS.init(true);
                 }
-            },
-            loadSystemFonts: function(evt) {
-                var loadFontBTN = $(evt.target),
-                    getFontMessage;
-                $(document.head).append($('<script type="text/javascript">' +
-                    "function populateFontList(fontArr)" +
-                    "{" +
-                    "var fontList = [];" +
-                    "for (var key in fontArr)" +
-                    "fontList.push(fontArr[key]);" +
-                    "window.postMessage(fontList, '*');" +
-                    "}"));
-                window.addEventListener("message", getFontMessage = function(e) {
-                    $SS.fontList = e.data;
-                    var fontSelect = $("<select name='Font Family'>");
-
-                    for (var i = 0, MAX = $SS.fontList.length; i < MAX; ++i) {
-                        var name, value;
-                        name = value = $SS.fontList[i];
-
-                        fontSelect.append($("<option" + " style=\"font-family:" + $SS.formatFont(value) + "!important\"" +
-                            " value='" + value + "'" + (value == $SS.conf["Font Family"] ? " selected=true" : "") + ">" + name));
-                    }
-
-                    $("select[name='Font Family']").before(fontSelect).remove();
-
-                    $("#fontListSWF").remove();
-                    window.removeEventListener("message", getFontMessage);
-                    loadFontBTN.text("loaded!").unbind("click", $SS.options.loadSystemFonts);
-                }, false);
-
-                $(document.body).append($("<div id=fontListSWF hidden><object type='application/x-shockwave-flash'" +
-                    " data='" + fontListSWF + "'><param name=allowScriptAccess value=always></object>"));
-                return loadFontBTN.text("loading...");
             },
             save: function() {
                 var div = $("#oneechan-options"),
