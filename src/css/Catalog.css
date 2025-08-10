@@ -15,7 +15,7 @@
 }
 /* Catalog Comment */
 :root.catalog-justify .teaser,
-:root.catalog-justify .catalog-post > .postMessage {
+:root.catalog-justify .catalog-post>.postMessage {
   text-align: justify !important;
 }
 /* Background */
@@ -28,7 +28,7 @@
   border-radius: 3px !important;
 }
 :root.catalog-background .teaser,
-:root.catalog-background .catalog-post > .postMessage {
+:root.catalog-background .catalog-post>.postMessage {
   margin: 0 5px 5px 5px;
 }
 :root.catalog-background .thumb,

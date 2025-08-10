@@ -17,7 +17,7 @@
   left: 0;
   right: 0;
   box-shadow: rgba(0,0,0,.6) 0 0 10px !important;
-  padding: 5px 5px 35px 5px;
+  padding: 5px 5px 35px;
 }
 #options-container:not(.yui-skin-sam) {
   padding: 3px;
