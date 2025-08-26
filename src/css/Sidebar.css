@@ -47,6 +47,7 @@
   position:fixed;
   top:0;
   right: 0;
+  pointer-events:none;
 }
 :root.ss-sidebar #mascot img, :root.ss-sidebar #mascotprev img {
   padding: 0 1px 0 0;
