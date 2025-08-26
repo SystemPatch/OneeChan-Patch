@@ -48,6 +48,12 @@ body {
 .postMessage {
   margin: " + $SS.conf["Margin Post Message"] + " !important;
 }
+:root.bottom-backlinks .container {
+  padding-left: 8px;
+}
+:root.bottom-backlinks .post:not(.op) .container:not(:empty) {
+  padding-bottom: 4px;
+}
 /* Index thread summary */
 :root.op-background:not(.float-summary) .summary:not(.summary-bottom, .preview-summary) {
   display: block;
