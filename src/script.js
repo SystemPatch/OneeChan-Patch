@@ -104,6 +104,8 @@
             "Grayscale Mascots": [false, "Desaturates mascots."],
             ":: Replies": ["header", ""],
             "Fit Width": [true, "Replies stretch to the width of the page."],
+            "Right Post Menu": [false, "Sets the post menu to the right.", "Fit Width", true, true],
+            "Hover Post Menu": [false, "Sets the post menu to appear on hover.", "Fit Width", true, true],
             "Fit Expanded Images": [false, "Expanded images will better fit to the viewport. Enable 'Fit height' in 4chan X's header menu to use."],
             "Show Reply Header": [true, "Shows reply header background and line border."],
             "Show Post Info On Hover": [false, "Shows post number and file info on hover only."],
@@ -3489,6 +3491,8 @@
                 $("html").optionClass("Show Checkboxes", false, "hide-checkboxes");
                 $("html").optionClass("Show Board Name", false, "hide-board-name");
                 $("html").optionClass("Fit Width", true, "reply-fit-width");
+                $("html").optionClass("Right Post Menu", true, "fit-postmenu");
+                $("html").optionClass("Hover Post Menu", true, "hover-postmenu");
                 $("html").optionClass("Show Banner", false, "hide-banner");
                 $("html").optionClass("Reduce Banner Opacity", true, "banner-opacity");
                 $("html").optionClass("Show Post Info On Hover", true, "info-on-hover");

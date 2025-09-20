@@ -12,7 +12,9 @@ body {
 /* Replies */
 .postInfo {
   padding: 5px 13px;
-  display: block !important;
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
 }
 .summary {
   margin-left: 2px;
@@ -150,17 +152,26 @@ body {
 .menu-button + .container:not(:empty) {
   margin-left: 4px !important;
 }
-:root:not(.catalog-mode).reply-fit-width .post .menu-button {
-  float: right;
-  margin-left: 0;
-  position: relative;
-  left: 5px;
+:root.fourchan-xt svg.icon {
+  vertical-align: -.2em;
 }
-:root.reply-fit-width .post .menu-button {
+:root.fourchan-xt .postInfo>.menu-button {
+  margin: 0 0 0 -.1em;
+}
+:root:not(.fourchan-xt) .postInfo>.menu-button {
+  width: 15px;
+  margin-left: -.1em;
+}
+:root:not(.catalog-mode).reply-fit-width.fit-postmenu .postInfo>.menu-button {
+  margin-left: auto;
+  left: 5px;
+  order: 1;
+}
+:root.reply-fit-width.hover-postmenu .post .menu-button {
   opacity: 0;
   transition: opacity .3s ease-out 0s;
 }
-:root.reply-fit-width .post:hover .menu-button {
+:root.reply-fit-width.hover-postmenu .post:hover .menu-button {
   opacity: 1;
   transition: opacity .3s ease-in .1s;
 }

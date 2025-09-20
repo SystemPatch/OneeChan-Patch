@@ -61,10 +61,9 @@
   display: inline-block;
   width: " + $SS.conf["Font Size"] + "px;
   height: " + $SS.conf["Font Size"] + "px;
-  margin: -1px 0;
-}
-:root.bottom-backlinks.bottom-bl-icon.reply-fit-width .post:has(>.container:not(:empty))>.postInfo::after {
-  margin-left: 4px;
+  position: relative;
+  left: -.1em;
+  top: -.1em;
 }
 /* From 4chanSS */
 img[title=Closed],
