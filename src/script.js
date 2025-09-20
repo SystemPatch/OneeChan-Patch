@@ -103,7 +103,7 @@
             "Reduce Mascot Opacity": [false, "Reduces opacity of mascots until hover. Warning: Overrides pointer events."],
             "Grayscale Mascots": [false, "Desaturates mascots."],
             ":: Replies": ["header", ""],
-            "Fit Width": [true, "Replies stretch to the width of the page."],
+            "Fit Width": [true, "Replies stretch to the width of the page.", null, true],
             "Right Post Menu": [false, "Sets the post menu to the right.", "Fit Width", true, true],
             "Hover Post Menu": [false, "Sets the post menu to appear on hover.", "Fit Width", true, true],
             "Fit Expanded Images": [false, "Expanded images will better fit to the viewport. Enable 'Fit height' in 4chan X's header menu to use."],

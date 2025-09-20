@@ -13,8 +13,10 @@ body {
 .postInfo {
   padding: 5px 13px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   column-gap: .4em;
+  row-gap: .4em;
 }
 .summary {
   margin-left: 2px;
