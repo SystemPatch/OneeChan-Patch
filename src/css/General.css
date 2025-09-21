@@ -15,8 +15,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  column-gap: .4em;
-  row-gap: .4em;
+  gap: .4em;
 }
 .summary {
   margin-left: 2px;
@@ -43,7 +42,7 @@ body {
 .inline {
   margin-left: 13px !important;
 }
-.postMessage > .inline {
+.postMessage>.inline {
   margin-left: 0 !important;
 }
 #qp .op>.postInfo {
@@ -92,7 +91,7 @@ body {
 :root.reply-fit-width .reply.post {
   display: block !important;
 }
-:root.reply-fit-width .stub ~ .reply.post {
+:root.reply-fit-width .stub~.reply.post {
   display: none !important;
 }
 .hasInline .inline>.replyContainer:not(.expanded-image):not(.hasInline) .reply.post,
@@ -111,7 +110,7 @@ body {
 .stub {
   padding: 2px;
 }
-.stub > a.show-thread-button {
+.stub>a.show-thread-button {
   margin-right: 4px;
 }
 :root.reply-hide .thread>.expanded-image>.reply,
