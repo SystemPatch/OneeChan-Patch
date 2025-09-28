@@ -176,9 +176,12 @@ a.current,
 :root.shortcut-icons #shortcuts .shortcut .fa::before {
   font-size: " + ($SS.conf["Font Size"] + 2) + "px !important;
 }
+svg.icon {
+  vertical-align: -.2em;
+}
 #shortcuts svg.icon {
   font-size: " + ($SS.conf["Font Size"] + 1) + "px;
 }
-.menu-button svg.icon {
+:root:not(.catalog-mode) .menu-button svg.icon {
   font-size: " + $SS.conf["Font Size"] + "px;
 }
