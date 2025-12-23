@@ -95,6 +95,7 @@
             "Transparent QR": [false, "Reduces opacity of the QR box."],
             "Remove Background": [false, "Removes the QR background."],
             "Remove Controls": [false, "Removes the QR controls and checkbox."],
+            "Animated Transitions": [true, "Enables transition animations for autohiding the QR."],
             "Expanding Form Inputs": [true, "Makes certain form elements expand on focus."],
             "Force QR to Sidebar Size": [true, "QR will no longer extend past the sidebar size."],
             ":: Mascots": ["header", ""],
@@ -3531,6 +3532,7 @@
                 $("html").optionClass("OP Background", true, "op-background");
                 $("html").optionClass("Thread Summary in OP", true, "float-summary");
                 $("html").optionClass("Expanding Form Inputs", true, "expand-inputs");
+                $("html").optionClass("Animated Transitions", true, "qr-transition");
                 $("html").optionClass("Show Header Background Gradient", true, "header-gradient");
                 $("html").optionClass("Show Header Shadow", false, "header-shadow");
                 $("html").optionClass("Highlight Current Board", false, "header-highlight");

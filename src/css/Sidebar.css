@@ -27,7 +27,8 @@
   left: 0 !important;
   right: auto !important;
 }
-:root.right-sidebar:not(.qr-float) #qr {
+:root.right-sidebar:not(.qr-float) #qr,
+:root.vertical-qr #qr {
   right: 0 !important;
   left: auto !important;
 }

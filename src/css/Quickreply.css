@@ -94,9 +94,6 @@
   min-height: 58px !important;
   margin-bottom: 1px;
 }
-#t-resp {
-    width: 170px !important;
-}
 :root.force-qr #qr {
   max-width: 298px;
 }
@@ -123,10 +120,7 @@
   min-width: 298px !important;
   top: auto !important;
   position: fixed;
-  right: 0 !important;
-  left: auto !important;
   transform: translateX(100%);
-  transition: transform .3s ease-in-out .1s !important;
 }
 :root.vertical-qr.left-sidebar #qr {
   transform: translateX(-100%);
@@ -176,6 +170,19 @@
 :root.vertical-qr #qr form {
   display: block !important;
 }
+:root.qr-transition.vertical-qr #qr {
+  transition: transform .3s ease-in-out .1s !important;
+}
+:root.qr-transition:not(.fade-qr, .vertical-qr) #qr.autohide:not(.focus):not(:hover):not(:active)>form {
+  display: block;
+  max-height: 0 !important;
+}
+:root.qr-transition:not(.fade-qr, .vertical-qr) #qr.autohide>form {
+  transition: max-height .4s ease-out .2s !important;
+}
+#qr>form {
+  overflow-y: hidden !important;
+}
 /* Fade QR */
 :root.fade-qr #qr form {
   display: block !important;
@@ -184,6 +191,9 @@
   opacity: 0.2 !important;
   transition: opacity .2s ease-in-out 1s !important;
 }
+:root.qr-transition.fade-qr #qr.autohide {
+  transition: opacity .15s !important;
+}
 /* Oekaki */
 input[type="number"] {
   -moz-appearance: textfield;
@@ -191,6 +201,10 @@ input[type="number"] {
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   -webkit-appearance: none;
+}
+/* Captcha */
+#t-resp {
+  width: 174px !important;
 }
 /* 4chan XT */
 #file-n-submit .row.space {
