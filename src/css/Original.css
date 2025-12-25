@@ -3,29 +3,38 @@
   background: url(https://i.imgur.com/DG9V9sI.png) !important;
 }
 .party-hat {
-  left: 0;
-  margin-left: -11px;
-  padding-left: " + ($SS.conf["Margin Left"] - 1) + "px;
-  margin-top: -83px;
+  left: " + ($SS.conf["Margin Left"] - 12) + "px;
+  top: -30px;
   position: absolute;
   pointer-events: none;
   z-index: 1;
 }
 :root.force-indent .party-hat {
-  margin-left: -23px;
+  margin-left: -12px;
 }
 :root.op-background .party-hat {
-  margin-top: -79px;
+  top: -26px;
 }
 :root.op-background.borders-all .party-hat {
-  padding-left: " + $SS.conf["Margin Left"] + "px;
-  margin-top: -78px;
+  left: " + ($SS.conf["Margin Left"] - 11) + "px;
+  top: -25px;
 }
 :root.op-background.hl-border .party-hat {
-  padding-left: " + (($SS.conf["Margin Left"] - 1) + $SS.conf["Width Decoration"]) + "px;
+  left: " + (($SS.conf["Margin Left"] - 12) + $SS.conf["Width Decoration"]) + "px;
 }
 :root.op-background.borders-all.hl-border .party-hat {
-  padding-left: " + ($SS.conf["Margin Left"] + $SS.conf["Width Decoration"]) + "px;
+  left: " + (($SS.conf["Margin Left"] - 11) + $SS.conf["Width Decoration"]) + "px;
+}
+:root.catalog .party-cnt .party-hat {
+  left: 0px;
+  top: 0px;
+  margin-top: -47px;
+}
+:root.catalog.catalog-background .party-cnt .party-hat {
+  margin-top: -46px;
+}
+:root.hats-enabled.catalog-background .catalog-small > .catalog-thread::after {
+  top: -50px;
 }
 /* End */
 .sjis {
