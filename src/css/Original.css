@@ -5,14 +5,27 @@
 .party-hat {
   left: 0;
   margin-left: -11px;
-  padding-left: " + $SS.conf["Margin Left"] + "px;
-  margin-top: -75px;
+  padding-left: " + ($SS.conf["Margin Left"] - 1) + "px;
+  margin-top: -83px;
   position: absolute;
   pointer-events: none;
   z-index: 1;
 }
 :root.force-indent .party-hat {
   margin-left: -23px;
+}
+:root.op-background .party-hat {
+  margin-top: -79px;
+}
+:root.op-background.borders-all .party-hat {
+  padding-left: " + $SS.conf["Margin Left"] + "px;
+  margin-top: -78px;
+}
+:root.op-background.hl-border .party-hat {
+  padding-left: " + (($SS.conf["Margin Left"] - 1) + $SS.conf["Width Decoration"]) + "px;
+}
+:root.op-background.borders-all.hl-border .party-hat {
+  padding-left: " + ($SS.conf["Margin Left"] + $SS.conf["Width Decoration"]) + "px;
 }
 /* End */
 .sjis {
