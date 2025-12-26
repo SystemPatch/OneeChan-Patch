@@ -89,8 +89,16 @@ a.qr-link {
   font-family: " + $SS.formatFont($SS.conf["Font Family"]) + " !important;
   font-size: " + $SS.conf["Font Size"] + "px !important;
 }
-.backlink {
+.backlink,
+.catalog-stats,
+.meta {
   font-size: " + $SS.conf["Backlink Font Size"] + "px !important;
+}
+.catalog-stats>.menu-button>.icon {
+  height: " + ($SS.conf["Backlink Font Size"] - 1) + "px !important;
+}
+.meta {
+  line-height: " + ($SS.conf["Backlink Font Size"] - 2) + "px !important;
 }
 :root.info-on-hover .postNum {
   font-size: 0 !important;
