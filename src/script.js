@@ -259,9 +259,6 @@
                     name: "Segoe UI",
                     value: "Segoe UI"
                 }, {
-                    name: "Verdana",
-                    value: "Verdana"
-                }, {
                     name: "Calibri",
                     value: "Calibri"
                 }, {
@@ -273,6 +270,9 @@
                 }, {
                     name: "Helvetica",
                     value: "Helvetica"
+                }, {
+                    name: "Verdana",
+                    value: "Verdana"
                 }, {
                     name: "Garamond",
                     value:"Garamond"
@@ -362,7 +362,7 @@
                     value: "GorDIN"
                 }]
             ],
-            "Font Size": [13, "Set the general size of text (Pixels). Min: 8px, Max: 24px"],
+            "Font Size": [13, "Set the font size of text (in pixels). Min: 8px, Max: 24px"],
             "Backlink Font Size": [10, "Set the font size of backlinks."],
             "Bitmap Font": [false, "Check this if you are using a bitmap font."],
             ":: Compatibility": ["header", ""],
