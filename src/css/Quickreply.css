@@ -106,6 +106,19 @@
 :root.force-qr #qr textarea {
   min-width: 298px !important;
 }
+.captcha-root div {
+  width: auto !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+#t-task {
+  max-width: 300px;
+  margin: auto;
+}
+#t-load,
+#t-next {
+  height: 20px !important;
+}
 /* Vertical QR */
 :root.vertical-qr #qr > div > label > div,
 :root.vertical-qr #qr .move #autohide,

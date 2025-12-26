@@ -23,6 +23,9 @@ a.summary,
 select,
 .captcha-root,
 #t-root,
+#t-task,
+#t-load,
+#t-next,
 .tegaki-label,
 .dd-menu ul,
 .boxbar,
@@ -216,7 +219,10 @@ textarea,
 #qr-filename-container,
 select,
 .captcha-root,
-#t-root {
+.captcha-root > div,
+#t-root,
+#t-load,
+#t-next {
   background: " + $SS.theme.inputColor.hex + " !important;
   transition: background .2s, color .2s, border-color .2s, width .2s !important;
 }
@@ -232,7 +238,9 @@ input.field:hover,
 textarea:hover,
 select:hover,
 .captcha-root:hover,
-#t-root:hover {
+#t-root:hover,
+#t-load:hover,
+#t-next:hover {
   background: rgb\(" + $SS.theme.inputColor.hover + ") !important;
 }
 hr {
@@ -275,6 +283,8 @@ hr {
 :root.rounded-corners #updater,
 :root.rounded-corners #menu,
 :root.rounded-corners .thumb,
+:root.rounded-corners #t-load,
+:root.rounded-corners #t-next,
 :root.rounded-corners .fileThumb img:not(.full-image),
 :root.rounded-corners .catalog-thumb,
 :root.rounded-corners .dd-menu ul,
@@ -324,6 +334,8 @@ select,
 #post-preview,
 .captcha-root,
 #t-root,
+#t-load,
+#t-next,
 .dd-menu ul,
 :root.werkTyme .catalog-thread:not(:hover),
 :root.werkTyme:not(.catalog-hover-expand) .catalog-thread,
@@ -352,7 +364,9 @@ textarea:focus,
 #qr-filename-container.focus,
 select:focus,
 .captcha-root:focus,
-#t-root:focus {
+#t-root:focus,
+#t-load:focus,
+#t-next:focus {
   border: 1px solid var(--onee-link) !important;
 }
 #search-box:hover,
