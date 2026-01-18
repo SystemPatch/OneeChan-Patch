@@ -84,8 +84,12 @@ body {
   max-width: calc(75vw - 20rem) !important;
 }
 /* Fit Width option */
-:root.reply-fit-width .reply.post {
+:root.reply-fit-width .reply.post,
+:root.reply-fit-width .inline .op {
   display: block !important;
+}
+:root.reply-fit-width .inline {
+  display: flow-root !important;
 }
 :root.reply-fit-width .stub~.reply.post {
   display: none !important;
