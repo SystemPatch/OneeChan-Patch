@@ -57,12 +57,6 @@ body,
 .pages a,
 .dd-menu,
 #post-preview,
-#qr input.field,
-#qr:not(.sjis-preview) textarea.field,
-#qr span.field,
-#qr-file-button,
-#qr input[type=submit],
-#qr select[data-name="thread"],
 #menu .entry,
 #boardList,
 #shortcuts,
@@ -80,6 +74,22 @@ form.pageSwitcherForm > input[type="submit"] {
 a.qr-link {
   font-family: " + $SS.formatFont($SS.conf["Font Family"]) + " !important;
   font-size: " + $SS.conf["Font Size"] + "px !important;
+}
+/* Quick Reply */
+#qr input.field,
+#qr:not(.sjis-preview) textarea.field,
+#qr span.field,
+#qr-file-button,
+#qr input[type=submit],
+#qr select[data-name="thread"],
+#dump-list-container,
+#qr-filename,
+#qr-actions,
+#t-load,
+#t-next,
+#t-task {
+  font-family: " + $SS.formatFont($SS.conf["Font Family"]) + ";
+  font-size: " + (($SS.conf["Font Size"] < 17) ? $SS.conf["Font Size"] : 16) + "px !important;
 }
 #qr .field::-moz-placeholder,
 ::-moz-placeholder {
@@ -111,13 +121,17 @@ a.qr-link {
 #qr-file-button,
 #qr input[type=submit],
 #qr label,
-.captcha-counter {
+.captcha-counter,
+#t-load,
+#t-next {
   font-size: " + (($SS.conf["Font Size"] < 11) ? 8 : 10) + "px !important;
 }
 #qr-file-button,
 #qr input[type="submit"],
 #qr label,
-.captcha-counter {
+.captcha-counter,
+#t-load,
+#t-next {
   text-transform: uppercase;
 }
 #qr label:not(.riceCheck) {
