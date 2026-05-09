@@ -232,9 +232,6 @@
                 }, {
                     name: "CSS",
                     value: 1
-                }, {
-                    name: "Webkit",
-                    value: 2
                 }]
             ],
             "Thin Scrollbars": [false, "Use thin style scrollbars."],
@@ -3554,7 +3551,6 @@
                 $("html").optionClass("Show Background", true, "catalog-background");
                 $("html").optionClass("Unified Thumbnail Size", true, "catalog-thumbsize");
                 $("html").optionClass("Scrollbar Type", 1, "css-bars");
-                $("html").optionClass("Scrollbar Type", 2, "webkit-bars");
                 $("html").optionClass("Thin Scrollbars", true, "thin-bars");
             }
         },
