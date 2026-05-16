@@ -57,6 +57,7 @@ body,
 .pages a,
 .dd-menu,
 #post-preview,
+#togglePostFormLink,
 #menu .entry,
 #boardList,
 #shortcuts,
@@ -103,7 +104,8 @@ a.qr-link {
 }
 .backlink,
 .catalog-stats,
-.meta {
+.meta,
+:root.fourchan-x #togglePostFormLink {
   font-size: " + $SS.conf["Backlink Font Size"] + "px !important;
 }
 .catalog-stats>.menu-button>.icon {

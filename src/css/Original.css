@@ -164,7 +164,8 @@ s:focus {
   color: #fff;
 }
 #globalMessage,
-.boardBanner {
+.boardBanner,
+#togglePostFormLink {
   text-align: center;
 }
 div.sideArrows {
