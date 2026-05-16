@@ -230,7 +230,10 @@ input[value='Previous'] {
 }
 /* Accommodate Oneechan icon in header */
 :root.centered-links #shortcuts {
-  width: 350px !important;
+  width: 30vw !important;
+}
+:root.centered-links #custom-board-list {
+  left: 12vw !important;
 }
 /* Blotter */
 #blotter {
