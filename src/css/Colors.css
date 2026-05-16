@@ -455,11 +455,11 @@ select:focus,
 :root.css-bars .field {
   scrollbar-color: " + $SS.theme.textColor.hex +" " + $SS.theme.inputColor.hex + ";
 }
-:root.thin-bars:not(.webkit-bars),
-:root.thin-bars:not(.webkit-bars) .field,
-:root.thin-bars:not(.webkit-bars) .options-section,
-:root.thin-bars:not(.webkit-bars) .section-container,
-:root.thin-bars:not(.webkit-bars) #sauce-doc {
+:root.thin-bars,
+:root.thin-bars .field,
+:root.thin-bars .options-section,
+:root.thin-bars .section-container,
+:root.thin-bars #sauce-doc {
     scrollbar-width: thin;
 }
 /* 4chan XT: fxtwitter embed card */
